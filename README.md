@@ -2,9 +2,28 @@
 
 
 ## Purpose
+Loyal Paws Art is a commission enquiry website created for Gordon Burkert, a local pet portrait artist based in Evesham who works in oil, pencil and charcoal. Gordon currently has no online presence and relies entirely on word of mouth to reach new clients, meaning anyone who hasn't heard of him through a personal connection has no way to find him or see his work.
 
+The site gives Gordon a professional platform to showcase his portfolio and receive commission enquiries. It is aimed at three audiences: pet owners wanting a bespoke portrait, people searching for a meaningful and personal gift, and those wanting to commemorate a pet they have lost.
+
+The goal is that a visitor can arrive at the site, browse Gordon's work, understand the process and pricing, and submit an enquiry.
 
 ## User Stories
+### As a pet owner wanting a commission
+- I want to browse examples of the artists work so that I can decide whether his style suits what I have in mind before making contact.
+- I want to understand the commission process and pricing upfront so that I know what to expect before I commit to anything.
+
+### As a gift buyer
+- I want to find out how commissioning a portrait works so that I can confidently purchase one as a gift without needing specialist knowledge.
+- I want to see clear pricing so that I can decide whether a portrait fits my budget before getting in touch.
+
+### As someone memorialising a lost pet
+- I want to feel confident that the artist handles this type of commission with care so that I trust him with something that means a lot to me.
+- I want a straightforward way to describe my pet and submit an enquiry so that the process feels manageable at a difficult time.
+
+### As the Artist
+- I want to display my portfolio online so that potential clients can find and evaluate my work without needing a personal referral.
+- I want to receive structured commission enquiries through the site so that I have all the information I need before responding to a client.
 
 ## UX Design
 
