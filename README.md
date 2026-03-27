@@ -55,7 +55,7 @@ All images include descriptive alt text. Semantic HTML elements are used through
 
 📄 [Home](docs/wireframes/home-desktop.png)
 
-📄 [Gallery]() - TBD
+📄 [Portfolio](docs/wireframes/portfolio-desktop.png)
 
 📄 [Commission]() - TBD
 
@@ -66,7 +66,7 @@ All images include descriptive alt text. Semantic HTML elements are used through
 ### Across All Pages
 
 ## Current Development
-If you would like to see the features to be added in the future visit the Project board: TBD
+If you would like to see the features to be added in the future visit the Project board: https://github.com/users/Hybrid965/projects/2
 
 ## Testing
 
