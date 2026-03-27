@@ -26,19 +26,34 @@ The goal is that a visitor can arrive at the site, browse Gordon's work, underst
 - I want to receive structured commission enquiries through the site so that I have all the information I need before responding to a client.
 
 ## UX Design
+The palette has three core tones with a warm accent. 
+Ivory and dark ivory form the base of the site, keeping it light and uncluttered.
+Charcoal provides structure and contrast for text and key UI elements. 
+The dusty rose runs through the site as a warm accent, used sparingly on interactive elements, hover states and the CTA sections. 
+The near black is reserved exclusively for the hero background, making the opening section distinct from the rest of the page.
 
 ### Colour Palette & Contrast
-
+| Colour           | Hex       | Usage                                       |
+| ---------------- | --------- | ------------------------------------------- |
+| Ivory            | `#FAF7F2` | Main Page background                        |
+| Dark Ivory       | `#F0EBE3` | Section background (Mediums)                |
+| Charcoal Mid     | `#5A5555` | Text colour                                 |
+| Charcoal         | `#2C2828` | Section Background (Testimonials), Headings |
+| Near Black       | `#1A1717` | Hero background                             |
+| Dusty Rose Dark  | `#A87878` | Hover states for links                      |
+| Dusty Rose       | `#C9A0A0` | Commission CTA banner background            |
+| Dusty Rose Light | `#E8D0D0` | Text accents                                |
 ### Font
+Cormorant Garamond - used for all display text: headings, the logo, card titles, quotes, prices
 
-### Care Page Layout Change
+Jost - used for all body text: navigation links, labels, buttons, descriptions and form fields.
 
 ### Accessibility
-
+All images include descriptive alt text. Semantic HTML elements are used throughout to provide a clear document structure for screen readers. ARIA labels have been used to further aid screen readers, skip links have been added for additional accessibility. 
 
 ### Wireframes
 
-📄 [Home]() - TBD
+📄 [Home](docs/wireframes/home-desktop.png)
 
 📄 [Gallery]() - TBD
 
