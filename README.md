@@ -165,7 +165,7 @@ git clone https://github.com/Hybrid965/loyal-paws-art.git
 ## Credits
 
 ### Content
-
+Logo - https://www.flaticon.com/authors/creatype
 #### Favicon
 
 ### Media

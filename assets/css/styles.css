@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Jost', sans-serif;
+}
+
+.font-heading {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+
+
+/* Nav Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FAF7F2;
+    background-color: #1A1717;
+
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#logo {
+    padding: 20px;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    color: #FAF7F2;
+}
+
+#logo-img {
+    height: 25px;
+    width: 25px;
+    padding-right: 10px;
+}
+
+#commission{
+    padding: 8px;
+    min-width: 120px;
+    background-color: #2C2828;
+    color: #FAF7F2;
+    text-align: center;
+    
+}
