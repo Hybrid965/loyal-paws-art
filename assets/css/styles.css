@@ -9,7 +9,7 @@
 }
 
 
-
+/* -------------------------------------------------- */
 /* Nav Bar */
 nav {
     display: flex;
@@ -17,6 +17,7 @@ nav {
     align-items: center;
     color: #FAF7F2;
     background-color: #1A1717;
+    border-bottom: 1px solid #2C2828
 
 }
 
@@ -51,4 +52,68 @@ nav {
     color: #FAF7F2;
     text-align: center;
     
+}
+/* -------------------------------------------------- */
+/* Hero Section */
+#hero {
+    height: 60vh;
+    display: flex;
+    background-color: #1A1717;
+    align-items: center;
+}
+.hero-content {
+    color: #FAF7F2;
+    max-width: 600px;
+    padding: 40px;
+}
+.font-subheading {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FAF7F2;
+    margin-bottom: 10px;
+}
+.font-heading-hero {
+    font-size: 46px;
+    margin-bottom: 20px;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 100;
+    max-width: 260px;
+    line-height: 1.1;
+}
+.font-heading-hero span{
+    color: #E8D0D0;
+    font-style: italic;
+    font-size: 46px;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+}
+#hero-paragraph {
+    font-size: 16px;
+    color: rgba(250, 247, 242, 0.75);
+    margin: 30px 0px;
+    max-width: 450px;
+    line-height: 1.8;
+    font-weight: 100;
+}
+.btn-commission{
+    padding: 12px 30px;
+    background-color: #2C2828;
+    color: #FAF7F2;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.btn-commission:hover, .btn-gallery:hover{
+    background-color: #FAF7F2;
+    color: #1A1717;
+    transition: 0.3s ease-in-out;
+}
+.btn-gallery{
+    padding: 12px 30px;
+    border: 1px solid rgba(250, 247, 242, 0.75);
+    color: #FAF7F2;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+
 }
