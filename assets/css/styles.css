@@ -1,13 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-    font-family:'Jost', sans-serif;
+    font-family: 'Jost', sans-serif;
 }
 
 .font-heading {
     font-family: 'Cormorant Garamond', Georgia, serif;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
 
 /* -------------------------------------------------- */
 /* Nav Bar */
@@ -18,7 +21,6 @@ nav {
     color: #FAF7F2;
     background-color: #1A1717;
     border-bottom: 1px solid #2C2828
-
 }
 
 .nav-links {
@@ -45,33 +47,37 @@ nav {
     padding-right: 10px;
 }
 
-#commission{
+#commission {
     padding: 8px;
     min-width: 120px;
     background-color: #2C2828;
     color: #FAF7F2;
     text-align: center;
-    
+
 }
+
 /* -------------------------------------------------- */
 /* Hero Section */
 #hero {
-    height: 60vh;
+    height: auto;
     display: flex;
     background-color: #1A1717;
     align-items: center;
 }
+
 .hero-content {
     color: #FAF7F2;
     max-width: 600px;
-    padding: 40px;
+    padding: 200px;
 }
+
 .font-subheading {
     font-size: 14px;
     text-transform: uppercase;
     color: #FAF7F2;
     margin-bottom: 10px;
 }
+
 .font-heading-hero {
     font-size: 46px;
     margin-bottom: 20px;
@@ -80,12 +86,14 @@ nav {
     max-width: 260px;
     line-height: 1.1;
 }
-.font-heading-hero span{
+
+.font-heading-hero span {
     color: #E8D0D0;
     font-style: italic;
     font-size: 46px;
     font-family: 'Cormorant Garamond', Georgia, serif;
 }
+
 #hero-paragraph {
     font-size: 16px;
     color: rgba(250, 247, 242, 0.75);
@@ -94,7 +102,8 @@ nav {
     line-height: 1.8;
     font-weight: 100;
 }
-.btn-commission{
+
+.btn-commission {
     padding: 12px 30px;
     background-color: #2C2828;
     color: #FAF7F2;
@@ -103,12 +112,15 @@ nav {
     font-size: 14px;
     margin-right: 10px;
 }
-.btn-commission:hover, .btn-gallery:hover{
+
+.btn-commission:hover,
+.btn-gallery:hover {
     background-color: #FAF7F2;
     color: #1A1717;
     transition: 0.3s ease-in-out;
 }
-.btn-gallery{
+
+.btn-gallery {
     padding: 12px 30px;
     border: 1px solid rgba(250, 247, 242, 0.75);
     color: #FAF7F2;
@@ -116,4 +128,114 @@ nav {
     text-transform: uppercase;
     font-size: 14px;
 
+}
+
+/* -------------------------------------------------- */
+/* About the Artist */
+#about {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 150px;
+    height: 70vh;
+    background-color: #F0EBE3;
+
+}
+
+#about figure {
+    width: 400px;
+    height: 500px;
+    border: #1A1717 1px solid;
+}
+
+#about-content {
+    font-size: 14px;
+    color: #1A1717;
+    padding: 50px 100px;
+    width: 800px;
+
+}
+
+.heading {
+    font-size: 48px;
+    margin-bottom: 40px;
+    font-weight: 100;
+}
+
+.content {
+    font-size: 16px;
+    color: #5A5555;
+    padding-bottom: 20px;
+    line-height: 1.8;
+}
+
+#about a {
+    color: #5A5555;
+    text-decoration: none;
+    border-bottom: 1px solid #5A5555;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+@media (max-width:1300px) {
+     /* Hero */
+    .hero-content {
+        padding: 100px;
+    }
+     /* About the Artist */
+    #about {
+        flex-direction: column;
+        padding: 100px;
+        height: auto;
+    }
+
+    #about-content {
+        padding: 0;
+        margin-top: 40px;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    #about figure {
+        max-width: 500px;
+        max-height: 500px;
+    }
+}
+
+@media (max-width:600px) {
+
+    /* Hero */
+    .hero-content {
+        padding: 40px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .btn-commission,
+    .btn-gallery {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+    }
+
+    /* About the Artist */
+    #about {
+        padding: 40px;
+    }
+
+    #about figure {
+        width: 300px;
+        height: 300px;
+    }
+
+    #about-content {
+        font-size: 14px;
+    }
+
+    .heading {
+        font-size: 38px;
+    }
 }
