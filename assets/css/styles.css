@@ -80,18 +80,18 @@ nav {
 }
 
 .font-heading-hero {
-    font-size: 46px;
+    font-size: 70px;
     margin-bottom: 20px;
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 100;
-    max-width: 260px;
+    max-width: 400px;
     line-height: 1.1;
 }
 
 .font-heading-hero span {
     color: #E8D0D0;
     font-style: italic;
-    font-size: 46px;
+    font-size: 70px;
     font-family: 'Cormorant Garamond', Georgia, serif;
 }
 
@@ -288,7 +288,10 @@ nav {
         height: auto;
         display: flex;
         flex-direction: column;
-
+    }
+    .font-heading-hero, .font-heading-hero span {
+        font-size: 60px;
+        width: 320px;
     }
 
     .btn-commission,
