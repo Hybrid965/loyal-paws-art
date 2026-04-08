@@ -16,7 +16,7 @@
 
 /* -------------------------------------------------- */
 /* Nav Bar */
-nav {
+#main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +43,7 @@ nav {
     color: #FAF7F2;
 }
 
-#logo-img {
+.logo-img {
     height: 25px;
     width: 25px;
     padding-right: 10px;
@@ -301,17 +301,90 @@ nav {
     margin-top: 40px;
     font-size: 18px;
     text-decoration: none;
-    
+
+}
+
+#cta-btn:hover {
+    background-color: #FAF7F2;
+    color: #1A1717;
+    transition: 0.3s ease-in-out;
+}
+
+/* ------------------------------------------------------*/
+/* Footer */
+footer {
+    background-color: #1A1717;
+    color: #FAF7F2;
+    padding: 40px 0 0 0;
+}
+
+#footer-content {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    padding: 40px 100px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
 }
 
 
+.brand-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 
+.footer-desc {
+    font-size: 14px;
+}
 
+.footer-border {
+    border-bottom: #5A5555 1px solid;
+    padding-bottom: 15px;
+}
 
+.inner-nav {
+    margin-top: 20px;
+    display: block;
+}
 
+.explore-links {
+    display: block;
+    color: #FAF7F2;
+    text-decoration: none;
+    padding: 6px 0;
+    font-size: 14px;
+}
 
+.explore-links:hover {
+    color: #c49a6c;
+}
 
+.footer-column h3 {
+    font-size: 14px;
+    margin-bottom: 3px;
+    margin-top: 0;
+    font-weight: 100;
+}
 
+.footer-column nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+}
+
+#copyright {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(250, 247, 242, 0.4);
+    font-size: 12px;
+}
 
 /* 1300px Breakpoint */
 @media (max-width:1300px) {
@@ -413,4 +486,9 @@ nav {
         padding: 40px;
     }
 
+    /* Footer */
+    #footer-content{
+        flex-direction: column;
+        gap:50px
+    }
 }
