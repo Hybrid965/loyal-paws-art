@@ -71,12 +71,12 @@ If you would like to see the features to be added in the future visit the Projec
 ## Testing
 
 ### Current and Resolved Bugs
-- 1.1 - **Current** - In mobile views you can scroll to the right of the screen
+- 1.1 - **Resolved** - In mobile views you can scroll to the right of the screen
     - Evidence: [Bug - 1.1](docs/bugs/bug1.1.png)
-    - Resolution:
-    - Commit:
+    - Resolution: Added - Overflow x to the html and body tags
+    - Commit: b4eed54
     - Date reported: 09/04/2026
-    - Date fixed:
+    - Date fixed: 09/04/2026
 
 ## Future Development
 
