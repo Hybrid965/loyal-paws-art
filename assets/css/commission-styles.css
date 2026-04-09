@@ -6,7 +6,8 @@
 
 }
 
-html,body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -25,11 +26,28 @@ header {
 .uppercase {
     text-transform: uppercase;
 }
-.nav-current{
+
+.nav-current {
     border-bottom: 1px solid #FAF7F2;
     color: #FAF7F2;
     text-decoration: none;
 
+}
+
+.font-heading-title {
+    font-size: 32px;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 100;
+    line-height: 1.1;
+    text-align: center;
+}
+.font-subheading {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Cormorant Garamond', Georgia, serif;
 }
 
 /* -------------------------------------------------- */
@@ -162,12 +180,13 @@ header {
     padding: 100px;
 }
 
-.font-subheading {
+.font-subheading-hero {
     font-size: 14px;
     text-transform: uppercase;
     color: #FAF7F2;
     margin-bottom: 10px;
     text-align: center;
+    font-family: 'Cormorant Garamond', Georgia, serif;
 }
 
 .font-heading-hero {
@@ -186,6 +205,51 @@ header {
     font-weight: 100;
     text-align: center;
 }
+
+/* The Process */
+#process{
+    background-color: #F0EBE3;
+}
+#process-container{
+    display: flex;
+    margin-top: 30px;
+    
+}
+.process-box{
+    text-align: center;
+    padding: 20px;
+    
+    
+    
+}
+
+.number{
+    border-radius: 50%;
+    background-color: #2C2828;
+    width: 25px;
+    height: 25px;
+    color: #FAF7F2;
+    margin: auto;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.process-sub-heading{
+    padding: 15px 0;
+    font-size: 20px;
+}
+.process-paragraph{
+    font-weight: 100;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
 
 
 /* 600px Breakpoint */
@@ -259,4 +323,10 @@ header {
         text-align: left;
         padding: 15px;
     }
+    /* The Process */
+    #process-container{
+        flex-direction: column;
+        width: 100%;
+    }
 }
+
