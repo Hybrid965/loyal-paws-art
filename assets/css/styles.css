@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     font-family: 'Jost', sans-serif;
-    
+
 
 }
-body{
+
+body {
     overflow-x: hidden;
 }
+
 header {
     position: fixed;
     z-index: 999;
@@ -21,6 +23,12 @@ header {
 
 .uppercase {
     text-transform: uppercase;
+}
+.nav-current{
+    border-bottom: 1px solid #FAF7F2;
+    color: #FAF7F2;
+    text-decoration: none;
+
 }
 
 /* -------------------------------------------------- */
@@ -56,6 +64,28 @@ header {
     text-transform: uppercase;
 }
 
+.hover {
+    text-decoration: none;
+    color: #FAF7F2;
+    position: relative;
+    display: inline-block;
+}
+
+.hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #FAF7F2;
+    transition: width 0.3s ease;
+}
+
+.hover:hover::after {
+    width: 100%;
+}
+
 #logo {
     padding: 20px;
     font-family: 'Cormorant Garamond', Georgia, serif;
@@ -71,14 +101,27 @@ header {
     padding-right: 10px;
 }
 
+.logo {
+    text-decoration: none;
+    color: #FAF7F2;
+}
+
 #commission {
     padding: 8px;
     min-width: 120px;
     background-color: #2C2828;
     color: #FAF7F2;
     text-align: center;
+    text-decoration: none;
 
 }
+
+#commission:hover {
+    background-color: #FAF7F2;
+    color: #1A1717;
+    transition: 0.3s ease-in-out;
+}
+
 
 /* -------------------------------------------------- */
 /* Burger button */
@@ -406,10 +449,6 @@ footer {
     font-size: 14px;
 }
 
-.explore-links:hover {
-    color: #c49a6c;
-}
-
 .footer-column h3 {
     font-size: 14px;
     margin-bottom: 3px;
@@ -492,7 +531,7 @@ footer {
         justify-content: space-between;
         z-index: 1000;
         padding: 15px;
-        
+
     }
 
     .burger {
