@@ -138,15 +138,15 @@
     display: flex;
     flex-direction: row;
     padding: 100px 150px;
-    height: 70vh;
+    height: auto;
     background-color: #FAF7F2;
 
 }
 
-#about figure {
+#about figure img{
     width: 400px;
     height: 500px;
-    border: #1A1717 1px solid;
+    border: #c49a6c 3px solid;
 }
 
 #about-content {
@@ -408,7 +408,7 @@ footer {
         max-width: 600px;
     }
 
-    #about figure {
+    #about figure img{
         max-width: 500px;
         max-height: 500px;
     }
@@ -468,7 +468,7 @@ footer {
         padding: 40px;
     }
 
-    #about figure {
+    #about figure img{
         width: 300px;
         height: 300px;
     }
