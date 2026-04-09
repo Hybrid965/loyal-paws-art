@@ -70,8 +70,8 @@ header {
     justify-content: space-between;
     align-items: center;
     color: #FAF7F2;
-    background-color: #1A1717;
-    border-bottom: 1px solid #2C2828
+    background-color: #2C2828;
+    border-bottom: 1px solid #5A5555
 }
 
 .nav-links {
@@ -170,7 +170,7 @@ header {
 #hero {
     height: auto;
     display: flex;
-    background-color: #1A1717;
+    background-color: #2C2828;
     align-items: center;
     justify-content: center;
 }
