@@ -171,7 +171,7 @@ Logo - https://www.flaticon.com/authors/creatype
 ### Media
 
 ### Code
-
+Intersection Observer API - https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 ### Fonts
 
 ---
