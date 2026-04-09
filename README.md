@@ -168,13 +168,13 @@ git clone https://github.com/Hybrid965/loyal-paws-art.git
 ## Credits
 
 ### Content
-Logo - https://www.flaticon.com/authors/creatype
-#### Favicon
+- **Logo**: https://www.flaticon.com/authors/logisstudio
+- **Favicon**: https://www.flaticon.com/authors/logisstudio
 
 ### Media
 
 ### Code
-Intersection Observer API - https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+**Intersection Observer API**: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 ### Fonts
 
 ---
