@@ -70,71 +70,13 @@ If you would like to see the features to be added in the future visit the Projec
 
 ## Testing
 
-### HTML Validation
-
-All three pages were tested using the [W3C Nu HTML Checker](https://validator.w3.org/).
-
-| Page           | Errors / Warnings                                      | Validated Screenshot                                         |
-| -------------- | ------------------------------------------------------ | ------------------------------------------------------------ |
-| index.html     |                                                        |                                                              |
-| gallery.html   |                                                        |                                                              |
-| commission.html|                                                        |                                                              |
-
-
-### CSS Validation
-
-CSS was tested using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
-
-| Page           | Errors / Warnings                                      | Validated Screenshot                                         |
-| -------------- | ------------------------------------------------------ | ------------------------------------------------------------ |
-| index.html     |                                                        |                                                              |
-| gallery.html   |                                                        |                                                              |
-| commission.html|                                                        |                                                              |
-
-### Functional Testing
-
-| Test                                   | Expected Result                       | Pass/Fail |
-| -------------------------------------- | ------------------------------------- | --------- |
-|                                        |                                       |           |
-|                                        |                                       |           |
-|                                        |                                       |           |
-|                                        |                                       |           |
-|                                        |                                       |           |
-|                                        |                                       |           |
-
-
-### Responsiveness Testing
-
-| Device  | Navigation                               | Images                      | Pass/Fail                   | Evidence
-| ------- | ---------------------------------------- | ----------------------------| --------------------------- | --------- 
-|         |                                          |                             |                             |
-|         |                                          |                             |                             |
-|         |                                          |                             |                             |
-
-### Browser Testing
-
-| Browser | Layout             | Navigation     | Images          | Pass/Fail | Evidence
-| ------- | ------------------ | -------------- | --------------- | --------- |-----------
-|         |                    |                |                 |           |
-|         |                    |                |                 |           |
-|         |                    |                |                 |           |
-
-### User Story Validation
-
-|User Story | Evidence |
-|-----------|----------|
-|           |          |
-|           |          |
-|           |          |
-
-### Current and Solved Bugs
-
-| Bug | Solved? | How was it Solved | Date | Commit |
-| --- | ------- | ----------------- | ---- | ------ |
-|     |         |                   |      |        |
-|     |         |                   |      |        |
-|     |         |                   |      |        |
-|     |         |                   |      |        |
+### Current and Resolved Bugs
+- 1.1 - **Current** - In mobile views you can scroll to the right of the screen
+    - Evidence: [Bug - 1.1](docs/bugs/bug1.1.png)
+    - Resolution:
+    - Commit:
+    - Date reported: 09/04/2026
+    - Date fixed:
 
 ## Future Development
 
