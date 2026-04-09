@@ -70,41 +70,41 @@ The near black is reserved exclusively for the hero background, making the openi
 
 ### Across All Pages
 
-- **Navigation Bar**
+- **Navigation Bar**:  
 The navigation bar is fixed to the top of the page and remains visible as the user scrolls. It includes the site logo on the left and three page links on the right: Home, Portfolio, and Commission. The active page link is highlighted to show the user where they are. On smaller screens the navbar collapses to keep the layout clean.
 
     - [Navbar screenshot](docs/features/navbar.png)
 
-- **Footer**
-The footer appears on every page and contains the site logo and tagline, page navigation links, social media links to Instagram and Facebook, and a copyright notice. It gives users a way to navigate without scrolling back to the top.
+- **Footer**:  
+The footer appears on every page and contains the site logo and tagline, page navigation links, social media links to Instagram and Facebook, and a copyright notice.
 
     - [Footer screenshot](docs/features/footer.png)
 
 
 ### Home Page
 
-- **Hero Section**
-The hero is the first thing a visitor sees. It features a full-width dark background with a headline, a short description of Gordon's work, and two CTA buttons — one linking to the commission page and one anchoring down to the portfolio gallery. The contrast between the near-black hero and the rest of the page makes the opening section visually distinct.
+- **Hero Section**: 
+The hero is the first thing a visitor sees. It features a full-width dark background with a headline, a short description of Gordon's work, and two CTA buttons - one linking to the commission page and one anchoring down to the portfolio gallery. The contrast between the near-black hero and the rest of the page makes the opening section visually distinct.
 
     - [Hero screenshot](docs/features/home-hero.png)
 
-- **Artist Biography**
-Below the hero, a two-column section introduces Gordon alongside a photo of the artist. It covers his background, his approach to commissions, and includes a pull quote written in his own voice. This section is aimed at building trust with visitors who have arrived without a personal referral.
+- **Artist Biography**:  
+Below the hero, a two-column section introduces Gordon. It covers his background, his approach to commissions. This section is aimed at building trust with visitors who have arrived without a personal referral.
 
     - [Artist bio screenshot](docs/features/artist-bio.png)
 
-- **Size and Pricing Cards**
+- **Size and Pricing Cards**:  
 Three cards display the available portrait sizes (A1, A3, A4), each with an example image, a brief description, a starting price, and an enquire button linking to the commission page. The A4 card is marked as most popular. This section lets visitors understand their options and pricing before committing to an enquiry.
 
     - [Pricing cards screenshot](docs/features/pricing-cards.png)
 
-- **Testimonials Section**
-Three customer testimonials are displayed against a dark charcoal background, each with a five-star rating, review text, and the customer's name and location. The section provides social proof for visitors considering a commission.
+- **Testimonials Section**: 
+Three customer testimonials are displayed against a dark charcoal background, each with a five-star rating, review text, and the customer's name and location. 
 
     - [Testimonials screenshot](docs/features/testimonials.png)
 
-- **Commission CTA Banner**
-A full-width dusty rose banner near the bottom of the page prompts visitors to commission a portrait. It includes a short note that Gordon takes a limited number of commissions each month, creating a gentle sense of urgency.
+- **Commission CTA Banner**:  
+A full-width dusty rose banner near the bottom of the page prompts visitors to commission a portrait. 
 
     - [CTA banner screenshot](docs/features/cta-banner.png)
 
