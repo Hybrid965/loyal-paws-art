@@ -250,23 +250,21 @@
     margin-top: 40px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: center;
+    
 }
 
 .testimonial-box {
-    border: 1px solid white;
-    padding: 20px;
-    flex: 1 1 40%;
-    max-width: 350px;
-    min-width: 300px;
+    border: 1px solid #C9A0A0;
+    padding: 40px;
+    flex: 1;
     box-sizing: border-box;
     color: rgba(250, 247, 242, 0.75);
 
 }
 
 .testimonial-desc {
-    padding-top: 10px;
+    padding: 20px 20px 40px 0px;
 }
 
 .reviewer {
@@ -275,6 +273,8 @@
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-size: 20px;
     color: rgba(250, 247, 242, 0.75);
+    border-top: #5A5555 1px solid;
+    width: 90;
 
 }
 
