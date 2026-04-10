@@ -132,7 +132,7 @@
                 </aside>
                 <form>
                     <div class="form" id="formWrap">
-
+                        <div id="error-summary"></div>
                         <!--Name + Email-->
                         <div class="row">
                             <div class="field">
@@ -212,6 +212,7 @@
                             <p class="hint">Describe the photo(s) you plan to send. Gordon will request them by email
                                 once he reviews your enquiry.</p>
                         </div>
+                        <button type="submit" class="btn-submit">Send Enquiry</button>
                 </form>
             </div>
         </section>
@@ -247,6 +248,11 @@
 
     <script src="assets/js/burger.js"></script>
     <script src="assets/js/fadeIn.js"></script>
+    <script src="assets/js/form-validation.js"></script>
+    <script src="assets/js/selectedMediumSelector.js"></script>
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>emailjs.init("0n_8Vj8sZFDSBBUNb");</script>
 </body>
 
 </html>

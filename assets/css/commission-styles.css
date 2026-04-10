@@ -538,6 +538,59 @@ form {
 }
 
 /*------------------------------- 
+    Form Validation 
+    ---------------------------------*/
+.btn-submit {
+  display: block;
+  width: 20%;
+  padding: 15px;
+  background-color: #2c2820;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  margin-top: 20px
+}
+
+.btn-submit:hover {
+  background-color: #b8887a;
+}
+
+
+#error-summary {
+  background-color: #f9e8e8;
+  border: 1px solid #c0392b;
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  color: #2d2d2d;
+}
+
+#error-summary:empty {
+  display: none;
+}
+
+.error-summary-heading {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+#error-summary ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+#error-summary a {
+  color: #c0392b;
+  text-decoration: underline;
+}
+
+#error-summary a:hover {
+  color: #922b21;
+}
+
+/*------------------------------- 
     Footer 
     ---------------------------------*/
 footer {
@@ -609,6 +662,7 @@ footer {
     color: rgba(250, 247, 242, 0.4);
     font-size: 12px;
 }
+
 
 /*=======================================
   ==========1000px Breakpoint=============
