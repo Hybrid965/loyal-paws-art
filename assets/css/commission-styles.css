@@ -17,7 +17,9 @@ header {
     top: 0;
     width: 100%;
 }
-
+/*------------------------------- 
+Universal
+---------------------------------*/
 .font-heading {
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 100;
@@ -50,8 +52,9 @@ header {
     font-family: 'Cormorant Garamond', Georgia, serif;
 }
 
-/* -------------------------------------------------- */
-/* Javascript classes */
+/*------------------------------- 
+JS classes 
+---------------------------------*/
 .fade {
     opacity: 0;
     transform: translateY(24px);
@@ -63,8 +66,9 @@ header {
     transform: translateY(0);
 }
 
-/* -------------------------------------------------- */
-/* Nav Bar */
+/*------------------------------- 
+Nav Bar 
+---------------------------------*/
 #main-nav {
     display: flex;
     justify-content: space-between;
@@ -142,8 +146,9 @@ header {
 }
 
 
-/* -------------------------------------------------- */
-/* Burger button */
+/*------------------------------- 
+Burger
+---------------------------------*/
 .burger {
     display: none;
     flex-direction: column;
@@ -165,8 +170,9 @@ header {
     transition: all 0.3s ease;
 }
 
-/* -------------------------------------------------- */
-/* Hero Section */
+/*------------------------------- 
+Hero Section
+---------------------------------*/
 #hero {
     height: auto;
     display: flex;
@@ -206,7 +212,9 @@ header {
     text-align: center;
 }
 
-/* The Process */
+/*------------------------------- 
+The Process
+---------------------------------*/
 #process{
     background-color: #F0EBE3;
 }
@@ -217,10 +225,7 @@ header {
 }
 .process-box{
     text-align: center;
-    padding: 20px;
-    
-    
-    
+    padding: 20px;   
 }
 
 .number{
@@ -243,19 +248,87 @@ header {
     font-size: 14px;
 }
 
+/*------------------------------- 
+Pricing 
+---------------------------------*/
+#pricing{
+    background-color: #FAF7F2;
+}
+#price-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+.price-box{
+    border: 1px solid #F0EBE3;
+    padding: 30px 30px 80px 30px;
+    margin: 40px 0px;
+}
+.price-title{
+    margin-bottom: 40px ;
+    font-size: 30px;
+}
+
+.price-startingfrom{
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    border-bottom: #5A5555 1px solid;
+    font-size: 30px;
+    font-weight: 100;
+    
+}
+
+.price-startingfrom span{
+    font-size: 14px;
+    padding-left: 20px;
+    color: #5A5555;
+}
+
+.price-desc{
+    font-size: 16px;
+    padding-top: 10px;
+    list-style: none;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.white{
+    background-color: white;
+}
+
+.black{
+    background-color: #2C2828;
+    color: #FAF7F2;
+}
+
+.black .price-startingfrom span{
+    color: #FAF7F2;
+}
+
+.price-endquote{
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-size: 18px;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    padding-bottom: 60px;
+    text-align: center;
+    padding: 0px 20px 60px 0px;
+    
+}
 
 
 
 
 
-
-
-
-
-/* 600px Breakpoint */
+/*=======================================
+  ==========600px Breakpoint=============
+  =======================================*/
 @media (max-width:600px) {
 
-    /* Nav Bar */
+    /*------------------------------- 
+    Nav Bar 
+    ---------------------------------*/
     #main-nav {
         flex-direction: column;
         align-items: flex-start;
@@ -323,10 +396,26 @@ header {
         text-align: left;
         padding: 15px;
     }
-    /* The Process */
+
+    /*------------------------------- 
+    The Process 
+    ---------------------------------*/
     #process-container{
         flex-direction: column;
         width: 100%;
+    }
+
+    /*------------------------------- 
+    Pricing 
+    ---------------------------------*/
+    #price-container{
+        flex-direction: column;
+    }
+    .white{
+        margin-bottom: 0px;
+    }
+    .black{
+        margin-top: 0px;
     }
 }
 
