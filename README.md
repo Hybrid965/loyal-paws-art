@@ -38,9 +38,9 @@ The goal is that a visitor can arrive at the site, browse Gordon's work, underst
 
 ### Skeleton Plane
 - **Wireframes**: Initial layouts were designed for all pages to plan the placement of headers, images, and navigation menus.
-    - 📄 [Home](docs/wireframes/home-desktop.png)
-    - 📄 [Portfolio](docs/wireframes/portfolio-desktop.png)
-    - 📄 [Commission](docs/wireframes/comission-desktop.png) -TBD
+    - 📄 [Home](docs/wireframes/home.png)
+    - 📄 [Portfolio](docs/wireframes/portfolio.png)
+    - 📄 [Commission](docs/wireframes/commission.png)
 
 - **Layout Changes**: 
 - **Navigation Design**: A fixed navigation bar ensures that primary resources are easy to find and accessible across all screen sizes.
