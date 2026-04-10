@@ -109,7 +109,114 @@
                         </div>
                     </div>
                 </div>
-                <p class="price-endquote fadein">Final price depends on size, number of subjects, and complexity of background. Gordon will confirm this in your quote.</p>
+                <p class="price-endquote fadein">Final price depends on size, number of subjects, and complexity of
+                    background. Gordon will confirm this in your quote.</p>
+            </div>
+        </section>
+        <!-- Form -->
+        <section>
+            <div id="form">
+                <aside>
+                    <p class="font-heading form-subheading">Ready when you are</p>
+                    <h2 class="font-heading form-title">Lets' create <br><span class="font-heading">something
+                            lasting</span></h2>
+                    <p></p>
+                    <ul>
+                        <li class="uppercase font-heading">Response Time</li>
+                        <p class="list-paragraph">Gordon responds to all enquiries within 48 hours.</p>
+                        <li class="uppercase font-heading">Preview Included</li>
+                        <p class="list-paragraph">You'll approve a sketch before the final piece begins.</p>
+                        <li class="uppercase font-heading">Pet Loss Commissions</li>
+                        <p class="list-paragraph">Gordon handles memorial pieces with great sensitivity and care.</p>
+                    </ul>
+                </aside>
+                <form>
+                    <div class="form" id="formWrap">
+
+                        <!--Name + Email-->
+                        <div class="row">
+                            <div class="field">
+                                <label class="label" for="name">Your Name<span class="req">*</span></label>
+                                <input class="input" type="text" id="name" name="name" placeholder="Jane Smith"/>
+                            </div>
+                            <div class="field">
+                                <label class="label" for="email">Email Address<span
+                                        class="req">*</span></label>
+                                <input class="input" type="email" id="email" name="email"
+                                    placeholder="jane@example.com"/>
+                            </div>
+                        </div>
+
+                        <!--Pet name + Type-->
+                        <div class="row">
+                            <div class="field">
+                                <label class="label" for="petname">Pet's Name<span class="req">*</span></label>
+                                <input class="input" type="text" id="petname" name="pet_name"
+                                    placeholder="Buddy" />
+                            </div>
+                            <div class="field">
+                                <label class="label" for="pettype">Type of Pet<span
+                                        class="req">*</span></label>
+                                <select class="select" id="pettype" name="pet_type">
+                                    <option value="" disabled selected>Select pet type</option>
+                                    <option value="dog">Dog</option>
+                                    <option value="cat">Cat</option>
+                                    <option value="rabbit">Rabbit</option>
+                                    <option value="horse">Horse</option>
+                                    <option value="bird">Bird</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!--Preferred Medium-->
+                        <div class="section">
+                            <label class="label">Preferred Medium<span class="req">*</span></label>
+                            <div class="medium-grid" role="group" aria-label="Preferred medium">
+                                <div class="medium-card selected" data-value="pastel" role="radio" aria-checked="true"
+                                    tabindex="0">
+                                    <div class="med-title">Pastel</div>
+                                    <div class="med-sub">Rich, textured canvas</div>
+                                </div>
+                                <div class="medium-card" data-value="pencil" role="radio"
+                                    tabindex="0">
+                                    <div class="med-title">Pencil</div>
+                                    <div class="med-sub">Detailed greyscale</div>
+                                </div>
+                            </div>
+                            <input type="hidden" id="medium" name="medium" value="pastel" />
+                        </div>
+
+                        <!--Preferred Size-->
+                        <div class="section">
+                            <label class="label" for="size">Preferred Size<span class="req">*</span></label>
+                            <select class="select" id="size" name="size">
+                                <option value="" disabled selected>Select a size</option>
+                                <option value="a4">A4 (210 × 297mm)</option>
+                                <option value="a3">A3 (297 × 420mm)</option>
+                                <option value="a1">A1 (420 × 594mm)</option>
+                                <option value="custom">Custom — I'll describe below</option>
+                            </select>
+                        </div>
+
+                        <!--Tell us about your pet-->
+                        <div class="section">
+                            <label class="label" for="about">Tell Us About Your Pet</label>
+                            <textarea class="textarea" id="about" name="about_pet" rows="4"
+                                placeholder="Personality, favourite spots, anything that captures them…"></textarea>
+                            <p class="hint">Optional — but the more you share, the better Gordon can capture your
+                                pet's character.</p>
+                        </div>
+
+                        <!--Photo description-->
+                        <div class="section">
+                            <label class="label" for="photo">Photo Description</label>
+                            <input class="input" type="text" id="photo" name="photo_description"
+                                placeholder="e.g. Sitting in sunlight, looking to the left" />
+                            <p class="hint">Describe the photo(s) you plan to send. Gordon will request them by email
+                                once he reviews your enquiry.</p>
+                        </div>
+                </form>
             </div>
         </section>
     </main>

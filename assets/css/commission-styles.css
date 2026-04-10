@@ -17,6 +17,7 @@ header {
     top: 0;
     width: 100%;
 }
+
 /*------------------------------- 
 Universal
 ---------------------------------*/
@@ -43,6 +44,7 @@ Universal
     line-height: 1.1;
     text-align: center;
 }
+
 .font-subheading {
     font-size: 14px;
     text-transform: uppercase;
@@ -215,20 +217,22 @@ Hero Section
 /*------------------------------- 
 The Process
 ---------------------------------*/
-#process{
+#process {
     background-color: #F0EBE3;
 }
-#process-container{
+
+#process-container {
     display: flex;
     margin-top: 30px;
-    
-}
-.process-box{
-    text-align: center;
-    padding: 20px;   
+
 }
 
-.number{
+.process-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.number {
     border-radius: 50%;
     background-color: #2C2828;
     width: 25px;
@@ -239,11 +243,12 @@ The Process
     font-size: 18px;
 }
 
-.process-sub-heading{
+.process-sub-heading {
     padding: 15px 0;
     font-size: 20px;
 }
-.process-paragraph{
+
+.process-paragraph {
     font-weight: 100;
     font-size: 14px;
 }
@@ -251,61 +256,64 @@ The Process
 /*------------------------------- 
 Pricing 
 ---------------------------------*/
-#pricing{
+#pricing {
     background-color: #FAF7F2;
 }
-#price-container{
+
+#price-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: auto;
 }
-.price-box{
+
+.price-box {
     border: 1px solid #F0EBE3;
     padding: 30px 30px 80px 30px;
     margin: 40px 0px;
 }
-.price-title{
-    margin-bottom: 40px ;
+
+.price-title {
+    margin-bottom: 40px;
     font-size: 30px;
 }
 
-.price-startingfrom{
+.price-startingfrom {
     padding-bottom: 30px;
     margin-bottom: 10px;
     border-bottom: #5A5555 1px solid;
     font-size: 30px;
     font-weight: 100;
-    
+
 }
 
-.price-startingfrom span{
+.price-startingfrom span {
     font-size: 14px;
     padding-left: 20px;
     color: #5A5555;
 }
 
-.price-desc{
+.price-desc {
     font-size: 16px;
     padding-top: 10px;
     list-style: none;
     font-family: 'Cormorant Garamond', Georgia, serif;
 }
 
-.white{
+.white {
     background-color: white;
 }
 
-.black{
+.black {
     background-color: #2C2828;
     color: #FAF7F2;
 }
 
-.black .price-startingfrom span{
+.black .price-startingfrom span {
     color: #FAF7F2;
 }
 
-.price-endquote{
+.price-endquote {
     display: flex;
     justify-content: center;
     font-style: italic;
@@ -314,9 +322,243 @@ Pricing
     padding-bottom: 60px;
     text-align: center;
     padding: 0px 20px 60px 0px;
-    
+
 }
 
+/*------------------------------- 
+Form 
+---------------------------------*/
+#form {
+    display: flex;
+    flex-direction: row;
+    background-color: #F0EBE3;
+}
+
+aside {
+    padding: 60px;
+    width: 40%;
+    margin-top: 85px;
+}
+
+aside li {
+    list-style-type: circle;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.form-title {
+    font-size: 40px;
+    padding: 20px 0px;
+}
+
+.form-title span {
+    font-style: italic;
+
+}
+
+.form-subheading {
+    font-size: 20px;
+}
+
+.list-paragraph {
+    padding: 0px 10px;
+    font-weight: 100;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 70%;
+    padding: 40px;
+    margin: 150px 100px 100px 0px;
+    background-color: #FAF7F2;
+}
+
+/*  Two-column row  */
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.75rem;
+}
+
+@media (max-width: 480px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*  Individual field  */
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/*  Labels  */
+.label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #5a5247;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.req {
+    color: #c0785a;
+    margin-left: 2px;
+}
+
+/*  Text inputs  */
+.input {
+    font-size: 14px;
+    font-weight: 300;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #9c9088;
+    padding: 8px 0;
+    color: #2c2820;
+    outline: none;
+    width: 100%;
+}
+
+.input:focus {
+    border-bottom-color: #2c2820;
+}
+
+.input::placeholder {
+    color: #b0a89e;
+}
+
+/* Dropdowns */
+.select {
+    font-size: 14px;
+    font-weight: 300;
+    background: transparent;
+    border-bottom: 1px solid #9c9088;
+    padding: 8px 20px 8px 0;
+    color: #2c2820;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.select:focus {
+    border-bottom-color: #2c2820;
+}
+
+.select option {
+    background: #f5f0eb;
+    color: #2c2820;
+}
+
+/* Textarea */
+.textarea {
+    font-size: 14px;
+    font-weight: 300;
+    background: transparent;
+    border: 1px solid #9c9088;
+    border-radius: 0;
+    padding: 10px 12px;
+    color: #2c2820;
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+    resize: none;
+    line-height: 1.6;
+}
+
+.textarea:focus {
+    border-color: #2c2820;
+}
+
+.textarea::placeholder {
+    color: #b0a89e;
+}
+
+
+/* Medium cards */
+.medium-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.medium-card {
+    border: 1px solid #9c9088;
+    background: transparent;
+    padding: 14px 12px;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+}
+
+.medium-card:hover {
+    border-color: #2c2820;
+}
+
+.medium-card.selected {
+    border-color: #2c2820;
+    background: #2c2820;
+}
+
+.medium-card.selected .med-title {
+    color: #f5f0eb;
+}
+
+.medium-card.selected .med-sub {
+    color: #9c9088;
+}
+
+.med-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #2c2820;
+    margin-bottom: 3px;
+    transition: color 0.2s;
+}
+
+.med-sub {
+    font-size: 11px;
+    color: #7a7268;
+    letter-spacing: 0.04em;
+    transition: color 0.2s;
+}
+
+.hint {
+      font-size: 12px;
+      color: #7a7268;
+      margin-top: 6px;
+      line-height: 1.5;
+      font-weight: 300;
+    }
+
+/*=======================================
+  ==========1000px Breakpoint=============
+  =======================================*/
+@media (max-width:1000px) {
+    #form {
+        flex-direction: column;
+    }
+    form{
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    aside{
+        margin: auto;
+        text-align: center;
+    }
+    aside li{
+        list-style: none;
+    }
+    .form-title{
+        font-size: 34px;
+    }
+}
 
 
 
@@ -400,7 +642,7 @@ Pricing
     /*------------------------------- 
     The Process 
     ---------------------------------*/
-    #process-container{
+    #process-container {
         flex-direction: column;
         width: 100%;
     }
@@ -408,14 +650,15 @@ Pricing
     /*------------------------------- 
     Pricing 
     ---------------------------------*/
-    #price-container{
+    #price-container {
         flex-direction: column;
     }
-    .white{
+
+    .white {
         margin-bottom: 0px;
     }
-    .black{
+
+    .black {
         margin-top: 0px;
     }
 }
-
