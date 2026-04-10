@@ -530,12 +530,85 @@ form {
 }
 
 .hint {
-      font-size: 12px;
-      color: #7a7268;
-      margin-top: 6px;
-      line-height: 1.5;
-      font-weight: 300;
-    }
+    font-size: 12px;
+    color: #7a7268;
+    margin-top: 6px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/*------------------------------- 
+    Footer 
+    ---------------------------------*/
+footer {
+    background-color: #1A1717;
+    color: #FAF7F2;
+    padding: 40px 0 0 0;
+}
+
+#footer-content {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    padding: 40px 100px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+
+.brand-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-desc {
+    font-size: 14px;
+}
+
+.footer-border {
+    border-bottom: #5A5555 1px solid;
+    padding-bottom: 15px;
+}
+
+.inner-nav {
+    margin-top: 20px;
+    display: block;
+}
+
+.explore-links {
+    display: block;
+    color: #FAF7F2;
+    text-decoration: none;
+    padding: 6px 0;
+    font-size: 14px;
+}
+
+.footer-column h3 {
+    font-size: 14px;
+    margin-bottom: 3px;
+    margin-top: 0;
+    font-weight: 100;
+}
+
+.footer-column nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+}
+
+#copyright {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(250, 247, 242, 0.4);
+    font-size: 12px;
+}
 
 /*=======================================
   ==========1000px Breakpoint=============
@@ -544,18 +617,22 @@ form {
     #form {
         flex-direction: column;
     }
-    form{
+
+    form {
         margin: auto;
         margin-bottom: 50px;
     }
-    aside{
+
+    aside {
         margin: auto;
         text-align: center;
     }
-    aside li{
+
+    aside li {
         list-style: none;
     }
-    .form-title{
+
+    .form-title {
         font-size: 34px;
     }
 }
@@ -660,5 +737,12 @@ form {
 
     .black {
         margin-top: 0px;
+    }
+    /*------------------------------- 
+    Footer 
+    ---------------------------------*/
+    #footer-content {
+        flex-direction: column;
+        gap: 50px
     }
 }
