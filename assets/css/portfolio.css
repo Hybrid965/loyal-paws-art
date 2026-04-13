@@ -207,9 +207,10 @@ header {
 }
 
 .gallery-card-thumb img {
-    width: 100%;
-    object-fit: cover;
-    display: block;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
 }
 
 .gallery-card-info {

@@ -5,7 +5,7 @@ let portraits = [
     petType: 'dog',
     label: 'dog drawing',
     name: 'Bob',
-    src: 'assets/images/placeholder.png',
+    src: 'assets/images/dog1.jpg',
     alt: 'Pencil drawing of Bob'
   },
   { 
@@ -13,7 +13,7 @@ let portraits = [
     petType: 'dog', 
     label: 'dog drawing',
     name: 'Bob',
-    src: 'assets/images/placeholder.png',
+    src: 'assets/images/dog2.jpg',
     alt: 'Pencil drawing of Bob'
   },
   { 
@@ -21,55 +21,103 @@ let portraits = [
     petType: 'dog', 
     label: 'dog drawing',
     name: 'Bob',
-    src: 'assets/images/placeholder.png',
+    src: 'assets/images/dog3.jpg',
     alt: 'Pencil drawing of Bob'
   },
   { 
     id: 4, 
-    petType: 'cat', 
-    label: 'cat drawing',
+    petType: 'dog', 
+    label: 'dog drawing',
     name: 'Bob',
-    src: 'assets/images/placeholder.png',
+    src: 'assets/images/dog4.jpg',
     alt: 'Pencil drawing of Bob'
   },
   { 
     id: 5, 
-    petType: 'cat', 
-    label: 'cat drawing',
+    petType: 'dog', 
+    label: 'dog drawing',
     name: 'Bob',
-    src: 'assets/images/placeholder.png',
+    src: 'assets/images/dog5.jpg',
     alt: 'Pencil drawing of Bob'
   },
   { 
     id: 6, 
-    petType: 'cat', 
-    label: 'cat drawing',
+    petType: 'dog', 
+    label: 'dog drawing',
     name: 'Bob',
-    src: 'assets/images/placeholder.png',
+    src: 'assets/images/dog6.jpg',
     alt: 'Pencil drawing of Bob'
   },
   { 
     id: 7, 
-    petType: 'horse', 
-    label: 'horse drawing',
+    petType: 'dog', 
+    label: 'dog drawing',
     name: 'Bob',
-    src: 'assets/images/placeholder.png',
+    src: 'assets/images/dog7.jpg',
     alt: 'Pencil drawing of Bob'
   },
   { 
     id: 8, 
-    petType: 'horse', 
-    label: 'horse drawing',
+    petType: 'dog', 
+    label: 'dog drawing',
     name: 'Bob',
-    src: 'assets/images/placeholder.png',
+    src: 'assets/images/dog8.jpg',
     alt: 'Pencil drawing of Bob'
   },
   { 
     id: 9, 
-    petType: 'horse', 
-    label: 'horse drawing',
+    petType: 'dog', 
+    label: 'dog drawing',
     name: 'Bob',
-    src: 'assets/images/placeholder.png',
+    src: 'assets/images/dog9.jpg',
+    alt: 'Pencil drawing of Bob'
+  },
+    { 
+    id: 10, 
+    petType: 'dog', 
+    label: 'dog drawing',
+    name: 'Bob',
+    src: 'assets/images/dog10.jpg',
+    alt: 'Pencil drawing of Bob'
+  },
+    { 
+    id: 11, 
+    petType: 'dog', 
+    label: 'dog drawing',
+    name: 'Bob',
+    src: 'assets/images/dog11.jpg',
+    alt: 'Pencil drawing of Bob'
+  },
+    { 
+    id: 12, 
+    petType: 'dog', 
+    label: 'dog drawing',
+    name: 'Bob',
+    src: 'assets/images/dog12.jpg',
+    alt: 'Pencil drawing of Bob'
+  },
+    { 
+    id: 13, 
+    petType: 'dog', 
+    label: 'dog drawing',
+    name: 'Bob',
+    src: 'assets/images/dog13.jpg',
+    alt: 'Pencil drawing of Bob'
+  },
+    { 
+    id: 14, 
+    petType: 'cat', 
+    label: 'cat drawing',
+    name: 'Bob',
+    src: 'assets/images/cat1.jpg',
+    alt: 'Pencil drawing of Bob'
+  },
+    { 
+    id: 15, 
+    petType: 'cat', 
+    label: 'cat drawing',
+    name: 'Bob',
+    src: 'assets/images/cat2.jpg',
     alt: 'Pencil drawing of Bob'
   },
 ];
