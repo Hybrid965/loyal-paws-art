@@ -136,13 +136,13 @@ If you would like to see the features to be added in the future visit the Projec
 - 1.2 - **Resolved** - Fixing previous bug caused the nav bar to become unstuck
     - Evidence: 🐛 [Bug - 1.2](docs/bugs/bug1.2.png)
     - Resolution: Removed overflow from html tag, changed header to position fixed instead of sticky
-    - Commit:
+    - Commit: 6005608
     - Date reported: 09/04/2026
     - Date fixed:09/04/2026
 - 1.3 - **Resolved** - Padding of the button is missaligning the rest of the nav bar
-    - Evidence: [Bug - 1.3](docs/bugs/bug%201.3.png)
+    - Evidence: 🐛 [Bug - 1.3](docs/bugs/bug%201.3.png)
     - Resolution: Removed the commission ID for each css sheet and added the hover class to remove the button. 
-    - Commit:
+    - Commit: ff4e0c9
     - Date reported: 13/04/2026
     - Date fixed: 13/04/2026
 
