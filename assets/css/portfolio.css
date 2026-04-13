@@ -16,7 +16,9 @@ header {
     top: 0;
     width: 100%;
 }
-
+/*------------------------------- 
+    Universal 
+    ---------------------------------*/
 .font-heading {
     font-family: 'Cormorant Garamond', Georgia, serif;
 }
@@ -30,9 +32,14 @@ header {
     text-decoration: none;
 
 }
+.subheading{
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    text-transform: uppercase;
+}
 
-/* -------------------------------------------------- */
-/* Javascript classes */
+/*------------------------------- 
+    Javascript Classes
+    ---------------------------------*/
 .fade {
     opacity: 0;
     transform: translateY(24px);
@@ -44,15 +51,16 @@ header {
     transform: translateY(0);
 }
 
-/* -------------------------------------------------- */
-/* Nav Bar */
+/*------------------------------- 
+    Nav Bar
+    ---------------------------------*/
 #main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #FAF7F2;
-    background-color: #1A1717;
-    border-bottom: 1px solid #2C2828
+    background-color: #2C2828;
+    border-bottom: 1px solid #5A5555
 }
 
 .nav-links {
@@ -122,8 +130,6 @@ header {
     transition: 0.3s ease-in-out;
 }
 
-
-/* -------------------------------------------------- */
 /* Burger button */
 .burger {
     display: none;
@@ -145,6 +151,33 @@ header {
     border-radius: 2px;
     transition: all 0.3s ease;
 }
+
+/*------------------------------- 
+    Hero 
+    ---------------------------------*/
+    #hero{
+        background-color: #2C2828;
+        color: #FAF7F2;
+    }
+
+    #hero-content{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 150px;
+    }
+    
+    .heading-hero{
+        font-size: 58px;
+        font-weight: 100;
+        margin-bottom: 20px;
+    }
+
+
+
+
+
 
 
 
@@ -218,5 +251,20 @@ header {
         background-color: transparent;
         text-align: left;
         padding: 15px;
+    }
+
+    /* Hero */
+    #hero-content{
+        padding: 100px 50px;
+    }
+    .subheading{
+        font-size: 14px;
+    }
+    .heading-hero{
+        font-size: 34px;
+        margin: 20px 0;
+    }
+    .heading-paragraph{
+        font-size: 14px;
     }
 }
