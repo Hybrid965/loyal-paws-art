@@ -152,8 +152,9 @@ header {
     Hero 
     ---------------------------------*/
 #hero {
-    background-color: #2C2828;
     color: #FAF7F2;
+    height: auto;
+    background-color: #2C2828;
 }
 
 #hero-content {
@@ -165,7 +166,7 @@ header {
 }
 
 .heading-hero {
-    font-size: 58px;
+    font-size: 70px;
     font-weight: 100;
     margin-bottom: 20px;
 }
@@ -358,7 +359,12 @@ footer {
 
 
 
-
+@media (max-width:800px) {
+    .heading-hero {
+        font-size: 50px;
+        margin: 20px 0;
+    }
+}
 
 
 /* 600px Breakpoint */
@@ -442,13 +448,13 @@ footer {
         font-size: 14px;
     }
 
-    .heading-hero {
-        font-size: 34px;
-        margin: 20px 0;
-    }
-
     .heading-paragraph {
         font-size: 14px;
+    }
+
+    /* CTA */
+    #cta{
+        padding: 50px;
     }
 
     /* Footer */

@@ -145,6 +145,12 @@ If you would like to see the features to be added in the future visit the Projec
     - Commit: ff4e0c9
     - Date reported: 13/04/2026
     - Date fixed: 13/04/2026
+- 3.1 - **Revolved** - Form info is missaligned 
+    - Evidence: 🐛 [Bug - 1.4](docs/bugs/bug1.4.png)
+    - Resolution: Centered the aside and removed padding in 1000px media query 
+    - Commit:
+    - Date reported: 13/04/2026
+    - Date fixed: 13/04/2026
 
 
 ## Deployment
