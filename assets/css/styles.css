@@ -243,11 +243,13 @@ header {
 }
 
 #about a {
-    color: #5A5555;
+    color: #FAF7F2;
     text-decoration: none;
-    border-bottom: 1px solid #5A5555;
     padding-bottom: 5px;
     font-size: 16px;
+}
+#about a:hover{
+    color: #FAF7F2;
 }
 
 /* Choose your size */
@@ -266,6 +268,11 @@ header {
     background-color: #FAF7F2;
     height: auto;
     padding-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .box-border {
@@ -307,6 +314,24 @@ header {
 .enquire {
     color: #5A5555;
     text-decoration: underline;
+}
+
+.enquire {
+    display: inline-block;
+    padding: 10px 24px;
+    text-decoration: none;
+    color: #FAF7F2;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin: 10px;
+    background-color: #b8887a;
+}
+
+.enquire:hover {
+    background-color: #333;
+    color: #FAF7F2;
 }
 
 /* Testimonials */
