@@ -41,12 +41,27 @@
             <div id="hero-content" class="fadein">
                 <p class="subheading">Selected Works</p>
                 <h1 class="heading-hero font-heading">The Portfolio</h1>
-                <p class="heading-paragraph">A selection of original commissions by Gordon Burkert - each painted from life or a client's
-                    photograph. Filter by medium to explore the range.</p>
+                <p class="heading-paragraph">A selection of original commissions by Gordon Burkert - each painted from
+                    life or a client's
+                    photograph. Filter by animal to explore the range.</p>
             </div>
+        </section>
+        <!-- Gallery -->
+        <section id="gallery">
+            <div class="filter-bar fadein">
+                <h2 class="font-heading">Filter By:</h2>
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="dog">Dog</button>
+                <button class="filter-btn" data-filter="cat">Cat</button>
+                <button class="filter-btn" data-filter="horse">Horse</button>
+            </div>
+
+            <ul id="gallery-grid"></ul>
         </section>
 
     </main>
-    <script src="assets/js/fadeIn.js"></script>
+    
     <script src="assets/js/burger.js"></script>
+    <script src="assets/js/filter.js"></script>
+    <script src="assets/js/fadeIn.js"></script>
 </body>
