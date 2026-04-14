@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Jost', sans-serif;
-
-
 }
 
 html,
@@ -34,11 +32,10 @@ Universal
     border-bottom: 1px solid #FAF7F2;
     color: #FAF7F2;
     text-decoration: none;
-
 }
 
 .font-heading-title {
-    font-size: 32px;
+    font-size: 2rem;
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 100;
     line-height: 1.1;
@@ -46,7 +43,7 @@ Universal
 }
 
 .font-subheading {
-    font-size: 14px;
+    font-size: 0.875rem;
     text-transform: uppercase;
     margin-bottom: 10px;
     text-align: center;
@@ -85,7 +82,7 @@ Nav Bar
     align-items: center;
     gap: 40px;
     padding: 10px;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-transform: uppercase;
 }
 
@@ -116,7 +113,7 @@ Nav Bar
     font-family: 'Cormorant Garamond', Georgia, serif;
     align-items: center;
     display: flex;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #FAF7F2;
 }
 
@@ -172,7 +169,7 @@ Hero Section
 }
 
 .font-subheading-hero {
-    font-size: 14px;
+    font-size: 0.875rem;
     text-transform: uppercase;
     color: #FAF7F2;
     margin-bottom: 10px;
@@ -181,7 +178,7 @@ Hero Section
 }
 
 .font-heading-hero {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 100;
     line-height: 1.1;
@@ -189,7 +186,7 @@ Hero Section
 }
 
 #hero-paragraph {
-    font-size: 16px;
+    font-size: 1rem;
     color: rgba(250, 247, 242, 0.75);
     margin-top: 30px;
     line-height: 1.8;
@@ -207,7 +204,6 @@ The Process
 #process-container {
     display: flex;
     margin-top: 30px;
-
 }
 
 .process-box {
@@ -223,17 +219,17 @@ The Process
     color: #FAF7F2;
     margin: auto;
     padding: 5px;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .process-sub-heading {
     padding: 15px 0;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .process-paragraph {
     font-weight: 100;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 /*------------------------------- 
@@ -258,26 +254,25 @@ Pricing
 
 .price-title {
     margin-bottom: 40px;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .price-startingfrom {
     padding-bottom: 30px;
     margin-bottom: 10px;
     border-bottom: #5A5555 1px solid;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 100;
-
 }
 
 .price-startingfrom span {
-    font-size: 14px;
+    font-size: 0.875rem;
     padding-left: 20px;
     color: #5A5555;
 }
 
 .price-desc {
-    font-size: 16px;
+    font-size: 1rem;
     padding-top: 10px;
     list-style: none;
     font-family: 'Cormorant Garamond', Georgia, serif;
@@ -300,12 +295,11 @@ Pricing
     display: flex;
     justify-content: center;
     font-style: italic;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Cormorant Garamond', Georgia, serif;
     padding-bottom: 60px;
     text-align: center;
     padding: 0px 20px 60px 0px;
-
 }
 
 /*------------------------------- 
@@ -326,28 +320,27 @@ aside {
 aside li {
     list-style-type: circle;
     padding: 10px;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 100;
 }
 
 .form-title {
-    font-size: 40px;
+    font-size: 2.5rem;
     padding: 20px 0px;
 }
 
 .form-title span {
     font-style: italic;
-
 }
 
 .form-subheading {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .list-paragraph {
     padding: 0px 10px;
     font-weight: 100;
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 20px;
 }
 
@@ -358,7 +351,7 @@ form {
     background-color: #FAF7F2;
 }
 
-/*  Two-column row  */
+/* Two-column row  */
 .row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -372,16 +365,16 @@ form {
     }
 }
 
-/*  Individual field  */
+/* Individual field  */
 .field {
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
 
-/*  Labels  */
+/* Labels  */
 .label {
-    font-size: 10px;
+    font-size: 0.625rem;
     font-weight: 500;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -395,9 +388,9 @@ form {
     margin-left: 2px;
 }
 
-/*  Text inputs  */
+/* Text inputs  */
 .input {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 300;
     background: transparent;
     border: none;
@@ -418,7 +411,7 @@ form {
 
 /* Dropdowns */
 .select {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 300;
     background: transparent;
     border-bottom: 1px solid #9c9088;
@@ -440,7 +433,7 @@ form {
 
 /* Textarea */
 .textarea {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 300;
     background: transparent;
     border: 1px solid #9c9088;
@@ -498,7 +491,7 @@ form {
 
 .med-title {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 17px;
+    font-size: 1.0625rem;
     font-weight: 600;
     color: #2c2820;
     margin-bottom: 3px;
@@ -506,14 +499,14 @@ form {
 }
 
 .med-sub {
-    font-size: 11px;
+    font-size: 0.6875rem;
     color: #7a7268;
     letter-spacing: 0.04em;
     transition: color 0.2s;
 }
 
 .hint {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #7a7268;
     margin-top: 6px;
     line-height: 1.5;
@@ -529,7 +522,7 @@ form {
   padding: 15px;
   background-color: #2c2820;
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   text-transform: uppercase;
   border: none;
   border-radius: 4px;
@@ -539,7 +532,6 @@ form {
 .btn-submit:hover {
   background-color: #b8887a;
 }
-
 
 #error-summary {
   background-color: #f9e8e8;
@@ -596,14 +588,13 @@ footer {
     text-align: left;
 }
 
-
 .brand-name {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 10px;
 }
 
 .footer-desc {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .footer-border {
@@ -621,11 +612,11 @@ footer {
     color: #FAF7F2;
     text-decoration: none;
     padding: 6px 0;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .footer-column h3 {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 3px;
     margin-top: 0;
     font-weight: 100;
@@ -643,13 +634,10 @@ footer {
     padding: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: rgba(250, 247, 242, 0.4);
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
-
-/*=======================================
-  ==========1000px Breakpoint=============
-  =======================================*/
+/* Breakpoints kept in PX for stability */
 @media (max-width:1000px) {
     #form {
         flex-direction: column;
@@ -658,45 +646,37 @@ footer {
     form {
         margin: auto;
         margin-bottom: 50px;
-        
     }
+
     aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-    margin-bottom: 60px;
-}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 60px;
+    }
+
     .cen-aside{
         align-items: center;
         text-align: center;
     }
-    aside li {
-    text-align: center;
-    list-style: none;
-}
-.list-paragraph{
-    text-align: center;
-}
 
+    aside li {
+        text-align: center;
+        list-style: none;
+    }
+
+    .list-paragraph{
+        text-align: center;
+    }
 
     .form-title {
-        font-size: 34px;
+        font-size: 2.125rem;
     }
 }
 
-
-
-
-/*=======================================
-  ==========600px Breakpoint=============
-  =======================================*/
 @media (max-width:600px) {
-
-    /*------------------------------- 
-    Nav Bar 
-    ---------------------------------*/
     #main-nav {
         flex-direction: column;
         align-items: flex-start;
@@ -707,7 +687,6 @@ footer {
         justify-content: space-between;
         z-index: 1000;
         padding: 15px;
-
     }
 
     .burger {
@@ -751,7 +730,7 @@ footer {
 
     .nav-links a {
         padding: 16px 24px;
-        font-size: 12px;
+        font-size: 0.75rem;
         letter-spacing: 0.15em;
         border-bottom: 1px solid #2C2828;
         display: block;
@@ -765,17 +744,11 @@ footer {
         padding: 15px;
     }
 
-    /*------------------------------- 
-    The Process 
-    ---------------------------------*/
     #process-container {
         flex-direction: column;
         width: 100%;
     }
 
-    /*------------------------------- 
-    Pricing 
-    ---------------------------------*/
     #price-container {
         flex-direction: column;
     }
@@ -788,9 +761,6 @@ footer {
         margin-top: 0px;
     }
 
-    /*------------------------------- 
-    Footer 
-    ---------------------------------*/
     #footer-content {
         flex-direction: column;
         gap: 50px

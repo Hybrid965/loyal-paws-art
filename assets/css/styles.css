@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Jost', sans-serif;
-
-
 }
 
 body {
@@ -24,15 +22,13 @@ header {
 .uppercase {
     text-transform: uppercase;
 }
-.nav-current{
+
+.nav-current {
     border-bottom: 1px solid #FAF7F2;
     color: #FAF7F2;
     text-decoration: none;
-
 }
 
-/* -------------------------------------------------- */
-/* Javascript classes */
 .fade {
     opacity: 0;
     transform: translateY(24px);
@@ -44,15 +40,13 @@ header {
     transform: translateY(0);
 }
 
-/* -------------------------------------------------- */
-/* Nav Bar */
 #main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #FAF7F2;
     background-color: #1A1717;
-    border-bottom: 1px solid #2C2828
+    border-bottom: 1px solid #2C2828;
 }
 
 .nav-links {
@@ -60,7 +54,7 @@ header {
     align-items: center;
     gap: 40px;
     padding: 10px;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-transform: uppercase;
 }
 
@@ -91,7 +85,7 @@ header {
     font-family: 'Cormorant Garamond', Georgia, serif;
     align-items: center;
     display: flex;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #FAF7F2;
 }
 
@@ -106,8 +100,6 @@ header {
     color: #FAF7F2;
 }
 
-/* -------------------------------------------------- */
-/* Burger button */
 .burger {
     display: none;
     flex-direction: column;
@@ -129,9 +121,6 @@ header {
     transition: all 0.3s ease;
 }
 
-
-/* -------------------------------------------------- */
-/* Hero Section */
 #hero {
     height: auto;
     display: flex;
@@ -146,14 +135,14 @@ header {
 }
 
 .font-subheading {
-    font-size: 14px;
+    font-size: 0.875rem;
     text-transform: uppercase;
     color: #FAF7F2;
     margin-bottom: 10px;
 }
 
 .font-heading-hero {
-    font-size: 70px;
+    font-size: 4.375rem;
     margin-bottom: 20px;
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 100;
@@ -164,12 +153,12 @@ header {
 .font-heading-hero span {
     color: #E8D0D0;
     font-style: italic;
-    font-size: 70px;
+    font-size: 4.375rem;
     font-family: 'Cormorant Garamond', Georgia, serif;
 }
 
 #hero-paragraph {
-    font-size: 16px;
+    font-size: 1rem;
     color: rgba(250, 247, 242, 0.75);
     margin: 30px 0px;
     max-width: 450px;
@@ -183,7 +172,7 @@ header {
     color: #FAF7F2;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-right: 10px;
 }
 
@@ -200,19 +189,15 @@ header {
     color: #FAF7F2;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
-
+    font-size: 0.875rem;
 }
 
-/* -------------------------------------------------- */
-/* About the Artist */
 #about {
     display: flex;
     flex-direction: row;
     padding: 100px 150px;
     height: auto;
     background-color: #FAF7F2;
-
 }
 
 #about figure img {
@@ -222,21 +207,20 @@ header {
 }
 
 #about-content {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #1A1717;
     padding: 50px 100px;
     width: 800px;
-
 }
 
 .heading {
-    font-size: 48px;
+    font-size: 3rem;
     margin-bottom: 40px;
     font-weight: 100;
 }
 
 .content {
-    font-size: 16px;
+    font-size: 1rem;
     color: #5A5555;
     padding-bottom: 20px;
     line-height: 1.8;
@@ -246,17 +230,16 @@ header {
     color: #FAF7F2;
     text-decoration: none;
     padding-bottom: 5px;
-    font-size: 16px;
+    font-size: 1rem;
 }
-#about a:hover{
+
+#about a:hover {
     color: #FAF7F2;
 }
 
-/* Choose your size */
 #choose {
     padding: 100px;
     background-color: #F0EBE3;
-
 }
 
 #box-container {
@@ -270,7 +253,8 @@ header {
     padding-bottom: 40px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.box:hover{
+
+.box:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
@@ -278,20 +262,18 @@ header {
 .box-border {
     border-right: #5A5555 1px solid;
     border-left: #5A5555 1px solid;
-    ;
 }
 
 .box figure img {
     width: 100%;
     height: 450px;
     object-fit: cover;
-
 }
 
 .box-title {
     text-align: center;
     color: #1A1717;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .box-desc {
@@ -301,7 +283,7 @@ header {
 
 .most-popular {
     border: 1px solid red;
-    font-size: 12px;
+    font-size: 0.75rem;
     width: 100px;
     text-align: center;
     margin: 15px auto;
@@ -309,11 +291,6 @@ header {
 
 .offset {
     padding-top: 50px;
-}
-
-.enquire {
-    color: #5A5555;
-    text-decoration: underline;
 }
 
 .enquire {
@@ -334,12 +311,10 @@ header {
     color: #FAF7F2;
 }
 
-/* Testimonials */
 #testimonials {
     padding: 50px 5%;
     background-color: #2C2828;
     color: #FAF7F2;
-
 }
 
 #testimonial-container {
@@ -348,7 +323,6 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .testimonial-box {
@@ -357,7 +331,6 @@ header {
     flex: 1;
     box-sizing: border-box;
     color: rgba(250, 247, 242, 0.75);
-
 }
 
 .testimonial-desc {
@@ -368,14 +341,12 @@ header {
     padding-top: 15px;
     font-style: italic;
     font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: rgba(250, 247, 242, 0.75);
     border-top: #5A5555 1px solid;
     width: 90;
-
 }
 
-/* CTA Commission */
 #cta {
     display: flex;
     flex-direction: column;
@@ -396,9 +367,8 @@ header {
     color: #FAF7F2;
     text-align: center;
     margin-top: 40px;
-    font-size: 18px;
+    font-size: 1.125rem;
     text-decoration: none;
-
 }
 
 #cta-btn:hover {
@@ -407,8 +377,6 @@ header {
     transition: 0.3s ease-in-out;
 }
 
-/* ------------------------------------------------------*/
-/* Footer */
 footer {
     background-color: #1A1717;
     color: #FAF7F2;
@@ -429,14 +397,13 @@ footer {
     text-align: left;
 }
 
-
 .brand-name {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 10px;
 }
 
 .footer-desc {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .footer-border {
@@ -454,11 +421,11 @@ footer {
     color: #FAF7F2;
     text-decoration: none;
     padding: 6px 0;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .footer-column h3 {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 3px;
     margin-top: 0;
     font-weight: 100;
@@ -476,18 +443,14 @@ footer {
     padding: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: rgba(250, 247, 242, 0.4);
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
-/* 1300px Breakpoint */
 @media (max-width:1300px) {
-
-    /* Hero */
     .hero-content {
         padding: 100px;
     }
 
-    /* About the Artist */
     #about {
         flex-direction: column;
         padding: 100px;
@@ -507,15 +470,11 @@ footer {
     }
 }
 
-/* 850px Breakpoint */
 @media (max-width:850px) {
-
-    /* Choose your size */
     #box-container {
         flex-direction: column;
     }
 
-    /* Testimonials */
     #testimonial-container {
         flex-direction: column;
     }
@@ -525,10 +484,7 @@ footer {
     }
 }
 
-/* 600px Breakpoint */
 @media (max-width:600px) {
-
-    /* Nav Bar */
     #main-nav {
         flex-direction: column;
         align-items: flex-start;
@@ -539,7 +495,6 @@ footer {
         justify-content: space-between;
         z-index: 1000;
         padding: 15px;
-
     }
 
     .burger {
@@ -583,7 +538,7 @@ footer {
 
     .nav-links a {
         padding: 16px 24px;
-        font-size: 12px;
+        font-size: 0.75rem;
         letter-spacing: 0.15em;
         border-bottom: 1px solid #2C2828;
         display: block;
@@ -597,7 +552,6 @@ footer {
         padding: 15px;
     }
 
-    /* Hero */
     .hero-content {
         padding: 40px;
         height: auto;
@@ -607,7 +561,7 @@ footer {
 
     .font-heading-hero,
     .font-heading-hero span {
-        font-size: 60px;
+        font-size: 3.75rem;
         width: 320px;
     }
 
@@ -620,7 +574,6 @@ footer {
         text-align: center;
     }
 
-    /* About the Artist */
     #about {
         padding: 40px;
     }
@@ -631,26 +584,23 @@ footer {
     }
 
     #about-content {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .heading {
-        font-size: 38px;
+        font-size: 2.375rem;
     }
 
-    /* Choose your size */
     #choose {
         padding: 40px;
     }
 
-    /* CTA */
-    #cta{
+    #cta {
         padding: 50px;
     }
 
-    /* Footer */
     #footer-content {
         flex-direction: column;
-        gap: 50px
+        gap: 50px;
     }
 }

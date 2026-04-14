@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Jost', sans-serif;
-
-
 }
 
 body {
@@ -17,9 +15,6 @@ header {
     width: 100%;
 }
 
-/*------------------------------- 
-    Universal 
-    ---------------------------------*/
 .font-heading {
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 100;
@@ -33,7 +28,6 @@ header {
     border-bottom: 1px solid #FAF7F2;
     color: #FAF7F2;
     text-decoration: none;
-
 }
 
 .subheading {
@@ -42,12 +36,9 @@ header {
 }
 
 .heading {
-    font-size: 38px;
+    font-size: 2.375rem;
 }
 
-/*------------------------------- 
-    Javascript Classes
-    ---------------------------------*/
 .fade {
     opacity: 0;
     transform: translateY(24px);
@@ -63,9 +54,6 @@ header {
     display: none;
 }
 
-/*------------------------------- 
-    Nav Bar
-    ---------------------------------*/
 #main-nav {
     display: flex;
     justify-content: space-between;
@@ -80,7 +68,7 @@ header {
     align-items: center;
     gap: 40px;
     padding: 10px;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-transform: uppercase;
 }
 
@@ -111,7 +99,7 @@ header {
     font-family: 'Cormorant Garamond', Georgia, serif;
     align-items: center;
     display: flex;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #FAF7F2;
 }
 
@@ -126,7 +114,6 @@ header {
     color: #FAF7F2;
 }
 
-/* Burger button */
 .burger {
     display: none;
     flex-direction: column;
@@ -148,9 +135,6 @@ header {
     transition: all 0.3s ease;
 }
 
-/*------------------------------- 
-    Hero 
-    ---------------------------------*/
 #hero {
     color: #FAF7F2;
     height: auto;
@@ -166,14 +150,11 @@ header {
 }
 
 .heading-hero {
-    font-size: 70px;
+    font-size: 4.375rem;
     font-weight: 100;
     margin-bottom: 20px;
 }
 
-/*------------------------------- 
-    Gallery 
-    ---------------------------------*/
 #gallery {
     margin-bottom: 40px;
 }
@@ -181,14 +162,13 @@ header {
 .filter-bar {
     margin: 30px;
     padding: 10px;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .filter-btn {
     padding: 8px 20px;
     border: none;
     margin: 5px;
-
 }
 
 .filter-btn:hover {
@@ -203,7 +183,6 @@ header {
     background-color: #FAF7F2;
     display: flex;
     flex-direction: column;
-
 }
 
 .gallery-card-thumb img {
@@ -243,9 +222,6 @@ header {
     justify-content: center;
 }
 
-/*------------------------------- 
-    CTA Commission 
-    ---------------------------------*/
 #cta {
     display: flex;
     flex-direction: column;
@@ -270,9 +246,8 @@ header {
     color: #FAF7F2;
     text-align: center;
     margin-top: 40px;
-    font-size: 18px;
+    font-size: 1.125rem;
     text-decoration: none;
-
 }
 
 #cta-btn:hover {
@@ -281,9 +256,6 @@ header {
     transition: 0.3s ease-in-out;
 }
 
-/*------------------------------- 
-    Footer 
-    ---------------------------------*/
 footer {
     background-color: #1A1717;
     color: #FAF7F2;
@@ -304,14 +276,13 @@ footer {
     text-align: left;
 }
 
-
 .brand-name {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 10px;
 }
 
 .footer-desc {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .footer-border {
@@ -329,11 +300,11 @@ footer {
     color: #FAF7F2;
     text-decoration: none;
     padding: 6px 0;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .footer-column h3 {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 3px;
     margin-top: 0;
     font-weight: 100;
@@ -351,27 +322,17 @@ footer {
     padding: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: rgba(250, 247, 242, 0.4);
-    font-size: 12px;
+    font-size: 0.75rem;
 }
-
-
-
-
-
-
 
 @media (max-width:800px) {
     .heading-hero {
-        font-size: 50px;
+        font-size: 3.125rem;
         margin: 20px 0;
     }
 }
 
-
-/* 600px Breakpoint */
 @media (max-width:600px) {
-
-    /* Nav Bar */
     #main-nav {
         flex-direction: column;
         align-items: flex-start;
@@ -382,7 +343,6 @@ footer {
         justify-content: space-between;
         z-index: 1000;
         padding: 15px;
-
     }
 
     .burger {
@@ -426,7 +386,7 @@ footer {
 
     .nav-links a {
         padding: 16px 24px;
-        font-size: 12px;
+        font-size: 0.75rem;
         letter-spacing: 0.15em;
         border-bottom: 1px solid #2C2828;
         display: block;
@@ -440,25 +400,22 @@ footer {
         padding: 15px;
     }
 
-    /* Hero */
     #hero-content {
         padding: 100px 50px;
     }
 
     .subheading {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .heading-paragraph {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
-    /* CTA */
     #cta{
         padding: 50px;
     }
 
-    /* Footer */
     #footer-content {
         flex-direction: column;
         gap: 50px
