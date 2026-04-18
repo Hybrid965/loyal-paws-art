@@ -118,5 +118,85 @@
     "name": "Bob",
     "src": "assets/images/cat2.jpg",
     "alt": "Pencil drawing of Bob"
+  },
+  {
+    "id": 16,
+    "petType": "cat",
+    "label": "placeholder drawing",
+    "name": "Bob",
+    "src": "assets/images/placeholder.png",
+    "alt": "Pencil drawing of Bob"
+  },
+  {
+    "id": 17,
+    "petType": "cat",
+    "label": "placeholder drawing",
+    "name": "Bob",
+    "src": "assets/images/placeholder.png",
+    "alt": "Pencil drawing of Bob"
+  },
+  {
+    "id": 18,
+    "petType": "cat",
+    "label": "placeholder drawing",
+    "name": "Bob",
+    "src": "assets/images/placeholder.png",
+    "alt": "Pencil drawing of Bob"
+  },
+  {
+    "id": 19,
+    "petType": "cat",
+    "label": "placeholder drawing",
+    "name": "Bob",
+    "src": "assets/images/placeholder.png",
+    "alt": "Pencil drawing of Bob"
+  },
+  {
+    "id": 20,
+    "petType": "cat",
+    "label": "placeholder drawing",
+    "name": "Bob",
+    "src": "assets/images/placeholder.png",
+    "alt": "Pencil drawing of Bob"
+  },
+  {
+    "id": 21,
+    "petType": "horse",
+    "label": "placeholder drawing",
+    "name": "Bob",
+    "src": "assets/images/placeholder.png",
+    "alt": "Pencil drawing of Bob"
+  },
+  {
+    "id": 22,
+    "petType": "horse",
+    "label": "placeholder drawing",
+    "name": "Bob",
+    "src": "assets/images/placeholder.png",
+    "alt": "Pencil drawing of Bob"
+  },
+  {
+    "id": 23,
+    "petType": "horse",
+    "label": "placeholder drawing",
+    "name": "Bob",
+    "src": "assets/images/placeholder.png",
+    "alt": "Pencil drawing of Bob"
+  },
+  {
+    "id": 24,
+    "petType": "horse",
+    "label": "placeholder drawing",
+    "name": "Bob",
+    "src": "assets/images/placeholder.png",
+    "alt": "Pencil drawing of Bob"
+  },
+  {
+    "id": 25,
+    "petType": "horse",
+    "label": "placeholder drawing",
+    "name": "Bob",
+    "src": "assets/images/placeholder.png",
+    "alt": "Pencil drawing of Bob"
   }
 ]
