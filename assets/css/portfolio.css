@@ -256,6 +256,65 @@ Gallery & Filter
 }
 
 /*==========================================
+Lightbox
+==========================================*/
+
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-content {
+    background-color: #FAF7F2;
+    max-width: 500px;
+    width: 100%;
+    
+}
+
+.lightbox-content img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 3px solid #c49a6c ;
+}
+
+.lightbox-info {
+    padding: 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.lightbox-desc {
+    font-size: 0.8rem;
+    color: #5A5555;
+    margin-top: 4px;
+    line-height: 1.5;
+}
+
+#lightbox-close {
+    position: fixed;
+    top: 20px;
+    right: 28px;
+    background: none;
+    border: none;
+    color: #FAF7F2;
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/*==========================================
 CTA
 ==========================================*/
 
