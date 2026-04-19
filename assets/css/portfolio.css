@@ -1,3 +1,7 @@
+/*==========================================
+Default
+==========================================*/
+
 * {
     margin: 0;
     padding: 0;
@@ -8,12 +12,9 @@ body {
     overflow-x: hidden;
 }
 
-header {
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    width: 100%;
-}
+/*==========================================
+Universal
+==========================================*/
 
 .font-heading {
     font-family: 'Cormorant Garamond', Georgia, serif;
@@ -24,12 +25,6 @@ header {
     text-transform: uppercase;
 }
 
-.nav-current {
-    border-bottom: 1px solid #FAF7F2;
-    color: #FAF7F2;
-    text-decoration: none;
-}
-
 .subheading {
     font-family: 'Cormorant Garamond', Georgia, serif;
     text-transform: uppercase;
@@ -38,6 +33,10 @@ header {
 .heading {
     font-size: 2.375rem;
 }
+
+/*==========================================
+JS Classes
+==========================================*/
 
 .fade {
     opacity: 0;
@@ -52,6 +51,17 @@ header {
 
 .hidden {
     display: none;
+}
+
+/*==========================================
+Header & Navigation
+==========================================*/
+
+header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
 }
 
 #main-nav {
@@ -70,6 +80,12 @@ header {
     padding: 10px;
     font-size: 0.875rem;
     text-transform: uppercase;
+}
+
+.nav-current {
+    border-bottom: 1px solid #FAF7F2;
+    color: #FAF7F2;
+    text-decoration: none;
 }
 
 .hover {
@@ -114,6 +130,10 @@ header {
     color: #FAF7F2;
 }
 
+/*==========================================
+Burger Menu
+==========================================*/
+
 .burger {
     display: none;
     flex-direction: column;
@@ -135,6 +155,10 @@ header {
     transition: all 0.3s ease;
 }
 
+/*==========================================
+Hero
+==========================================*/
+
 #hero {
     color: #FAF7F2;
     height: auto;
@@ -154,6 +178,10 @@ header {
     font-weight: 100;
     margin-bottom: 20px;
 }
+
+/*==========================================
+Gallery & Filter
+==========================================*/
 
 #gallery {
     margin-bottom: 40px;
@@ -175,6 +203,11 @@ header {
     background-color: #1A1717;
     color: #FAF7F2;
     cursor: pointer;
+}
+
+.filter-btn.active {
+    background-color: #2C2828;
+    color: #FAF7F2;
 }
 
 .gallery-card {
@@ -222,6 +255,10 @@ header {
     justify-content: center;
 }
 
+/*==========================================
+CTA
+==========================================*/
+
 #cta {
     display: flex;
     flex-direction: column;
@@ -255,6 +292,10 @@ header {
     color: #1A1717;
     transition: 0.3s ease-in-out;
 }
+
+/*==========================================
+Footer
+==========================================*/
 
 footer {
     background-color: #1A1717;
@@ -324,6 +365,10 @@ footer {
     color: rgba(250, 247, 242, 0.4);
     font-size: 0.75rem;
 }
+
+/*==========================================
+Media Queries
+==========================================*/
 
 @media (max-width:800px) {
     .heading-hero {
