@@ -219,10 +219,10 @@ Gallery & Filter
 }
 
 .gallery-card-thumb img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  display: block;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
 }
 
 .gallery-card-info {
@@ -277,15 +277,15 @@ Lightbox
     background-color: #FAF7F2;
     max-width: 500px;
     width: 100%;
-    
+
 }
 
 .lightbox-content img {
-    width: 500px;
+    width: 100%;
     height: 500px;
     object-fit: cover;
     display: block;
-    border-bottom: 3px solid #c49a6c ;
+    border-bottom: 3px solid #c49a6c;
 }
 
 .lightbox-info {
@@ -516,7 +516,16 @@ Media Queries
         font-size: 0.875rem;
     }
 
-    #cta{
+    .lightbox-content {
+        width: 95%;
+    }
+
+    .lightbox-content img {
+        width: 100%;
+        height: 280px;
+    }
+
+    #cta {
         padding: 50px;
     }
 
