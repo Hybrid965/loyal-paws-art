@@ -294,59 +294,73 @@ JS was tested using the [JS Lint Validator](https:www.jslint.com/)
 - "As the artist, I want to receive structured enquiries with all the information I need" 
     - [Enquiry Form](docs/features/commission-form.png)
 
-### Current and Resolved Bugs
-1. Home
-2. Portfolio
-3. Commission
-- 1.1 - **Resolved** - In mobile views the page can be scrolled horizontally
-    - Evidence: 🐛 [Bug - 1.1](docs/bugs/bug1.1.png)
-    - Resolution: Added `overflow-x: hidden` to the `html` and `body` tags
-    - Commit: b4eed54
-    - Date reported: 09/04/2026
-    - Date fixed: 09/04/2026
-- 1.2 - **Resolved** - Fixing the previous bug caused the navigation bar to become unstuck
-    - Evidence: 🐛 [Bug - 1.2](docs/bugs/bug1.2.png)
-    - Resolution: Removed `overflow` from the `html` tag and changed the header to `position: fixed` instead of `sticky`
-    - Commit: 6005608
-    - Date reported: 09/04/2026
-    - Date fixed: 09/04/2026
-- 1.3 - **Resolved** - Button padding was misaligning the rest of the navigation bar
-    - Evidence: 🐛 [Bug - 1.3](docs/bugs/bug%201.3.png)
-    - Resolution: Removed the commission ID from each CSS sheet and added the hover class to remove the button styling
-    - Commit: ff4e0c9
-    - Date reported: 13/04/2026
-    - Date fixed: 13/04/2026
-- 2.1 - **Resolved** - Lightbox cuts off image due to height restrictions
-    - Evidence: 🐛 [Bug - 2.1](docs/bugs/bug2.1.png)
-    - Resolution: Readjusted the height on images inside the lightbox
-    - Commit: aee4802
-    - Date reported: 21/04/2026
-    - Date fixed: 21/04/2026
-- 3.1 - **Resolved** - Form content was misaligned
-    - Evidence: 🐛 [Bug - 3.1](docs/bugs/bug3.1.png)
-    - Resolution: Centred the aside and removed padding in the 1000px media query
-    - Commit: cfbd707
-    - Date reported: 13/04/2026
-    - Date fixed: 13/04/2026
-- 3.2 - **Resolved** - Form submission error
-    - Evidence: 🐛 [Bug - 3.2](docs/bugs/bug3.2.png)
-    - Resolution: Updated the form validation code, updated the event listener, and added Cloudinary support for file uploads
-    - Commit: 4071d8d
-    - Date reported: 21/04/2026
-    - Date fixed: 21/04/2026
-- 3.3 - **Resolved** - Commission form only sending a single image to the artist
-    - **Evidence**: 🐛 [Bug - 3.3](docs/bugs/bug3.3.png)
-    - **Resolution**: Refactored the form submission logic in `formValidation.js` to support multiple file uploads. Replaced the single-file Cloudinary fetch with a `Promise.all()` loop that iterates through the array. Added logic to join the resulting URLs into a single formatted string (`photoLinkString`).
-    - **Commit**: 7ab8a6a
+## Current and Resolved Bugs
+### 1. Home
+- **1.1 - Resolved** - In mobile views the page can be scrolled horizontally
+    - **Evidence**: 🐛 [Bug - 1.1](docs/bugs/bug1.1.png)
+    - **Resolution**: Added `overflow-x: hidden` to the `html` and `body` tags
+    - **Commit**: `b4eed54`
+    - **Date reported**: 09/04/2026
+    - **Date fixed**: 09/04/2026
+- **1.2 - Resolved** - Fixing the previous bug caused the navigation bar to become unstuck
+    - **Evidence**: 🐛 [Bug - 1.2](docs/bugs/bug1.2.png)
+    - **Resolution**: Removed `overflow` from the `html` tag and changed the header to `position: fixed` instead of `sticky`
+    - **Commit**: `6005608`
+    - **Date reported**: 09/04/2026
+    - **Date fixed**: 09/04/2026
+- **1.3 - Resolved** - Button padding was misaligning the rest of the navigation bar
+    - **Evidence**: 🐛 [Bug - 1.3](docs/bugs/bug%201.3.png)
+    - **Resolution**: Removed the commission ID from each CSS sheet and added the hover class to remove the button styling
+    - **Commit**: `ff4e0c9`
+    - **Date reported**: 13/04/2026
+    - **Date fixed**: 13/04/2026
+- **1.4 - Resolved** - Linter errors and syntax warnings in burger script
+    - **Evidence**: 🐛 [Bug - 1.4](docs/bugs/bug1.4.png)
+    - **Resolution**: Standardized quotes to double quotes, replaced arrow functions with standard function..
+    - **Commit**: ``
     - **Date reported**: 21/04/2026
     - **Date fixed**: 21/04/2026
-- 3.4 - **Resolved** - W3C Validation syntax and accessibility errors
+- **1.5 - Resolved** - Invalid syntax in fadein script
+    - **Evidence**: 🐛 [Bug - 1.5](docs/testing/fadeIn-js-errors.png)
+    - **Resolution**: Refactored the `in` operator and `typeof` checks to use a direct comparison with the `undefined` primitive (`window.IntersectionObserver !== undefined`). Standardized all internal strings to double quotes.
+    - **Commit**: ``
+    - **Date reported**: 21/04/2026
+    - **Date fixed**: 21/04/2026
+
+## 2. Portfolio
+- **2.1 - Resolved** - Lightbox cuts off image due to height restrictions
+    - **Evidence**: 🐛 [Bug - 2.1](docs/bugs/bug2.1.png)
+    - **Resolution**: Readjusted the height on images inside the lightbox
+    - **Commit**: `aee4802`
+    - **Date reported**: 21/04/2026
+    - **Date fixed**: 21/04/2026
+
+## 3. Commission
+- **3.1 - Resolved** - Form content was misaligned
+    - **Evidence**: 🐛 [Bug - 3.1](docs/bugs/bug3.1.png)
+    - **Resolution**: Centred the aside and removed padding in the 1000px media query
+    - **Commit**: `cfbd707`
+    - **Date reported**: 13/04/2026
+    - **Date fixed**: 13/04/2026
+- **3.2 - Resolved** - Form submission error
+    - **Evidence**: 🐛 [Bug - 3.2](docs/bugs/bug3.2.png)
+    - **Resolution**: Updated the form validation code, updated the event listener, and added Cloudinary support for file uploads
+    - **Commit**: `4071d8d`
+    - **Date reported**: 21/04/2026
+    - **Date fixed**: 21/04/2026
+- **3.3 - Resolved** - Commission form only sending a single image to the artist
+    - **Evidence**: 🐛 [Bug - 3.3](docs/bugs/bug3.3.png)
+    - **Resolution**: Refactored the form submission logic in `formValidation.js` to support multiple file uploads. Replaced the single-file Cloudinary fetch with a `Promise.all()` loop that iterates through the array. Added logic to join the resulting URLs into a single formatted string (`photoLinkString`).
+    - **Commit**: `7ab8a6a`
+    - **Date reported**: 21/04/2026
+    - **Date fixed**: 21/04/2026
+- **3.4 - Resolved** - W3C Validation syntax and accessibility errors
     - **Evidence**: 🐛 [Bug - 3.4](docs/testing/validation-syntax.png)
     - **Resolution**: 
         1. Removed trailing slashes from void elements (`link`, `input`).
-        2. Maintained the `<section>` element for the commission form to preserve document structure. Resolved the "Section lacks heading" warning by implementing an `aria-label="Commission Enquiry Form"`
+        2. Maintained the `<section>` element for the commission form to preserve document structure. Resolved the "Section lacks heading" warning by implementing an `aria-label="Commission Enquiry Form"`.
         3. Replaced the `label for` attribute for the medium selector with a `<p>` tag and `aria-labelledby`.
-    - **Commit**:
+    - **Commit**: `5e91b4c`
     - **Date reported**: 21/04/2026
     - **Date fixed**: 21/04/2026
 
