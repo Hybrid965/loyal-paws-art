@@ -337,7 +337,7 @@ JS was tested using the [JS Lint Validator](https:www.jslint.com/)
 - 3.3 - **Resolved** - Commission form only sending a single image to the artist
     - **Evidence**: 🐛 [Bug - 3.3](docs/bugs/bug3.3.png)
     - **Resolution**: Refactored the form submission logic in `formValidation.js` to support multiple file uploads. Replaced the single-file Cloudinary fetch with a `Promise.all()` loop that iterates through the array. Added logic to join the resulting URLs into a single formatted string (`photoLinkString`).
-    - **Commit**:
+    - **Commit**: 7ab8a6a
     - **Date reported**: 21/04/2026
     - **Date fixed**: 21/04/2026
 
