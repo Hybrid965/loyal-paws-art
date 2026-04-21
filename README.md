@@ -177,7 +177,16 @@ If you would like to see the features to be added in the future visit the Projec
 - **Blog** — A section showing works in progress and finished pieces before delivery, to build trust with new visitors and give the site regularly updated content.
 
 ## Testing
+### Testing Approach
  
+There are two main approaches to testing a web app: automated and manual.
+ 
+**Automated testing** uses scripts or testing frameworks (such as Jest) to run predefined checks against the code automatically. It is best suited to applications with complex logic, repeated functions, or large codebases where running checks by hand would be time-consuming.
+ 
+**Manual testing** involves a developer or tester interacting directly with the application to check that it behaves as expected. It is better suited to smaller projects where the focus is on layout, visual behaviour, user interaction, and responsiveness. Manual testing also allows for better judgement, such as whether a transition feels smooth or a layout looks correct at a given screen size.
+ 
+For this project, manual testing was chosen as the most appropriate approach. Loyal Paws Art is a three-page static front end site with focused interactivity, a gallery filter, lightbox, and commission form. The behaviour being tested is primarily visual and interaction-based. Each feature was tested systematically across devices and browsers at each stage of development, with results documented below.
+
 ### HTML Validation
 All three pages were tested using the [W3C Nu HTML Checker](https://validator.w3.org/).
 
