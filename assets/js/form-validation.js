@@ -1,12 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector("form");
 
-    form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        runValidation();
-    })
-
-
     function runValidation() {
         const errors = [];
 
@@ -17,8 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const pettype = document.getElementById("pettype");
         const medium = document.getElementById("medium");
         const size = document.getElementById("size");
-
-        // Validation Check
 
         // Checking Name is valid 
         if (!name.value.trim()) {
@@ -55,9 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         renderSummary(errors);
         return errors;
-
     }
-
 
     // Render Errors
     function renderSummary(errors) {
@@ -82,34 +72,59 @@ document.addEventListener("DOMContentLoaded", () => {
         summary.focus();
     }
 
+    // Submit success
+    function showSuccess() {
+        const formWrap = document.getElementById("formWrap");
+        formWrap.innerHTML = `
+            <div class="form-success">
+                <h3>Thank you!</h3>
+                <p>Gordon will be in touch within 48 hours.</p>
+            </div>
+        `;
+    }
 
-    // Submit handler
-    form.addEventListener("submit", (e) => {
+    // Submit button
+    form.addEventListener("submit", async (e) => {
         e.preventDefault();
         const errors = runValidation();
 
         if (errors.length === 0) {
-            emailjs.sendForm("service_ad8i0ak", "template_t4vjoyj", form)
-                .then(() => {
-                    showSuccess();
-                })
-                .catch((err) => {
-                    console.error("EmailJS error:", err);
-                    alert("Something went wrong. Please try again.");
+
+            const fileInput = document.getElementById('photo');
+            let photoUrl = 'No photo provided';
+
+            if (fileInput.files.length > 0) {
+                const formData = new FormData();
+                formData.append('file', fileInput.files[0]);
+                formData.append('upload_preset', 'loyal_paws');
+
+                const res = await fetch('https://api.cloudinary.com/v1_1/dwzixvekx/image/upload', {
+                    method: 'POST',
+                    body: formData
                 });
+
+                const data = await res.json();
+                photoUrl = data.secure_url;
+            }
+
+            emailjs.send("service_ad8i0ak", "template_t4vjoyj", {
+                name: form.name.value,
+                email: form.email.value,
+                pet_name: form.pet_name.value,
+                pet_type: form.pet_type.value,
+                medium: form.medium.value,
+                size: form.size.value,
+                about_pet: form.about_pet.value,
+                photo_url: photoUrl
+            })
+            .then(() => {
+                showSuccess();
+            })
+            .catch((err) => {
+                console.error("EmailJS error:", err);
+                alert("Something went wrong. Please try again.");
+            });
         }
     });
-
-    // Submit success
-    function showSuccess() {
-    const formWrap = document.getElementById("formWrap");
-    formWrap.innerHTML = `
-        <div class="form-success">
-            <h3>Thank you!</h3>
-            <p>Gordon will be in touch within 48 hours.</p>
-        </div>
-    `;
-}
-
 
 });
