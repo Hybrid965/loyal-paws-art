@@ -340,6 +340,15 @@ JS was tested using the [JS Lint Validator](https:www.jslint.com/)
     - **Commit**: 7ab8a6a
     - **Date reported**: 21/04/2026
     - **Date fixed**: 21/04/2026
+- 3.4 - **Resolved** - W3C Validation syntax and accessibility errors
+    - **Evidence**: 🐛 [Bug - 3.4](docs/testing/validation-syntax.png)
+    - **Resolution**: 
+        1. Removed trailing slashes from void elements (`link`, `input`).
+        2. Maintained the `<section>` element for the commission form to preserve document structure. Resolved the "Section lacks heading" warning by implementing an `aria-label="Commission Enquiry Form"`
+        3. Replaced the `label for` attribute for the medium selector with a `<p>` tag and `aria-labelledby`.
+    - **Commit**:
+    - **Date reported**: 21/04/2026
+    - **Date fixed**: 21/04/2026
 
 ## Deployment
 
