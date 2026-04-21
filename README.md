@@ -198,13 +198,25 @@ CSS was tested using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator
 - **commission-styles.css** - No errors 
     - [Commission CSS validated](docs/testing/commission-css-validated.png)
 
+### JS Validation
+JS was tested using the [JS Lint Validator](https:www.jslint.com/)
+- **burger.js** - No errors 
+    - [burger js validated](docs/testing/burger-js-validated.png)
+- **fadeIn.js** - No errors 
+    - [fadeIn JS validated](docs/testing/fadeIn-js-validated.png)
+- **filter.js** - No errors 
+    - [Filter JS validated](docs/testing/filter-js-validated.png)
+- **formValidation.js** - No errors 
+    - [Form Validation JS validated](docs/testing/formValidation-js-validated.png)
+- **selectedMediumSelector.js** - No errors 
+    - [Selected Medium Selector JS validated](docs/testing/selectedMediumSelector-js-validated.png)
+
 ### Functional Testing
 - Clicking logo in navbar → Navigates to index.html ✅
 - Clicking Home nav link → Navigates to index.html ✅
 - Clicking Portfolio nav link → Navigates to portfolio.html ✅
 - Clicking Commission nav link → Navigates to commission.html ✅
 - Active nav link highlighted → Current page link styled differently ✅
-- Burger button → Nav panel slides in and overlay appears ✅
 - Clicking overlay → Nav panel and overlay close ✅
 - Clicking "View Portfolio" CTA → Navigates to portfolio.html ✅
 - Clicking "Commission a Portrait" CTA → Navigates to commission.html ✅
