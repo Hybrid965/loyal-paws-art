@@ -145,6 +145,12 @@ If you would like to see the features to be added in the future visit the Projec
     - Commit: ff4e0c9
     - Date reported: 13/04/2026
     - Date fixed: 13/04/2026
+- 2.1 - **Revolved** - Lightbox cuts off image due to height restrictions  
+    - Evidence: 🐛 [Bug - 2.1](docs/bugs/bug2.1.png)
+    - Resolution: Readjusted the height on images in the lightbox
+    - Commit:
+    - Date reported: 21/04/2026
+    - Date fixed: 21/04/2026
 - 3.1 - **Revolved** - Form info is missaligned 
     - Evidence: 🐛 [Bug - 3.1](docs/bugs/bug3.1.png)
     - Resolution: Centered the aside and removed padding in 1000px media query 

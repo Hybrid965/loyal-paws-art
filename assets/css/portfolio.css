@@ -282,7 +282,7 @@ Lightbox
 
 .lightbox-content img {
     width: 100%;
-    height: 500px;
+    height: 100%;
     object-fit: cover;
     display: block;
     border-bottom: 3px solid #c49a6c;
@@ -518,11 +518,6 @@ Media Queries
 
     .lightbox-content {
         width: 95%;
-    }
-
-    .lightbox-content img {
-        width: 100%;
-        height: 280px;
     }
 
     #cta {
