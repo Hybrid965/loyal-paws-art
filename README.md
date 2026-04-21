@@ -170,6 +170,11 @@ Alongside the form, an aside panel reassures visitors with three key points: Gor
 If you would like to see the features to be added in the future visit the Project board: https://github.com/users/Hybrid965/projects/2
 
 ## Future Development
+ 
+- **Lightbox Keyboard Navigation** — Previous and next arrow controls to allow users to cycle through gallery images without closing and reopening the lightbox.
+- **Additional Gallery Filters** — Extend the portfolio filter bar to allow filtering by medium (Pastel / Pencil) as well as by animal type, giving visitors more control over what they browse.
+- **Expanded Testimonials** — A dedicated reviews page or integration with Google Reviews to surface a broader range of customer feedback as Gordon's client base grows.
+- **Blog** — A section showing works in progress and finished pieces before delivery, to build trust with new visitors and give the site regularly updated content.
 
 ## Testing
  
