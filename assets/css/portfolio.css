@@ -53,6 +53,12 @@ JS Classes
     display: none;
 }
 
+.gallery-count {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 8px 0 16px;
+}
+
 /*==========================================
 Header & Navigation
 ==========================================*/

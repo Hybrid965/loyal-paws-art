@@ -1,4 +1,12 @@
+// Assign the variable to gallery-grid
 let gallery = document.getElementById('gallery-grid');
+
+
+// Update the portrait number depending whats selected
+function updateGalleryCount() {
+  const visibleItems = gallery.querySelectorAll('li:not(.hidden)').length;
+  document.getElementById('gallery-count').textContent = `Showing ${visibleItems} Portraits`;
+}
 
 // Fetch the json
 fetch('assets/json/portraits.json')
@@ -19,7 +27,6 @@ fetch('assets/json/portraits.json')
           <span class="gallery-card-medium-tag">${portrait.label}</span>
         </div>
       `;
-      li.style.cursor = 'pointer';
       li.addEventListener('click', function () {
         openLightbox(portrait.src, portrait.alt, portrait.name, portrait.label, portrait.description);
       });
@@ -27,6 +34,7 @@ fetch('assets/json/portraits.json')
     });
 
     applyFilter('all');
+    updateGalleryCount();
 
   })
   .catch(err => console.error("Failed to load JSON:", err));
@@ -54,6 +62,7 @@ buttons.forEach(function (button) {
   button.addEventListener('click', function () {
     let selected = button.getAttribute('data-filter');
     applyFilter(selected);
+    updateGalleryCount();
 
     // Update active state on buttons
     buttons.forEach(function (btn) { btn.classList.remove('active'); });
