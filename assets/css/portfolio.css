@@ -222,6 +222,7 @@ Gallery & Filter
     background-color: #FAF7F2;
     display: flex;
     flex-direction: column;
+    
 }
 
 .gallery-card-thumb img {
@@ -229,6 +230,11 @@ Gallery & Filter
     height: 300px;
     object-fit: cover;
     display: block;
+    cursor: pointer;
+}
+
+.gallery-card-thumb img:hover{
+    transform: translateY(-2px);
 }
 
 .gallery-card-info {
@@ -283,6 +289,8 @@ Lightbox
     background-color: #FAF7F2;
     max-width: 500px;
     width: 100%;
+    overflow-y: auto;
+    max-height: 90vh;
 
 }
 
