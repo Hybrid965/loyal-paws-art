@@ -136,7 +136,7 @@ Clicking any gallery card opens a full-screen lightbox overlay. The lightbox dis
 - **Commission CTA Banner**:
 A CTA section at the bottom of the page mirrors the one on the homepage, prompting visitors who have browsed the gallery to take the next step and commission a portrait.
 
-    - [Portfolio CTA screenshot](docs/features/portfolio-cta.png)
+    - [Portfolio CTA screenshot](docs/features/cta-banner.png)
 
 ### Commission Page
 
@@ -159,7 +159,7 @@ Two pricing cards detail the cost and specifications for each medium. The Pastel
 The enquiry form collects all the information Gordon needs to respond with a personalised quote. Fields include the customer's name and email address, the pet's name, pet type, preferred medium, preferred size, a free-text description of the portrait, and an optional photo upload supporting multiple images. Required fields are marked and validated before submission. On submission the form is handled via EmailJS, which sends the enquiry directly to Gordon. An error summary is displayed if validation fails.
 
     - [Enquiry form screenshot](docs/features/commission-form.png)
-    - [Failed Validation example](docs/features/commission-form-validation.png)
+    - [Failed Validation example](docs/features/form-validation.png)
 
 - **Form Sidebar**:
 Alongside the form, an aside panel reassures visitors with three key points: Gordon's 48-hour response time, that a sketch preview is included before the final piece begins, and that memorial commissions for lost pets are handled with sensitivity and care.
