@@ -67,6 +67,18 @@ The near black is reserved exclusively for the hero background, making the openi
     - Jost - used for all body text: navigation links, labels, buttons, descriptions and form fields.
 - **Accessibility & Imagery**: All images include descriptive alt text. Semantic HTML elements are used throughout to provide a clear document structure for screen readers. ARIA labels have been used to further aid screen readers.
 
+## Design Evolution
+During the development process, several adjustments were made to the initial designs to improve user experience and accessibility.
+
+### Home
+- **User Guidance**: Added a "Most Popular" badge and specific CTA buttons to the pricing cards, adjusted the card descriptions and the amount there are. 
+
+### Portfolio
+- **Advanced Viewing**: Implemented a Lightbox overlay to allow users to inspect the fine details of the pastel and pencil portraits.
+
+### Commission
+- **Interactive Form**: Integrated Cloudinary API support for multiple photo uploads, providing a more professional and modern interface than the original sketch.
+
 ## Features
 
 ### Across All Pages
