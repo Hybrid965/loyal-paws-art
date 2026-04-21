@@ -154,9 +154,16 @@ If you would like to see the features to be added in the future visit the Projec
 - 3.1 - **Revolved** - Form info is missaligned 
     - Evidence: 🐛 [Bug - 3.1](docs/bugs/bug3.1.png)
     - Resolution: Centered the aside and removed padding in 1000px media query 
-    - Commit:cfbd707
+    - Commit: cfbd707
     - Date reported: 13/04/2026
     - Date fixed: 13/04/2026
+- 3.2 - **Revolved** - Form submit error 
+    - Evidence: 🐛 [Bug - 3.2](docs/bugs/bug3.2.png)
+    - Resolution: updated the form validation code, updated the event listener and added cloudinary support for files
+    - Commit: 4071d8d
+    - Date reported: 21/04/2026
+    - Date fixed: 21/04/2026
+
 
 
 ## Deployment
