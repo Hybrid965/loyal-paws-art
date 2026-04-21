@@ -148,7 +148,7 @@ If you would like to see the features to be added in the future visit the Projec
 - 2.1 - **Revolved** - Lightbox cuts off image due to height restrictions  
     - Evidence: 🐛 [Bug - 2.1](docs/bugs/bug2.1.png)
     - Resolution: Readjusted the height on images in the lightbox
-    - Commit:
+    - Commit: aee4802
     - Date reported: 21/04/2026
     - Date fixed: 21/04/2026
 - 3.1 - **Revolved** - Form info is missaligned 
