@@ -316,14 +316,14 @@ JS was tested using the [JS Lint Validator](https:www.jslint.com/)
     - **Date fixed**: 13/04/2026
 - **1.4 - Resolved** - Linter errors and syntax warnings in burger script
     - **Evidence**: 🐛 [Bug - 1.4](docs/bugs/bug1.4.png)
-    - **Resolution**: Standardized quotes to double quotes, replaced arrow functions with standard function..
-    - **Commit**: ``
+    - **Resolution**: Changed quotes to double quotes, replaced arrow functions with standard function.
+    - **Commit**: `d6f871b`
     - **Date reported**: 21/04/2026
     - **Date fixed**: 21/04/2026
 - **1.5 - Resolved** - Invalid syntax in fadein script
     - **Evidence**: 🐛 [Bug - 1.5](docs/testing/fadeIn-js-errors.png)
-    - **Resolution**: Refactored the `in` operator and `typeof` checks to use a direct comparison with the `undefined` primitive (`window.IntersectionObserver !== undefined`). Standardized all internal strings to double quotes.
-    - **Commit**: ``
+    - **Resolution**: Refactored the `in` operator check to use `undefined` (`window.IntersectionObserver !== undefined`). Changed all internal strings to double quotes.
+    - **Commit**: `d6f871b`
     - **Date reported**: 21/04/2026
     - **Date fixed**: 21/04/2026
 
