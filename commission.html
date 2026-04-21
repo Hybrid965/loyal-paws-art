@@ -188,8 +188,8 @@
                             <label class="label" for="size">Preferred Size<span class="req">*</span></label>
                             <select class="select" id="size" name="size">
                                 <option value="" disabled selected>Select a size</option>
-                                <option value="a4">A4 (210 × 297mm)</option>
                                 <option value="a3">A3 (297 × 420mm)</option>
+                                <option value="a4">A4 (210 × 297mm)</option>
                                 <option value="a5">A5 (148 x 210mm)</option>
                                 <option value="custom">Custom — I'll describe below</option>
                             </select>
@@ -197,20 +197,17 @@
 
                         <!--Tell us about your pet-->
                         <div class="section">
-                            <label class="label" for="about">Tell Us About Your Pet</label>
+                            <label class="label" for="about">Tell Us about the portrait</label>
                             <textarea class="textarea" id="about" name="about_pet" rows="4"
-                                placeholder="Personality, favourite spots, anything that captures them…"></textarea>
-                            <p class="hint">Optional — but the more you share, the better Gordon can capture your
-                                pet's character.</p>
+                                placeholder="Describe your pet, the pose, any colours or background preferences, and anything that makes them unique."></textarea>
                         </div>
 
-                        <!--Photo description-->
+                        <!--Photo Upload-->
                         <div class="section">
-                            <label class="label" for="photo">Photo Description</label>
-                            <input class="input" type="text" id="photo" name="photo_description"
-                                placeholder="e.g. Sitting in sunlight, looking to the left" />
-                            <p class="hint">Describe the photo(s) you plan to send. Gordon will request them by email
-                                once he reviews your enquiry.</p>
+                            <label class="label" for="photo">Upload a Photo</label>
+                            <input type="file" id="photo" name="photo" accept="image/*" multiple/>
+                            <p class="hint">Optional — but the more you share, the better Gordon can capture your pet's
+                                character.</p>
                         </div>
                         <button type="submit" class="btn-submit">Send Enquiry</button>
                 </form>
