@@ -32,99 +32,120 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Checking pet type is valid 
         if (!pettype.value) {
-            errors.push({ id: "pettype", message: "Please select a type of pet." });
+            errors.push({ id: "pettype", message: "Please select a type of pet" })
         }
 
-        // Checking medium is selected 
+        // Checking Medium is valid 
         if (!medium.value) {
-            errors.push({ id: "medium", message: "Please select a preferred medium." });
+            errors.push({ id: "medium", message: "Please select a medium" })
         }
 
-        // Checking size is selected 
+        // Checking Size is valid 
         if (!size.value) {
-            errors.push({ id: "size", message: "Please select a preferred size." });
+            errors.push({ id: "size", message: "Please select a size" })
         }
 
-        renderSummary(errors);
         return errors;
     }
 
-    // Render Errors
-    function renderSummary(errors) {
-        let summary = document.getElementById("error-summary");
+    function showErrors(errors) {
+        // Clear previous errors
+        document.querySelectorAll(".error-message").forEach(el => el.remove());
+        const summary = document.getElementById("error-summary");
+        summary.innerHTML = "";
+        summary.style.display = "block";
 
-        if (errors.length === 0) {
-            summary.innerHTML = "";
-            summary.removeAttribute("role");
-            summary.removeAttribute("tabindex");
-            return;
-        }
+        errors.forEach(err => {
+            // Field level message
+            const input = document.getElementById(err.id);
+            const msg = document.createElement("span");
+            msg.className = "error-message";
+            msg.textContent = err.message;
+            input.parentNode.appendChild(msg);
 
-        summary.setAttribute("role", "alert");
-        summary.setAttribute("tabindex", "-1");
-
-        summary.innerHTML = `<p class="error-summary-heading">Please fix the following before continuing:</p>
-      <ul>
-        ${errors.map(err => `<li><a href="#${err.id}">${err.message}</a></li>`).join("")}
-      </ul>`;
-
-        summary.scrollIntoView();
-        summary.focus();
+            // Summary list
+            const li = document.createElement("li");
+            li.textContent = err.message;
+            summary.appendChild(li);
+        });
     }
 
-    // Submit success
     function showSuccess() {
-        const formWrap = document.getElementById("formWrap");
-        formWrap.innerHTML = `
-            <div class="form-success">
-                <h3>Thank you!</h3>
-                <p>Gordon will be in touch within 48 hours.</p>
+        form.innerHTML = `
+            <div class="success-message">
+                <h3 class="font-heading">Thank you!</h3>
+                <p>Your enquiry for ${form.petname.value} has been sent. Gordon will be in touch within 48 hours.</p>
             </div>
         `;
     }
 
-    // Submit button
     form.addEventListener("submit", async (e) => {
         e.preventDefault();
         const errors = runValidation();
 
         if (errors.length === 0) {
-
             const fileInput = document.getElementById('photo');
-            let photoUrl = 'No photo provided';
+            let photoUrls = [];
 
+            // Loop through all files if any are provided
             if (fileInput.files.length > 0) {
-                const formData = new FormData();
-                formData.append('file', fileInput.files[0]);
-                formData.append('upload_preset', 'loyal_paws');
+                try {
+                    // Array of upload promises
+                    const uploadPromises = Array.from(fileInput.files).map(async (file) => {
+                        const formData = new FormData();
+                        formData.append('file', file);
+                        formData.append('upload_preset', 'loyal_paws');
 
-                const res = await fetch('https://api.cloudinary.com/v1_1/dwzixvekx/image/upload', {
-                    method: 'POST',
-                    body: formData
-                });
+                        const res = await fetch('https://api.cloudinary.com/v1_1/dwzixvekx/image/upload', {
+                            method: 'POST',
+                            body: formData
+                        });
 
-                const data = await res.json();
-                photoUrl = data.secure_url;
+                        if (!res.ok) {
+                            throw new Error("Upload failed");
+                        }
+                        
+                        const data = await res.json();
+                        return data.secure_url;
+                    });
+
+                    // Wait for uploads to complete
+                    photoUrls = await Promise.all(uploadPromises);
+                } catch (uploadError) {
+                    console.error("Cloudinary Error:", uploadError);
+                    alert("There was an issue uploading your images. Please try again.");
+                    return;
+                }
+            }
+
+            // Combine all URLs into a string separated by new lines
+            let photoLinkString;
+            if (photoUrls.length > 0) {
+                photoLinkString = photoUrls.join("\n \n");
+            } else {
+                photoLinkString = "No Photos Provided";
             }
 
             emailjs.send("service_ad8i0ak", "template_t4vjoyj", {
                 name: form.name.value,
                 email: form.email.value,
-                pet_name: form.pet_name.value,
-                pet_type: form.pet_type.value,
+                pet_name: form.petname.value,
+                pet_type: form.pettype.value,
                 medium: form.medium.value,
                 size: form.size.value,
                 about_pet: form.about_pet.value,
-                photo_url: photoUrl
+                photo_url: photoLinkString
             })
             .then(() => {
                 showSuccess();
             })
             .catch((err) => {
                 console.error("EmailJS error:", err);
-                alert("Something went wrong. Please try again.");
+                alert("Sorry, there was an error sending your enquiry. Please try again later.");
             });
+
+        } else {
+            showErrors(errors);
         }
     });
-
 });
