@@ -63,8 +63,8 @@ The near black is reserved exclusively for the hero background, making the openi
 | Dusty Rose Light | `#E8D0D0` | Text accents                                |
 
 - **Font**:
-    - Cormorant Garamond — used for all display text: headings, the logo, card titles, quotes, prices.
-    - Jost — used for all body text: navigation links, labels, buttons, descriptions and form fields.
+    - Cormorant Garamond - used for all display text: headings, the logo, card titles, quotes, prices.
+    - Jost - used for all body text: navigation links, labels, buttons, descriptions and form fields.
 - **Accessibility & Imagery**: All images include descriptive alt text. Semantic HTML elements are used throughout to provide a clear document structure for screen readers. ARIA labels have been used to further aid screen readers.
 
 ## Features
@@ -172,47 +172,124 @@ If you would like to see the features to be added in the future visit the Projec
 ## Future Development
 
 ## Testing
+ 
+### HTML Validation
+All three pages were tested using the [W3C Nu HTML Checker](https://validator.w3.org/).
+
+- **index.html** - No errors 
+    - [Index validated](docs/testing/index.html-validated.png)
+- **portfolio.html** - No errors 
+    - [Portfolio validated](docs/testing/portfolio.html-validated.png)
+- **commission.html** - No errors 
+    - [Commission validated](docs/testing/commission.html-validated.png)
+
+### CSS Validation
+CSS was tested using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
+ 
+- **index-styles.css** - No errors 
+    - [Index CSS validated](docs/testing/index-css-validated.png)
+- **portfolio.css** - No errors 
+    - [Portfolio CSS validated](docs/testing/portfolio-css-validated.png)
+- **commission-styles.css** - No errors 
+    - [Commission CSS validated](docs/testing/commission-css-validated.png)
+
+### Functional Testing
+- Clicking logo in navbar → Navigates to index.html ✅
+- Clicking Home nav link → Navigates to index.html ✅
+- Clicking Portfolio nav link → Navigates to portfolio.html ✅
+- Clicking Commission nav link → Navigates to commission.html ✅
+- Active nav link highlighted → Current page link styled differently ✅
+- Burger button → Nav panel slides in and overlay appears ✅
+- Clicking overlay → Nav panel and overlay close ✅
+- Clicking "View Portfolio" CTA → Navigates to portfolio.html ✅
+- Clicking "Commission a Portrait" CTA → Navigates to commission.html ✅
+- Clicking "Enquire here" on pricing cards → Navigates to commission.html ✅
+- Footer navigation links → Each link navigates to the correct page ✅
+- Footer Instagram link → Opens Instagram in a new tab ✅
+- Footer Facebook link → Opens Facebook in a new tab ✅
+- Gallery filter - All → All portrait cards displayed, count updates ✅
+- Gallery filter - Dog → Only dog portraits shown, count updates ✅
+- Gallery filter - Cat → Only cat portraits shown, count updates ✅
+- Gallery filter - Horse → Only horse portraits shown, count updates ✅
+- Clicking a gallery card → Lightbox opens with correct image, name and description ✅
+- Closing lightbox via close button → Lightbox closes ✅
+- Closing lightbox via Escape key → Lightbox closes ✅
+- Closing lightbox by clicking outside the image → Lightbox closes ✅
+- Submitting form with empty required fields → Validation errors shown in error summary ✅
+- Submitting form with invalid email → Validation error shown on email field ✅
+- Selecting a medium card → Card highlights and hidden input value updates ✅
+- Uploading a photo → File accepted and attached to submission ✅
+- Submitting a valid completed form → Enquiry sent via EmailJS, success message shown ✅
+
+### Responsiveness Testing
+- **Desktop** - Full navbar visible, images at full size 
+    - [Desktop](docs/testing/desktop-test.png) ✅
+- **Tablet** - Full navbar visible, images scale correctly 
+    - [Tablet](docs/testing/tablet-test.png) ✅
+- **Mobile** - Navbar collapses to burger menu, images scale to full width 
+    - [Mobile](docs/testing/mobile-test.png) ✅
+
+### Browser Testing
+- **Chrome** - Layout, navigation and images all display correctly 
+    - [Chrome](docs/testing/desktop-browser-test-chrome.png) ✅
+- **Edge** - Layout, navigation and images all display correctly 
+    - [Edge](docs/testing/desktop-browser-test-edge.png) ✅
+- **Firefox** - Layout, navigation and images all display correctly 
+    - [Firefox](docs/testing/desktop-browser-test-firefox.png) ✅
+
+### User Story Validation
+ 
+- "As a pet owner, I want to browse examples of the artist's work" 
+    - [Portfolio Gallery](docs/features/gallery-grid.png)
+- "As a pet owner, I want to understand the commission process and pricing upfront" 
+    - [Process Steps](docs/features/process-steps.png)
+- "As a gift buyer, I want to find out how commissioning a portrait works" 
+    - [Process Steps](docs/features/process-steps.png)
+- "As a gift buyer, I want to see clear pricing so I can decide if it fits my budget" 
+    - [Pricing Cards](docs/features/pricing-cards.png)
+- "As someone memorialising a pet, I want to feel confident the artist handles this with care" 
+    - [Form Sidebar](docs/features/form-sidebar.png)
+- "As someone memorialising a pet, I want a straightforward way to submit an enquiry" 
+    - [Enquiry Form](docs/features/commission-form.png)
+- "As the artist, I want to display my portfolio so clients can find and evaluate my work" 
+    - [Portfolio Gallery](docs/features/gallery-grid.png)
+- "As the artist, I want to receive structured enquiries with all the information I need" 
+    - [Enquiry Form](docs/features/commission-form.png)
 
 ### Current and Resolved Bugs
 1. Home
 2. Portfolio
 3. Commission
-
 - 1.1 - **Resolved** - In mobile views the page can be scrolled horizontally
     - Evidence: 🐛 [Bug - 1.1](docs/bugs/bug1.1.png)
     - Resolution: Added `overflow-x: hidden` to the `html` and `body` tags
     - Commit: b4eed54
     - Date reported: 09/04/2026
     - Date fixed: 09/04/2026
-
 - 1.2 - **Resolved** - Fixing the previous bug caused the navigation bar to become unstuck
     - Evidence: 🐛 [Bug - 1.2](docs/bugs/bug1.2.png)
     - Resolution: Removed `overflow` from the `html` tag and changed the header to `position: fixed` instead of `sticky`
     - Commit: 6005608
     - Date reported: 09/04/2026
     - Date fixed: 09/04/2026
-
 - 1.3 - **Resolved** - Button padding was misaligning the rest of the navigation bar
     - Evidence: 🐛 [Bug - 1.3](docs/bugs/bug%201.3.png)
     - Resolution: Removed the commission ID from each CSS sheet and added the hover class to remove the button styling
     - Commit: ff4e0c9
     - Date reported: 13/04/2026
     - Date fixed: 13/04/2026
-
 - 2.1 - **Resolved** - Lightbox cuts off image due to height restrictions
     - Evidence: 🐛 [Bug - 2.1](docs/bugs/bug2.1.png)
     - Resolution: Readjusted the height on images inside the lightbox
     - Commit: aee4802
     - Date reported: 21/04/2026
     - Date fixed: 21/04/2026
-
 - 3.1 - **Resolved** - Form content was misaligned
     - Evidence: 🐛 [Bug - 3.1](docs/bugs/bug3.1.png)
     - Resolution: Centred the aside and removed padding in the 1000px media query
     - Commit: cfbd707
     - Date reported: 13/04/2026
     - Date fixed: 13/04/2026
-
 - 3.2 - **Resolved** - Form submission error
     - Evidence: 🐛 [Bug - 3.2](docs/bugs/bug3.2.png)
     - Resolution: Updated the form validation code, updated the event listener, and added Cloudinary support for file uploads
@@ -254,7 +331,7 @@ git clone https://github.com/Hybrid965/loyal-paws-art.git
 
 ### Code
 - **Intersection Observer API**: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
-- **EmailJS**: https://www.emailjs.com — used to handle commission enquiry form submissions
+- **EmailJS**: https://www.emailjs.com - used to handle commission enquiry form submissions
 
 ### Fonts
 - **Cormorant Garamond & Jost**: https://fonts.google.com
