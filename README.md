@@ -220,7 +220,7 @@ CSS was tested using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator
     - [Commission CSS validated](docs/testing/commission-css-validated.png)
 
 ### JS Validation
-JS was tested using the [JS Lint Validator](https//:www.jslint.com/)
+JS was tested using the [JS Lint Validator](https://www.jslint.com/)
 - **burger.js** - No errors 
     - [burger js validated](docs/testing/burger-js-validated.png)
 - **fadeIn.js** - No errors 
@@ -338,6 +338,12 @@ JS was tested using the [JS Lint Validator](https//:www.jslint.com/)
     - **Evidence**: 🐛 [Bug - 2.2](docs/bugs/bug2.2.png)
     - **Resolution**: Converted complex arrow function to normal function. Split up longer lines into multiple lines. Added `/*global console*/` to declare `console` as a known global.
     - **Commit**: `0c69a1f`
+    - **Date reported**: 22/04/2026
+    - **Date fixed**: 22/04/2026
+- **2.3 - Resolved** - HTML validation errors in portfolio.html
+    - **Evidence**: 🐛 [Bug - 2.3](docs/bugs/bug2.3.png)
+    - **Resolution**: Removed trailing slashes. Replaced empty `src=""` on the lightbox `<img>` with a tranparent placeholder(`data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=`) to satisfy the validator while allowing JavaScript to replace the `src` at runtime when the lightbox opens.
+    - **Commit**: ``
     - **Date reported**: 22/04/2026
     - **Date fixed**: 22/04/2026
 
