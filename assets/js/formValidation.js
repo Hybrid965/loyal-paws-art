@@ -1,5 +1,12 @@
 /*global console, emailjs, alert*/
 /*jslint long*/
+
+// EmailJS used to send commission enquiry form data directly to the artist
+// Source: https://www.emailjs.com
+
+// Cloudinary API used to handle multiple photo uploads before passing URLs to EmailJS
+// Source: https://cloudinary.com
+
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
 

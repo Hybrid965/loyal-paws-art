@@ -1,3 +1,6 @@
+// Intersection Observer API used to detect when elements enter the viewport
+// Source: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+
 const revealElements = document.querySelectorAll(
     ".fadein"
 );

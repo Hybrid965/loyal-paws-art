@@ -30,6 +30,7 @@ The goal is that a visitor can arrive at the site, browse Gordon's work, underst
 ### Scope Plane
 - **Project Requirements**: A fully responsive three-page website featuring intuitive navigation, anchor links to key sections, and a structured commission enquiry form.
 - **Content Requirements**: A portfolio gallery of completed works, artist biography, size and pricing cards, customer testimonials, and a commission enquiry form.
+- **Out of Scope**: Features such as e-commerce, user accounts, an integrated booking or scheduling system, and a blog are considered out of scope for this release. The site is intentionally focused on showcasing work and capturing enquiries rather than handling transactions.
 
 ### Structure Plane
 - **Information Hierarchy**: The homepage leads with the hero and a clear CTA, followed by the artist biography, size and pricing cards, testimonials, and a second CTA to commission. Portfolio and Commission pages are reached from the navbar.
@@ -37,10 +38,10 @@ The goal is that a visitor can arrive at the site, browse Gordon's work, underst
 - **User Control**: All interactions are user-initiated. There are no auto-playing elements or unsolicited pop-ups.
 
 ### Skeleton Plane
-- **Wireframes**: Initial layouts were designed for all pages to plan the placement of headers, images, and navigation menus.
-    - 📄 [Home](docs/wireframes/home.png)
-    - 📄 [Portfolio](docs/wireframes/portfolio.png)
-    - 📄 [Commission](docs/wireframes/commission.png)
+- **Wireframes**: Initial layouts for all three pages were produced in Balsamiq to plan the placement of headers, images, navigation, and key interactive elements before development began.
+    - 📄 [Home](docs/wireframes/home.png) - Established the hero first layout with the headline and dual CTAs, followed by the artist biography section with an image. Medium/pricing cards section next followed by a three-column testimonials block on a dark background, and a full-width CTA banner before the footer.
+    - 📄 [Portfolio](docs/wireframes/portfolio.png) - Established a dark hero header followed by filter buttons (All / Pastel / Pencil) with a portrait count, a three-column image grid with subject labels and commission CTA banner before the footer.
+    - 📄 [Commission](docs/wireframes/commission.png) - Planned the page across four sections: a hero, a four-step numbered process section, a two-card pricing block with a Most Popular badge and the enquiry form. The form field order was established as: name and email, pet name and type, preferred medium, preferred size, a free-text pet description, and a photo description field before the submission button.
 
 - **Navigation Design**: A fixed navigation bar ensures that primary resources are easy to find and accessible across all screen sizes.
 
@@ -158,7 +159,7 @@ A full-width hero introduces the page and a short description of the process. It
     - [Commission hero screenshot](docs/features/commission-hero.png)
 
 - **The Process**:
-A four-step process section outlines what happens after an enquiry is submitted. The steps are: Receive a quote, Send an enquiry, Approve & confirm, and Artwork delivered. Each step is displayed in a numbered card with a short description.
+A four-step process section outlines what happens after an enquiry is submitted. The steps are: Send an enquiry, Receive a quote, Approve & confirm, and Artwork delivered. Each step is displayed in a numbered card with a short description.
 
     - [Process steps screenshot](docs/features/process-steps.png)
 
@@ -327,13 +328,13 @@ JS was tested using the [JS Lint Validator](https://www.jslint.com/)
     - **Date reported**: 21/04/2026
     - **Date fixed**: 21/04/2026
 - **1.6 - Resolved** - HTML validation errors in index.html
-    - **Evidence**: 🐛 [Bug - 1.5](docs/bugs/bug1.6.png)
+    - **Evidence**: 🐛 [Bug - 1.6](docs/bugs/bug1.6.png)
     - **Resolution**: Removed trailing slashes.
     - **Commit**: `3a9c203`
     - **Date reported**: 22/04/2026
     - **Date fixed**: 22/04/2026
 
-## 2. Portfolio
+### 2. Portfolio
 - **2.1 - Resolved** - Lightbox cuts off image due to height restrictions
     - **Evidence**: 🐛 [Bug - 2.1](docs/bugs/bug2.1.png)
     - **Resolution**: Readjusted the height on images inside the lightbox
@@ -354,7 +355,7 @@ JS was tested using the [JS Lint Validator](https://www.jslint.com/)
     - **Date fixed**: 22/04/2026
 
 
-## 3. Commission
+### 3. Commission
 - **3.1 - Resolved** - Form content was misaligned
     - **Evidence**: 🐛 [Bug - 3.1](docs/bugs/bug3.1.png)
     - **Resolution**: Centred the aside and removed padding in the 1000px media query
@@ -374,7 +375,7 @@ JS was tested using the [JS Lint Validator](https://www.jslint.com/)
     - **Date reported**: 21/04/2026
     - **Date fixed**: 21/04/2026
 - **3.4 - Resolved** - W3C Validation syntax and accessibility errors
-    - **Evidence**: 🐛 [Bug - 3.4](docs/bugs/bug3.4.png.png)
+    - **Evidence**: 🐛 [Bug - 3.4](docs/bugs/bug3.4.png)
     - **Resolution**: 
         1. Removed trailing slashes from void elements (`link`, `input`).
         2. Maintained the `<section>` element for the commission form to preserve document structure. Resolved the "Section lacks heading" warning by implementing an `aria-label="Commission Enquiry Form"`.
@@ -426,12 +427,18 @@ git clone https://github.com/Hybrid965/loyal-paws-art.git
 - **Favicon**: https://www.flaticon.com/authors/logisstudio
 
 ### Media
+- All portrait photography and artwork displayed in the gallery is the original work of Gordon and is used with his permission.
 
 ### Code
-- **Intersection Observer API**: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
-- **EmailJS**: https://www.emailjs.com - used to handle commission enquiry form submissions
+- **Intersection Observer API**: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API - used to trigger fade-in animations as elements enter the viewport
+- **EmailJS**: https://www.emailjs.com - used to handle commission enquiry form submissions and deliver them directly to the artist
+- **Cloudinary**: https://cloudinary.com - used to handle multiple photo uploads from the commission enquiry form before passing URLs to EmailJS
+- All external dependencies are attributed via comments in the relevant source files.
 
 ### Fonts
 - **Cormorant Garamond & Jost**: https://fonts.google.com
+
+### Tools
+- **Balsamiq**: https://balsamiq.com - used to produce wireframes during the design phase
 
 ---
