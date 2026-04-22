@@ -358,6 +358,7 @@ Choose
     justify-content: center;
     margin-top: 40px;
 }
+
 #enquire-btn {
     padding: 12px 20px;
     background-color: #C9A0A0;
@@ -514,6 +515,39 @@ footer {
 }
 
 /*=========================================
+404 
+===========================================*/
+#error-page {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    background-color: #FAF7F2;
+}
+
+#error-page h1 {
+    padding-bottom: 20px;
+}
+
+#error-page a {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #2C2828;
+    color: #FAF7F2;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    margin-right: 10px;
+}
+
+#error-page a:hover{
+    background-color: #b8887a;
+}
+
+
+/*=========================================
 1300px 
 ===========================================*/
 @media (max-width:1300px) {
@@ -563,7 +597,8 @@ footer {
     .price-box {
         margin: 0;
     }
-    .font-heading-title{
+
+    .font-heading-title {
         margin-bottom: 40px;
     }
 }
