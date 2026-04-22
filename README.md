@@ -326,6 +326,12 @@ JS was tested using the [JS Lint Validator](https://www.jslint.com/)
     - **Commit**: `d6f871b`
     - **Date reported**: 21/04/2026
     - **Date fixed**: 21/04/2026
+- **1.6 - Resolved** - HTML validation errors in index.html
+    - **Evidence**: 🐛 [Bug - 1.5](docs/bugs/bug1.6.png)
+    - **Resolution**: Removed trailing slashes.
+    - **Commit**: ``
+    - **Date reported**: 21/04/2026
+    - **Date fixed**: 21/04/2026
 
 ## 2. Portfolio
 - **2.1 - Resolved** - Lightbox cuts off image due to height restrictions
@@ -343,7 +349,7 @@ JS was tested using the [JS Lint Validator](https://www.jslint.com/)
 - **2.3 - Resolved** - HTML validation errors in portfolio.html
     - **Evidence**: 🐛 [Bug - 2.3](docs/bugs/bug2.3.png)
     - **Resolution**: Removed trailing slashes. Replaced empty `src=""` on the lightbox `<img>` with a tranparent placeholder(`data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=`) to satisfy the validator while allowing JavaScript to replace the `src` at runtime when the lightbox opens.
-    - **Commit**: ``
+    - **Commit**: `259a934`
     - **Date reported**: 22/04/2026
     - **Date fixed**: 22/04/2026
 
