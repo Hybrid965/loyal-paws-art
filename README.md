@@ -84,6 +84,12 @@ During the development process, several adjustments were made to the initial des
 the photo they planned to send. This was replaced with a file upload input 
 supporting multiple images.
 
+### 404
+- **404 Page**: A custom 404 page was added to redirect users who navigate to a 
+non-existent page back to the homepage, improving navigation without relying on 
+browser buttons. A live countdown timer was implemented using `setInterval` to 
+show the user how long until they are redirected.
+
 ## Features
 
 ### Across All Pages
@@ -183,6 +189,14 @@ Alongside the form, an aside panel reassures visitors with three key points: Gor
 
     - [Form sidebar screenshot](docs/features/form-sidebar.png)
 
+### 404 Page
+- **Page not Found**:
+A custom 404 page is displayed when a user navigates to a non-existent page. 
+A live countdown timer redirects the user to the homepage automatically after 
+10 seconds. A "Back to Home" button is also provided for users who don't want to wait.
+
+    - [404 screenshot](docs/features/404.png)
+
 ## Current Development
 If you would like to see the features to be added in the future visit the Project board: https://github.com/users/Hybrid965/projects/2
 
@@ -265,6 +279,7 @@ JS was tested using the [JS Lint Validator](https://www.jslint.com/)
 - Selecting a medium card → Card highlights and hidden input value updates ✅
 - Uploading a photo → File accepted and attached to submission ✅
 - Submitting a valid completed form → Enquiry sent via EmailJS, success message shown ✅
+- Navigating to a non-existent URL → 404 page displayed with countdown and redirect ✅
 
 ### Responsiveness Testing
 - **Desktop** - Full navbar visible, images at full size 
@@ -425,6 +440,12 @@ To run this project locally:
 ```
 git clone https://github.com/Hybrid965/loyal-paws-art.git
 ```
+
+### 404 Page
+A custom `404.html` is included in the root of the repository. GitHub Pages serves 
+this automatically when a user navigates to a non-existent URL. The page includes 
+a live countdown and redirects the user to the homepage after 10 seconds without 
+requiring browser navigation buttons.
 
 ## Credits
 

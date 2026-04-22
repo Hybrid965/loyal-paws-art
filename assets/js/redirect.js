@@ -1,3 +1,4 @@
+/*jslint long*/
 let seconds = 10;
 let countdownEl = document.getElementById("countdown");
 
