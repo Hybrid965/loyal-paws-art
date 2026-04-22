@@ -220,7 +220,7 @@ CSS was tested using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator
     - [Commission CSS validated](docs/testing/commission-css-validated.png)
 
 ### JS Validation
-JS was tested using the [JS Lint Validator](https:www.jslint.com/)
+JS was tested using the [JS Lint Validator](https//:www.jslint.com/)
 - **burger.js** - No errors 
     - [burger js validated](docs/testing/burger-js-validated.png)
 - **fadeIn.js** - No errors 
@@ -321,7 +321,7 @@ JS was tested using the [JS Lint Validator](https:www.jslint.com/)
     - **Date reported**: 21/04/2026
     - **Date fixed**: 21/04/2026
 - **1.5 - Resolved** - Invalid syntax in fadein script
-    - **Evidence**: 🐛 [Bug - 1.5](docs/testing/fadeIn-js-errors.png)
+    - **Evidence**: 🐛 [Bug - 1.5](docs/bugs/bug1.5.png)
     - **Resolution**: Refactored the `in` operator check to use `undefined` (`window.IntersectionObserver !== undefined`). Changed all internal strings to double quotes.
     - **Commit**: `d6f871b`
     - **Date reported**: 21/04/2026
@@ -335,7 +335,7 @@ JS was tested using the [JS Lint Validator](https:www.jslint.com/)
     - **Date reported**: 21/04/2026
     - **Date fixed**: 21/04/2026
 - **2.2 - Resolved** - JSLint errors in filter script
-    - **Evidence**: 🐛 [Bug - 2.2](docs/bugs/bug2.2.png.png)
+    - **Evidence**: 🐛 [Bug - 2.2](docs/bugs/bug2.2.png)
     - **Resolution**: Converted complex arrow function to normal function. Split up longer lines into multiple lines. Added `/*global console*/` to declare `console` as a known global.
     - **Commit**: `0c69a1f`
     - **Date reported**: 22/04/2026
@@ -373,13 +373,13 @@ JS was tested using the [JS Lint Validator](https:www.jslint.com/)
 - **3.5 - Resolved** - JSLint errors in form validation script
     - **Evidence**: 🐛 [Bug - 3.5](docs/bugs/bug3.5.png)
     - **Resolution**: Converted complex arrow functions to normal function. Broke long lines into multiple lines. Added missing semicolons. Converted single quotes to double quotes. Extracted Cloudinary URL into a `const` to reduce line length. Added `/*global console, emailjs, alert*/` to declare globals. Added `/*jslint long*/` to suppress unavoidable line length warning on the Cloudinary URL.
-    - **Commit**: `0c69a1f`
+    - **Commit**: `9793a62`
     - **Date reported**: 22/04/2026
     - **Date fixed**: 22/04/2026
 - **3.6 - Resolved** - JSLint errors in selected medium script
     - **Evidence**: 🐛 [Bug - 3.6](docs/bugs/bug3.6.png)
     - **Resolution**: Converted all arrow functions to normal functions.
-    - **Commit**: 
+    - **Commit**: `bc92208`
     - **Date reported**: 22/04/2026
     - **Date fixed**: 22/04/2026
 
