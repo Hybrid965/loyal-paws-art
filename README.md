@@ -334,6 +334,13 @@ JS was tested using the [JS Lint Validator](https:www.jslint.com/)
     - **Commit**: `aee4802`
     - **Date reported**: 21/04/2026
     - **Date fixed**: 21/04/2026
+- **2.2 - Resolved** - JSLint errors in filter script
+    - **Evidence**: 🐛 [Bug - 2.2](docs/bugs/bug2.2.png.png)
+    - **Resolution**: Converted complex arrow function to normal function. Split up longer lines into multiple lines. Added `/*global console*/` to declare `console` as a known global.
+    - **Commit**: 
+    - **Date reported**: 22/04/2026
+    - **Date fixed**: 22/04/2026
+
 
 ## 3. Commission
 - **3.1 - Resolved** - Form content was misaligned
