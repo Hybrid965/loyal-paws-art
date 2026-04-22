@@ -373,6 +373,12 @@ JS was tested using the [JS Lint Validator](https:www.jslint.com/)
 - **3.5 - Resolved** - JSLint errors in form validation script
     - **Evidence**: 🐛 [Bug - 3.5](docs/bugs/bug3.5.png)
     - **Resolution**: Converted complex arrow functions to normal function. Broke long lines into multiple lines. Added missing semicolons. Converted single quotes to double quotes. Extracted Cloudinary URL into a `const` to reduce line length. Added `/*global console, emailjs, alert*/` to declare globals. Added `/*jslint long*/` to suppress unavoidable line length warning on the Cloudinary URL.
+    - **Commit**: `0c69a1f`
+    - **Date reported**: 22/04/2026
+    - **Date fixed**: 22/04/2026
+- **3.6 - Resolved** - JSLint errors in selected medium script
+    - **Evidence**: 🐛 [Bug - 3.6](docs/bugs/bug3.6.png)
+    - **Resolution**: Converted all arrow functions to normal functions.
     - **Commit**: 
     - **Date reported**: 22/04/2026
     - **Date fixed**: 22/04/2026

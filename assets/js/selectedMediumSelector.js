@@ -1,9 +1,9 @@
 const mediumCards = document.querySelectorAll(".medium-card");
 
-mediumCards.forEach(card => {
-    card.addEventListener("click", () => {
+mediumCards.forEach(function (card) {
+    card.addEventListener("click", function () {
         // Remove selected from all cards
-        mediumCards.forEach(c => {
+        mediumCards.forEach(function (c) {
             c.classList.remove("selected");
             c.setAttribute("aria-checked", "false");
         });
