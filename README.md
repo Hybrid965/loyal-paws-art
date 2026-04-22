@@ -236,6 +236,8 @@ JS was tested using the [JS Lint Validator](https://www.jslint.com/)
     - [Form Validation JS validated](docs/testing/formValidation-js-validated.png)
 - **selectedMediumSelector.js** - No errors 
     - [Selected Medium Selector JS validated](docs/testing/selectedMediumSelector-js-validated.png)
+- **redirect.js** - No errors 
+    - [Redirect JS validated](docs/testing/redirect-js-validated.png)
 
 ### Functional Testing
 - Clicking logo in navbar → Navigates to index.html ✅
