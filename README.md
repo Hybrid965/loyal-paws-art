@@ -337,7 +337,7 @@ JS was tested using the [JS Lint Validator](https:www.jslint.com/)
 - **2.2 - Resolved** - JSLint errors in filter script
     - **Evidence**: 🐛 [Bug - 2.2](docs/bugs/bug2.2.png.png)
     - **Resolution**: Converted complex arrow function to normal function. Split up longer lines into multiple lines. Added `/*global console*/` to declare `console` as a known global.
-    - **Commit**: 
+    - **Commit**: `0c69a1f`
     - **Date reported**: 22/04/2026
     - **Date fixed**: 22/04/2026
 
@@ -362,7 +362,7 @@ JS was tested using the [JS Lint Validator](https:www.jslint.com/)
     - **Date reported**: 21/04/2026
     - **Date fixed**: 21/04/2026
 - **3.4 - Resolved** - W3C Validation syntax and accessibility errors
-    - **Evidence**: 🐛 [Bug - 3.4](docs/testing/validation-syntax.png)
+    - **Evidence**: 🐛 [Bug - 3.4](docs/bugs/bug3.4.png.png)
     - **Resolution**: 
         1. Removed trailing slashes from void elements (`link`, `input`).
         2. Maintained the `<section>` element for the commission form to preserve document structure. Resolved the "Section lacks heading" warning by implementing an `aria-label="Commission Enquiry Form"`.
@@ -370,6 +370,12 @@ JS was tested using the [JS Lint Validator](https:www.jslint.com/)
     - **Commit**: `5e91b4c`
     - **Date reported**: 21/04/2026
     - **Date fixed**: 21/04/2026
+- **3.5 - Resolved** - JSLint errors in form validation script
+    - **Evidence**: 🐛 [Bug - 3.5](docs/bugs/bug3.5.png)
+    - **Resolution**: Converted complex arrow functions to normal function. Broke long lines into multiple lines. Added missing semicolons. Converted single quotes to double quotes. Extracted Cloudinary URL into a `const` to reduce line length. Added `/*global console, emailjs, alert*/` to declare globals. Added `/*jslint long*/` to suppress unavoidable line length warning on the Cloudinary URL.
+    - **Commit**: 
+    - **Date reported**: 22/04/2026
+    - **Date fixed**: 22/04/2026
 
 ## Deployment
 

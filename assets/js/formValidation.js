@@ -1,4 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => {
+/*global console, emailjs, alert*/
+/*jslint long*/
+document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
 
     function runValidation() {
@@ -12,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const medium = document.getElementById("medium");
         const size = document.getElementById("size");
 
-        // Checking Name is valid 
+        // Checking Name is valid
         if (!name.value.trim()) {
             errors.push({ id: "name", message: "Please enter your name" });
         }
@@ -20,29 +22,41 @@ document.addEventListener("DOMContentLoaded", () => {
         // Checking valid email
         const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!email.value.trim()) {
-            errors.push({ id: "email", message: "Please enter your email address." })
+            errors.push({
+                id: "email",
+                message: "Please enter your email address."
+            });
         } else if (!validEmail.test(email.value.trim())) {
-            errors.push({ id: "email", message: "Please enter a valid email address" })
+            errors.push({
+                id: "email",
+                message: "Please enter a valid email address"
+            });
         }
 
-        // Checking pet name is valid 
+        // Checking pet name is valid
         if (!petname.value.trim()) {
-            errors.push({ id: "petname", message: "Please enter your pet's name." })
+            errors.push({
+                id: "petname",
+                message: "Please enter your pet's name."
+            });
         }
 
-        // Checking pet type is valid 
+        // Checking pet type is valid
         if (!pettype.value) {
-            errors.push({ id: "pettype", message: "Please select a type of pet" })
+            errors.push({
+                id: "pettype",
+                message: "Please select a type of pet"
+            });
         }
 
-        // Checking Medium is valid 
+        // Checking Medium is valid
         if (!medium.value) {
-            errors.push({ id: "medium", message: "Please select a medium" })
+            errors.push({ id: "medium", message: "Please select a medium" });
         }
 
-        // Checking Size is valid 
+        // Checking Size is valid
         if (!size.value) {
-            errors.push({ id: "size", message: "Please select a size" })
+            errors.push({ id: "size", message: "Please select a size" });
         }
 
         return errors;
@@ -50,12 +64,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function showErrors(errors) {
         // Clear previous errors
-        document.querySelectorAll(".error-message").forEach(el => el.remove());
+        document.querySelectorAll(".error-message")
+            .forEach((el) => el.remove());
         const summary = document.getElementById("error-summary");
         summary.innerHTML = "";
         summary.style.display = "block";
 
-        errors.forEach(err => {
+        errors.forEach(function (err) {
             // Field level message
             const input = document.getElementById(err.id);
             const msg = document.createElement("span");
@@ -74,37 +89,43 @@ document.addEventListener("DOMContentLoaded", () => {
         form.innerHTML = `
             <div class="success-message">
                 <h3 class="font-heading">Thank you!</h3>
-                <p>Your enquiry for ${form.petname.value} has been sent. Gordon will be in touch within 48 hours.</p>
+                <p>Your enquiry for ${form.petname.value} has been sent.
+                Gordon will be in touch within 48 hours.</p>
             </div>
         `;
     }
 
-    form.addEventListener("submit", async (e) => {
+    form.addEventListener("submit", async function (e) {
         e.preventDefault();
         const errors = runValidation();
 
         if (errors.length === 0) {
-            const fileInput = document.getElementById('photo');
+            const fileInput = document.getElementById("photo");
             let photoUrls = [];
 
             // Loop through all files if any are provided
             if (fileInput.files.length > 0) {
                 try {
-                    // Array of upload promises
-                    const uploadPromises = Array.from(fileInput.files).map(async (file) => {
-                        const formData = new FormData();
-                        formData.append('file', file);
-                        formData.append('upload_preset', 'loyal_paws');
+                    const cloudinaryUrl =
+                        "https://api.cloudinary.com/v1_1/dwzixvekx/image/upload";
 
-                        const res = await fetch('https://api.cloudinary.com/v1_1/dwzixvekx/image/upload', {
-                            method: 'POST',
-                            body: formData
+                    // Array of upload promises
+                    const uploadPromises = Array.from(
+                        fileInput.files
+                    ).map(async function (file) {
+                        const formData = new FormData();
+                        formData.append("file", file);
+                        formData.append("upload_preset", "loyal_paws");
+
+                        const res = await fetch(cloudinaryUrl, {
+                            body: formData,
+                            method: "POST"
                         });
 
                         if (!res.ok) {
                             throw new Error("Upload failed");
                         }
-                        
+
                         const data = await res.json();
                         return data.secure_url;
                     });
@@ -113,7 +134,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     photoUrls = await Promise.all(uploadPromises);
                 } catch (uploadError) {
                     console.error("Cloudinary Error:", uploadError);
-                    alert("There was an issue uploading your images. Please try again.");
+                    alert(
+                        "There was an issue uploading your images. " +
+                        "Please try again."
+                    );
                     return;
                 }
             }
@@ -127,21 +151,24 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             emailjs.send("service_ad8i0ak", "template_t4vjoyj", {
-                name: form.name.value,
+                about_pet: form.about_pet.value,
                 email: form.email.value,
+                medium: form.medium.value,
+                name: form.name.value,
                 pet_name: form.petname.value,
                 pet_type: form.pettype.value,
-                medium: form.medium.value,
-                size: form.size.value,
-                about_pet: form.about_pet.value,
-                photo_url: photoLinkString
+                photo_url: photoLinkString,
+                size: form.size.value
             })
-            .then(() => {
+            .then(function () {
                 showSuccess();
             })
-            .catch((err) => {
+            .catch(function (err) {
                 console.error("EmailJS error:", err);
-                alert("Sorry, there was an error sending your enquiry. Please try again later.");
+                alert(
+                    "Sorry, there was an error sending your enquiry. " +
+                    "Please try again later."
+                );
             });
 
         } else {
