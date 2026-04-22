@@ -76,9 +76,13 @@ During the development process, several adjustments were made to the initial des
 
 ### Portfolio
 - **Advanced Viewing**: Implemented a Lightbox overlay to allow users to inspect the fine details of the pastel and pencil portraits.
+- **Filter Design**: The initial wireframe planned filters by medium. This was changed to filter by animal type.
 
 ### Commission
 - **Interactive Form**: Integrated Cloudinary API support for multiple photo uploads, providing a more professional and modern interface than the original sketch.
+- **Photo Upload**: The original wireframe used a text field for users to describe 
+the photo they planned to send. This was replaced with a file upload input 
+supporting multiple images.
 
 ## Features
 
