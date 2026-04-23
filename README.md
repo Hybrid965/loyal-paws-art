@@ -234,11 +234,11 @@ All three pages were tested using the [W3C Nu HTML Checker](https://validator.w3
 CSS was tested using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
  
 - **index-styles.css** - No errors 
-    - [Index CSS validated](docs/testing/index-css-validated.png)
+    - [Index CSS validated](docs/testing/styles.css-validated.png)
 - **portfolio.css** - No errors 
-    - [Portfolio CSS validated](docs/testing/portfolio-css-validated.png)
+    - [Portfolio CSS validated](docs/testing/portfolio.css-validated.png)
 - **commission-styles.css** - No errors 
-    - [Commission CSS validated](docs/testing/commission-css-validated.png)
+    - [Commission CSS validated](docs/testing/commission-styles.css-validated.png)
 
 ### JS Validation
 JS was tested using the [JS Lint Validator](https://www.jslint.com/)
@@ -359,7 +359,7 @@ JS was tested using the [JS Lint Validator](https://www.jslint.com/)
 - **1.7 - Resolved** - CSS validation errors in styles.css
     - **Evidence**: 🐛 [Bug - 1.7](docs/bugs/bug1.7.png)
     - **Resolution**: Removed width from .reviewer as it wasnt doing anything.
-    - **Commit**: ``
+    - **Commit**: `f20fcd3`
     - **Date reported**: 23/04/2026
     - **Date fixed**: 23/04/2026
 
