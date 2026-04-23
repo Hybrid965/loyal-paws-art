@@ -103,6 +103,11 @@ show the user how long until they are redirected.
 - **Cloudinary**
 - **Balsamiq** 
 
+### Asynchronous JavaScript
+This project uses asynchronous JavaScript in two areas. The portfolio gallery fetches portrait data from `portraits.json` using the Fetch API, the DOM is only rendered once all data has been retrieved.
+
+The commission form submission handles multiple operations. Each selected photo is uploaded to Cloudinary independently, and `Promise.all()` is used to wait for every upload to resolve before any URLs are passed to EmailJS. This stops the email from being sent before the URLs have been resolved. If any upload fails, the error is caught and the user is notified.
+
 ## Features
 
 ### Across All Pages
@@ -334,6 +339,11 @@ Each page was tested using the [WAVE Web Accessibility Evaluation Tool](https://
 - Uploading a photo → File accepted and attached to submission ✅
 - Submitting a valid completed form → Enquiry sent via EmailJS, success message shown ✅
 - Navigating to a non-existent URL → 404 page displayed with countdown and redirect ✅
+- Back/forward browser navigation → Site remains functional, no broken state ✅
+- All external links → Open in a new tab ✅
+- User actions (form, filters, lightbox) → No errors generated in the console ✅
+- EmailJS failure → User notified via error message ✅
+- Cloudinary upload failure → Error caught, user notified before submission ✅
 
 ### Responsiveness Testing
 - **Desktop** - Full navbar visible, images at full size 
@@ -509,6 +519,9 @@ A custom `404.html` is included in the root of the repository. GitHub Pages serv
 this automatically when a user navigates to a non-existent URL. The page includes 
 a live countdown and redirects the user to the homepage after 10 seconds without 
 requiring browser navigation buttons.
+
+### Version Control
+Throughout development, commits were made at the completion of each individual feature or fix, keeping changes small and well-defined. Commit messages have been written descriptively to reflect the specific change made.
 
 ## Credits
 
