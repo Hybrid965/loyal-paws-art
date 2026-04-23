@@ -356,6 +356,12 @@ JS was tested using the [JS Lint Validator](https://www.jslint.com/)
     - **Commit**: `3a9c203`
     - **Date reported**: 22/04/2026
     - **Date fixed**: 22/04/2026
+- **1.7 - Resolved** - CSS validation errors in styles.css
+    - **Evidence**: 🐛 [Bug - 1.7](docs/bugs/bug1.7.png)
+    - **Resolution**: Removed width from .reviewer as it wasnt doing anything.
+    - **Commit**: ``
+    - **Date reported**: 23/04/2026
+    - **Date fixed**: 23/04/2026
 
 ### 2. Portfolio
 - **2.1 - Resolved** - Lightbox cuts off image due to height restrictions
