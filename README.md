@@ -92,6 +92,17 @@ non-existent page back to the homepage, improving navigation without relying on
 browser buttons. A live countdown timer was implemented using `setInterval` to 
 show the user how long until they are redirected.
 
+## Technologies Used
+
+- **HTML5** 
+- **CSS3**
+- **JavaScript**
+- **Fetch API**
+- **Intersection Observer API**
+- **EmailJS**
+- **Cloudinary**
+- **Balsamiq** 
+
 ## Features
 
 ### Across All Pages
@@ -254,6 +265,47 @@ JS was tested using the [JS Lint Validator](https://www.jslint.com/)
     - [Selected Medium Selector JS validated](docs/testing/selectedMediumSelector-js-validated.png)
 - **redirect.js** - No errors 
     - [Redirect JS validated](docs/testing/redirect-js-validated.png)
+
+### Lighthouse Testing
+Each page was audited using Chrome DevTools Lighthouse in an incognito window to avoid interference from browser extensions. Audits were run in desktop mode.
+
+#### index.html
+- **Performance** - 94
+- **Accessibility** - 93
+- **Best Practices** - 96
+- **SEO** - 91
+- **Lighthouse Score** - [Score](docs/testing/lighthouse-index.png)
+
+#### portfolio.html
+- **Performance** - 81
+- **Accessibility** - 93
+- **Best Practices** - 100 
+- **SEO** - 91
+- **Lighthouse** - [Score](docs/testing/lighthouse-portfolio.png)
+
+#### commission.html
+- **Performance** - 99
+- **Accessibility** - 97
+- **Best Practices** - 100
+- **SEO** - 91
+- **Lighthouse** - [Score](docs/testing/lighthouse-commission.png)
+
+#### 404.html
+- **Performance** - 100
+- **Accessibility** - 87
+- **Best Practices** - 100
+- **SEO** - 91
+- **Lighthouse** - [Score](docs/testing/lighthouse-404.png)
+
+### Accessibility Testing
+Each page was tested using the [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) to check for accessibility errors, contrast issues, and missing ARIA attributes.
+
+- **index.html** - No errors
+    - [WAVE - index.html](docs/testing/wave-index.png)
+- **portfolio.html** - No errors
+    - [WAVE - portfolio.html](docs/testing/wave-portfolio.png)
+- **commission.html** - No errors
+    - [WAVE - commission.html](docs/testing/wave-commission.png)
 
 ### Functional Testing
 - Clicking logo in navbar → Navigates to index.html ✅
@@ -424,6 +476,9 @@ JS was tested using the [JS Lint Validator](https://www.jslint.com/)
     - **Commit**: `bc92208`
     - **Date reported**: 22/04/2026
     - **Date fixed**: 22/04/2026
+
+### Known Bugs
+There are no known bugs remaining in the project at the time of submission.
 
 ## Deployment
 
