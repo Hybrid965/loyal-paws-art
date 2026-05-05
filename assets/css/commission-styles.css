@@ -1,38 +1,16 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Jost', sans-serif;
+/*------------------------------- 
+Nav (page-specific override)
+---------------------------------*/
+
+#main-nav {
+    background-color: #2C2828;
+    border-bottom: 1px solid #5A5555;
 }
 
-html,
-body {
-    overflow-x: hidden;
-}
-
-header {
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    width: 100%;
-}
 
 /*------------------------------- 
-Universal
+Universal (page-specific)
 ---------------------------------*/
-.font-heading {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-weight: 100;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-.nav-current {
-    border-bottom: 1px solid #FAF7F2;
-    color: #FAF7F2;
-    text-decoration: none;
-}
 
 .font-heading-title {
     font-size: 2rem;
@@ -51,110 +29,11 @@ Universal
     font-family: 'Cormorant Garamond', Georgia, serif;
 }
 
-/*------------------------------- 
-JS classes 
----------------------------------*/
-.fade {
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-}
-
-.fade.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/*------------------------------- 
-Nav Bar 
----------------------------------*/
-#main-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #FAF7F2;
-    background-color: #2C2828;
-    border-bottom: 1px solid #5A5555
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    padding: 10px;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-}
-
-.hover {
-    text-decoration: none;
-    color: #FAF7F2;
-    position: relative;
-    display: inline-block;
-}
-
-.hover::after {
-    content: '';
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: #FAF7F2;
-    transition: width 0.3s ease;
-}
-
-.hover:hover::after {
-    width: 100%;
-}
-
-#logo {
-    padding: 20px;
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    align-items: center;
-    display: flex;
-    font-size: 1.125rem;
-    color: #FAF7F2;
-}
-
-.logo-img {
-    height: 25px;
-    width: 25px;
-    padding-right: 10px;
-}
-
-.logo {
-    text-decoration: none;
-    color: #FAF7F2;
-}
-
-/*------------------------------- 
-Burger
----------------------------------*/
-.burger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    margin-right: 30px;
-    overflow: visible;
-}
-
-.burger span {
-    display: block;
-    width: 22px;
-    height: 2px;
-    background-color: #FAF7F2;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-}
 
 /*------------------------------- 
 Hero Section
 ---------------------------------*/
+
 #hero {
     height: auto;
     display: flex;
@@ -194,9 +73,11 @@ Hero Section
     text-align: center;
 }
 
+
 /*------------------------------- 
 The Process
 ---------------------------------*/
+
 #process {
     background-color: #F0EBE3;
 }
@@ -232,24 +113,13 @@ The Process
     font-size: 0.875rem;
 }
 
+
 /*------------------------------- 
 Pricing 
 ---------------------------------*/
+
 #pricing {
     background-color: #FAF7F2;
-}
-
-#price-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: auto;
-}
-
-.price-box {
-    border: 1px solid #F0EBE3;
-    padding: 30px 30px 80px 30px;
-    margin: 40px 0px;
 }
 
 .price-title {
@@ -271,22 +141,6 @@ Pricing
     color: #5A5555;
 }
 
-.price-desc {
-    font-size: 1rem;
-    padding-top: 10px;
-    list-style: none;
-    font-family: 'Cormorant Garamond', Georgia, serif;
-}
-
-.white {
-    background-color: white;
-}
-
-.black {
-    background-color: #2C2828;
-    color: #FAF7F2;
-}
-
 .black .price-startingfrom span {
     color: #FAF7F2;
 }
@@ -297,14 +151,15 @@ Pricing
     font-style: italic;
     font-size: 1.125rem;
     font-family: 'Cormorant Garamond', Georgia, serif;
-    padding-bottom: 60px;
     text-align: center;
     padding: 0px 20px 60px 0px;
 }
 
+
 /*------------------------------- 
 Form 
 ---------------------------------*/
+
 #form {
     display: flex;
     flex-direction: row;
@@ -351,7 +206,7 @@ form {
     background-color: #FAF7F2;
 }
 
-/* Two-column row  */
+/* Two-column row */
 .row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -359,20 +214,14 @@ form {
     margin-bottom: 1.75rem;
 }
 
-@media (max-width: 480px) {
-    .row {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Individual field  */
+/* Individual field */
 .field {
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
 
-/* Labels  */
+/* Labels */
 .label {
     font-size: 0.625rem;
     font-weight: 500;
@@ -388,7 +237,7 @@ form {
     margin-left: 2px;
 }
 
-/* Text inputs  */
+/* Text inputs */
 .input {
     font-size: 0.875rem;
     font-weight: 300;
@@ -455,7 +304,6 @@ form {
     color: #b0a89e;
 }
 
-
 /* Medium cards */
 .medium-grid {
     display: grid;
@@ -512,132 +360,66 @@ form {
     font-weight: 300;
 }
 
+
 /*------------------------------- 
-    Form Validation 
-    ---------------------------------*/
+Form Validation 
+---------------------------------*/
+
 .btn-submit {
-  display: block;
-  width: 100%;
-  padding: 15px;
-  background-color: #2c2820;
-  color: #fff;
-  font-size: 1rem;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 4px;
-  margin-top: 20px
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #2c2820;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
 }
 
 .btn-submit:hover {
-  background-color: #b8887a;
+    background-color: #b8887a;
 }
 
 #error-summary {
-  background-color: #f9e8e8;
-  border: 1px solid #c0392b;
-  border-radius: 6px;
-  padding: 1rem 1.25rem;
-  margin-bottom: 1.5rem;
-  color: #2d2d2d;
+    background-color: #f9e8e8;
+    border: 1px solid #c0392b;
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+    color: #2d2d2d;
 }
 
 #error-summary:empty {
-  display: none;
+    display: none;
 }
 
 .error-summary-heading {
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
 
 #error-summary ul {
-  margin: 0;
-  padding-left: 1.25rem;
+    margin: 0;
+    padding-left: 1.25rem;
 }
 
 #error-summary a {
-  color: #c0392b;
-  text-decoration: underline;
+    color: #c0392b;
+    text-decoration: underline;
 }
 
 #error-summary a:hover {
-  color: #922b21;
+    color: #922b21;
 }
+
 
 /*------------------------------- 
-    Footer 
-    ---------------------------------*/
-footer {
-    background-color: #1A1717;
-    color: #FAF7F2;
-    padding: 40px 0 0 0;
-}
+Media Queries
+---------------------------------*/
 
-#footer-content {
-    display: flex;
-    flex-direction: row;
-    gap: 150px;
-    padding: 40px 100px;
-}
-
-.footer-column {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-}
-
-.brand-name {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-}
-
-.footer-desc {
-    font-size: 0.875rem;
-}
-
-.footer-border {
-    border-bottom: #5A5555 1px solid;
-    padding-bottom: 15px;
-}
-
-.inner-nav {
-    margin-top: 20px;
-    display: block;
-}
-
-.explore-links {
-    display: block;
-    color: #FAF7F2;
-    text-decoration: none;
-    padding: 6px 0;
-    font-size: 0.875rem;
-}
-
-.footer-column h3 {
-    font-size: 0.875rem;
-    margin-bottom: 3px;
-    margin-top: 0;
-    font-weight: 100;
-}
-
-.footer-column nav {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    align-items: flex-start;
-}
-
-#copyright {
-    text-align: center;
-    padding: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: rgba(250, 247, 242, 0.4);
-    font-size: 0.75rem;
-}
-
-/* Breakpoints kept in PX for stability */
-@media (max-width:1000px) {
+@media (max-width: 1000px) {
     #form {
         flex-direction: column;
     }
@@ -656,7 +438,7 @@ footer {
         margin-bottom: 60px;
     }
 
-    .cen-aside{
+    .cen-aside {
         align-items: center;
         text-align: center;
     }
@@ -666,7 +448,7 @@ footer {
         list-style: none;
     }
 
-    .list-paragraph{
+    .list-paragraph {
         text-align: center;
     }
 
@@ -675,83 +457,13 @@ footer {
     }
 }
 
-@media (max-width:600px) {
-    #main-nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #logo {
-        width: 100%;
-        justify-content: space-between;
-        z-index: 1000;
-        padding: 15px;
-    }
-
-    .burger {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 10px;
-        margin-left: auto;
-    }
-
-    .burger span {
-        display: block;
-        width: 22px;
-        height: 2px;
-        background-color: #FAF7F2;
-        border-radius: 2px;
-    }
-
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 50%;
-        height: 100vh;
-        background-color: #1A1717;
-        border-left: 1px solid #2C2828;
-        padding-top: 80px;
-        transition: right 0.3s ease;
-        z-index: 998;
-    }
-
-    .nav-links.open {
-        right: 0;
-    }
-
-    .nav-links a {
-        padding: 16px 24px;
-        font-size: 0.75rem;
-        letter-spacing: 0.15em;
-        border-bottom: 1px solid #2C2828;
-        display: block;
-        width: 100%;
-        color: #FAF7F2;
-    }
-
-    #commission {
-        background-color: transparent;
-        text-align: left;
-        padding: 15px;
-    }
-
+@media (max-width: 600px) {
     #process-container {
         flex-direction: column;
         width: 100%;
     }
 
-    #price-container {
-        flex-direction: column;
-    }
-
+    /* Price card  */
     .white {
         margin-bottom: 0px;
     }
@@ -759,9 +471,10 @@ footer {
     .black {
         margin-top: 0px;
     }
+}
 
-    #footer-content {
-        flex-direction: column;
-        gap: 50px
+@media (max-width: 480px) {
+    .row {
+        grid-template-columns: 1fr;
     }
 }
