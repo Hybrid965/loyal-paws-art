@@ -149,14 +149,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
 
-            // Combine all URLs into a string separated by new lines
+            // Combine all URLs
             let photoLinkString;
             if (photoUrls.length > 0) {
                 photoLinkString = photoUrls.join("\n \n");
             } else {
                 photoLinkString = "No Photos Provided";
             }
-
+            // EmailJS send data 
             emailjs.send("service_ad8i0ak", "template_t4vjoyj", {
                 about_pet: form.about_pet.value,
                 email: form.email.value,
