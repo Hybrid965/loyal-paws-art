@@ -424,6 +424,12 @@ Each page was tested using the [WAVE Web Accessibility Evaluation Tool](https://
     - **Commit**: `f20fcd3`
     - **Date reported**: 23/04/2026
     - **Date fixed**: 23/04/2026
+- **1.8 - Resolved** - Burger buttons overflowing onto the page
+    - **Evidence**: 🐛 [Bug - 1.7](docs/bugs/bug1.8.png)
+    - **Resolution**: Adjusted the `navlinks a` rules width to 88% to stop the overflow.
+    - **Commit**: ``
+    - **Date reported**: 04/05/2026
+    - **Date fixed**: 05/05/2026
 
 ### 2. Portfolio
 - **2.1 - Resolved** - Lightbox cuts off image due to height restrictions
