@@ -302,16 +302,6 @@ Each page was audited using Chrome DevTools Lighthouse in an incognito window to
 - **SEO** - 91
 - **Lighthouse** - [Score](docs/testing/lighthouse-404.png)
 
-### Accessibility Testing
-Each page was tested using the [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) to check for accessibility errors, contrast issues, and missing ARIA attributes.
-
-- **index.html** - No errors
-    - [WAVE - index.html](docs/testing/wave-index.png)
-- **portfolio.html** - No errors
-    - [WAVE - portfolio.html](docs/testing/wave-portfolio.png)
-- **commission.html** - No errors
-    - [WAVE - commission.html](docs/testing/wave-commission.png)
-
 ### Functional Testing
 - Clicking logo in navbar → Navigates to index.html ✅
 - Clicking Home nav link → Navigates to index.html ✅
