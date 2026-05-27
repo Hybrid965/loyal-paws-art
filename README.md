@@ -261,13 +261,13 @@ JS was tested using the [JS Lint Validator](https://www.jslint.com/)
 - **burger.js** - No errors 
     - [burger js validated](docs/testing/burger-js-validated.png)
 - **fadeIn.js** - No errors 
-    - [fadeIn JS validated](docs/testing/fadeIn-js-validated.png)
+    - [fadeIn JS validated](docs/testing/fadein-js-validated.png)
 - **filter.js** - No errors 
     - [Filter JS validated](docs/testing/filter-js-validated.png)
 - **formValidation.js** - No errors 
-    - [Form Validation JS validated](docs/testing/formValidation-js-validated.png)
+    - [Form Validation JS validated](docs/testing/formvalidation-js-validated.png)
 - **selectedMediumSelector.js** - No errors 
-    - [Selected Medium Selector JS validated](docs/testing/selectedMediumSelector-js-validated.png)
+    - [Selected Medium Selector JS validated](docs/testing/selectedmediumselector-js-validated.png)
 - **redirect.js** - No errors 
     - [Redirect JS validated](docs/testing/redirect-js-validated.png)
 
@@ -395,7 +395,7 @@ Each page was tested using the [WAVE Web Accessibility Evaluation Tool](https://
     - **Date reported**: 09/04/2026
     - **Date fixed**: 09/04/2026
 - **1.3 - Resolved** - Button padding was misaligning the rest of the navigation bar
-    - **Evidence**: 🐛 [Bug - 1.3](docs/bugs/bug%201.3.png)
+    - **Evidence**: 🐛 [Bug - 1.3](docs/bugs/bug1.3.png)
     - **Resolution**: Removed the commission ID from each CSS sheet and added the hover class to remove the button styling
     - **Commit**: `ff4e0c9`
     - **Date reported**: 13/04/2026
