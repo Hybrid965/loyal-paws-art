@@ -1,543 +1,868 @@
 # Loyal Paws Art
 
 ## Purpose
-Loyal Paws Art is a commission enquiry website created for Gordon Burkert, a local pet portrait artist based in Evesham who works in pastel and pencil. Gordon currently has no online presence and relies entirely on word of mouth to reach new clients, meaning anyone who hasn't heard of him through a personal connection has no way to find him or see his work.
 
-The site gives Gordon a professional platform to showcase his portfolio and receive commission enquiries. It is aimed at three audiences: pet owners wanting a bespoke portrait, people searching for a meaningful and personal gift, and those wanting to commemorate a pet they have lost.
+Loyal Paws Art is a commission enquiry website created for Gordon Burkert, a pet portrait artist based in Evesham who works in pastel and pencil.
 
-The goal is that a visitor can arrive at the site, browse Gordon's work, understand the process and pricing, and submit an enquiry.
+Before this project, Gordon had no dedicated online presence and relied mainly on word of mouth to reach new clients. This meant that potential customers who had not heard of him through a personal connection had no simple way to find him, view his artwork, understand his prices, or submit a commission enquiry.
+
+The purpose of the website is to give Gordon a professional online platform where visitors can:
+
+- view examples of his pastel and pencil pet portraits
+- understand the available sizes, starting prices and commission process
+- submit a structured enquiry with the details Gordon needs to provide a personalised response
+- upload reference photos to support their commission request
+
+The site is aimed at three main user groups:
+
+- pet owners wanting a bespoke portrait
+- gift buyers looking for a meaningful and personal present
+- people wanting to commemorate a pet they have lost
+
+The goal is that a visitor can arrive at the site, quickly understand Gordon's work, browse the portfolio, review the pricing and process, and submit an enquiry with confidence.
 
 ## User Stories
+
 ### As a pet owner wanting a commission
-- I want to browse examples of the artist's work so that I can decide whether his style suits what I have in mind before making contact.
-- I want to understand the commission process and pricing upfront so that I know what to expect before I commit to anything.
+
+- I want to browse examples of Gordon's pastel and pencil portraits so that I can decide whether his style suits what I have in mind.
+- I want to understand the commission process and starting prices upfront so that I know what to expect before making contact.
+
 ### As a gift buyer
-- I want to find out how commissioning a portrait works so that I can confidently purchase one as a gift without needing specialist knowledge.
-- I want to see clear pricing so that I can decide whether a portrait fits my budget before getting in touch.
+
+- I want to understand how commissioning a pet portrait works so that I can confidently order one as a gift.
+- I want clear size and pricing information so that I can decide whether a portrait fits my budget before submitting an enquiry.
+
 ### As someone memorialising a lost pet
-- I want to feel confident that the artist handles this type of commission with care so that I trust him with something that means a lot to me.
-- I want a straightforward way to describe my pet and submit an enquiry so that the process feels manageable at a difficult time.
-### As the Artist
+
+- I want the site to feel warm, respectful and reassuring so that I can trust the artist with a commission that has personal meaning.
+- I want a straightforward enquiry form so that I can describe the pet, choose a preferred medium and upload reference photos without the process feeling difficult.
+
+### As the artist
+
 - I want to display my portfolio online so that potential clients can find and evaluate my work without needing a personal referral.
-- I want to receive structured commission enquiries through the site so that I have all the information I need before responding to a client.
+- I want to receive structured commission enquiries so that I have the key information I need before responding to a client.
 
 ## UX Design
+
 ### Strategy Plane
-- **Target Audience**: Pet owners wanting a bespoke portrait, gift buyers looking for something personal and meaningful, people memorialising a lost pet, and the artist himself.
-- **User Needs**: Clear visibility of the artist's style and portfolio, upfront pricing and process information, and a simple way to submit a commission enquiry.
-- **Rationale**: The project gives Gordon a professional online presence to replace word-of-mouth discovery, centred around three clear actions: browse the work, understand the process, and get in touch.
+
+- **Target Audience**: Pet owners, gift buyers, people memorialising a lost pet, and the artist receiving enquiries.
+- **User Needs**: Visitors need to see the artist's style clearly, understand the available pastel and pencil commission options, view pricing information, and submit an enquiry easily.
+- **Project Rationale**: The project gives Gordon a professional online presence that replaces reliance on word-of-mouth discovery. The site is centred around three clear user journeys: browse the artwork, understand the commission options, and submit an enquiry.
 
 ### Scope Plane
-- **Project Requirements**: A fully responsive three-page website featuring intuitive navigation, anchor links to key sections, and a structured commission enquiry form.
-- **Content Requirements**: A portfolio gallery of completed works, artist biography, size and pricing cards, customer testimonials, and a commission enquiry form.
-- **Out of Scope**: Features such as e-commerce, user accounts, an integrated booking or scheduling system, and a blog are considered out of scope for this release. The site is intentionally focused on showcasing work and capturing enquiries rather than handling transactions.
+
+The project was designed as a focused front end website rather than a full e-commerce platform.
+
+#### Project Requirements
+
+- A responsive multi-page website.
+- Clear navigation between Home, Portfolio and Commission pages.
+- A portfolio gallery showing Gordon's pet portrait work.
+- A commission enquiry form with validation.
+- JavaScript interactivity to improve usability.
+- A custom 404 page to guide users back to the main site.
+- Deployment to GitHub Pages.
+
+#### Content Requirements
+
+- Artist introduction.
+- Pastel and pencil artwork examples.
+- Size and pricing information.
+- Testimonials.
+- Commission process guidance.
+- Enquiry form with photo upload support.
+
+#### Out of Scope
+
+The following features were considered out of scope for this version:
+
+- online payment
+- user accounts
+- e-commerce checkout
+- booking calendar
+- blog/news section
+- customer dashboard
+
+The site is intentionally focused on showcasing Gordon's work and capturing commission enquiries rather than completing transactions online.
 
 ### Structure Plane
-- **Information Hierarchy**: The homepage leads with the hero and a clear CTA, followed by the artist biography, size and pricing cards, testimonials, and a second CTA to commission. Portfolio and Commission pages are reached from the navbar.
-- **Interaction Feedback**: The active page link is highlighted in the navbar. Hover states on links and buttons use a white background to confirm interactivity.
-- **User Control**: All interactions are user-initiated. There are no auto-playing elements or unsolicited pop-ups.
+
+The information architecture was planned so that users can make a decision in a natural order:
+
+1. See what the artist offers.
+2. Learn who the artist is.
+3. View portrait sizes and starting prices.
+4. Browse examples of completed artwork.
+5. Understand the commission process.
+6. Submit an enquiry.
+
+The homepage introduces the artist and directs users towards either the portfolio or the commission page. The portfolio page focuses on browsing artwork, while the commission page focuses on the process, pricing and enquiry form.
+
+#### Information Hierarchy
+
+- The homepage begins with a strong hero section and clear calls to action.
+- The artist biography builds trust early in the page.
+- Pricing cards provide quick comparison between available sizes.
+- Testimonials provide social proof.
+- Portfolio content is separated onto its own page to keep browsing focused.
+- The commission page groups process, pricing and form content together so users can act once they are ready.
+
+#### Interaction Feedback
+
+- The active navigation link shows the current page.
+- Buttons and links include hover states.
+- The mobile navigation opens and closes through a burger menu.
+- Gallery filters visually indicate the selected filter.
+- The gallery count updates when filters are applied.
+- The lightbox confirms which portrait has been selected.
+- Form validation displays feedback if required fields are missing or invalid.
+- Successful form submission gives the user a confirmation message.
+- Failed uploads or submission errors are reported to the user.
+
+#### User Control
+
+All main interactions are user-initiated. The site does not use autoplay media, aggressive pop-ups or unexpected overlays. Users choose when to open the mobile menu, filter the gallery, open a portrait in the lightbox, upload images or submit the form.
+
+The 404 page includes both an automatic redirect and a manual button, giving users control if they do not want to wait for the countdown.
 
 ### Skeleton Plane
-- **Wireframes**: Initial layouts for all three pages were produced in Balsamiq to plan the placement of headers, images, navigation, and key interactive elements before development began.
-    - 📄 [Home](docs/wireframes/home.png) - Established the hero first layout with the headline and dual CTAs, followed by the artist biography section with an image. Medium/pricing cards section next followed by a three-column testimonials block on a dark background, and a full-width CTA banner before the footer.
-    - 📄 [Portfolio](docs/wireframes/portfolio.png) - Established a dark hero header followed by filter buttons (All / Pastel / Pencil) with a portrait count, a three-column image grid with subject labels and commission CTA banner before the footer.
-    - 📄 [Commission](docs/wireframes/commission.png) - Planned the page across four sections: a hero, a four-step numbered process section, a two-card pricing block with a Most Popular badge and the enquiry form. The form field order was established as: name and email, pet name and type, preferred medium, preferred size, a free-text pet description, and a photo description field before the submission button.
 
-- **Navigation Design**: A fixed navigation bar ensures that primary resources are easy to find and accessible across all screen sizes.
+Wireframes were created in Balsamiq before development to plan the placement of navigation, page sections, images, text and interactive features.
+
+- [Home Wireframe](docs/wireframes/home.png)  
+  The homepage wireframe planned a hero-first layout with a headline and dual calls to action, followed by an artist biography section, size and pricing cards, testimonials, and a final commission call-to-action banner.
+
+- [Portfolio Wireframe](docs/wireframes/portfolio.png)  
+  The portfolio wireframe planned a gallery page with a hero section, filter controls, portrait count, image grid, and a commission call-to-action banner.
+
+- [Commission Wireframe](docs/wireframes/commission.png)  
+  The commission wireframe planned a page with a hero, a numbered process section, pricing information and a structured enquiry form.
+
+During development, the original wireframes were followed closely, but some changes were made to improve usability and better match the final project requirements.
 
 ### Surface Plane
-- **Colour Palette**: The palette has three core tones with a warm accent.
-Ivory and dark ivory form the base of the site, keeping it light and uncluttered.
-Charcoal provides structure and contrast for text and key UI elements.
-The dusty rose runs through the site as a warm accent, used sparingly on interactive elements, hover states and the CTA sections.
-The near black is reserved exclusively for the hero background, making the opening section distinct from the rest of the page.
 
-| Colour           | Hex       | Usage                                       |
-| ---------------- | --------- | ------------------------------------------- |
-| Ivory            | `#FAF7F2` | Main page background                        |
-| Dark Ivory       | `#F0EBE3` | Section background (Mediums)                |
-| Charcoal Mid     | `#5A5555` | Text colour                                 |
-| Charcoal         | `#2C2828` | Section background (Testimonials), Headings |
-| Near Black       | `#1A1717` | Hero background                             |
-| Dusty Rose Dark  | `#A87878` | Hover states for links                      |
-| Dusty Rose       | `#C9A0A0` | Commission CTA banner background            |
-| Dusty Rose Light | `#E8D0D0` | Text accents                                |
+The visual design was created to feel warm, calm and personal while still looking professional. This suited the subject matter because pet portraits are often emotional purchases, especially when they are bought as memorial pieces or meaningful gifts.
 
-- **Font**:
-    - Cormorant Garamond - used for all display text: headings, the logo, card titles, quotes, prices.
-    - Jost - used for all body text: navigation links, labels, buttons, descriptions and form fields.
-- **Accessibility & Imagery**: All images include descriptive alt text. Semantic HTML elements are used throughout to provide a clear document structure for screen readers. ARIA labels have been used to further aid screen readers.
+#### Colour Palette
+
+| Colour | Hex | Usage |
+| --- | --- | --- |
+| Ivory | `#FAF7F2` | Main page background |
+| Dark Ivory | `#F0EBE3` | Section background |
+| Charcoal Mid | `#5A5555` | Body text |
+| Charcoal | `#2C2828` | Headings and dark sections |
+| Near Black | `#1A1717` | Hero and footer background |
+| Dusty Rose Dark | `#A87878` | Hover states and accents |
+| Dusty Rose | `#C9A0A0` | CTA banner background |
+| Dusty Rose Light | `#E8D0D0` | Text accents |
+
+The ivory background keeps the site soft and uncluttered. Charcoal gives the site strong readability and structure. Dusty rose is used as a warm accent for calls to action and interactive elements.
+
+#### Typography
+
+- **Cormorant Garamond** is used for display text, including headings, logo text, card titles, testimonial quotes and prices.
+- **Jost** is used for body content, navigation, buttons, labels, descriptions and form fields.
+
+This pairing gives the site an elegant, handmade feel while keeping body text readable.
+
+#### Accessibility and Imagery
+
+- Semantic HTML is used throughout the project.
+- Images include descriptive alt text.
+- ARIA labels are used where they improve clarity for assistive technologies.
+- Form fields use labels and validation feedback.
+- Colour contrast was considered when combining text and backgrounds.
+- The site avoids automatic audio, video or disruptive pop-ups.
+- The lightbox can be closed with the Escape key as well as through visible controls.
 
 ## Design Evolution
-During the development process, several adjustments were made to the initial designs to improve user experience and accessibility.
 
-### Home
-- **User Guidance**: Added a "Most Popular" badge and specific CTA buttons to the pricing cards, adjusted the card descriptions and the amount there are. 
+Several changes were made during development to improve usability, accessibility and the quality of the final product.
 
-### Portfolio
-- **Advanced Viewing**: Implemented a Lightbox overlay to allow users to inspect the fine details of the pastel and pencil portraits.
-- **Filter Design**: The initial wireframe planned filters by medium. This was changed to filter by animal type.
-- **Data-Driven Gallery**: Portrait cards are rendered dynamically from a data file using the Fetch API, rather than being hardcoded 
-in HTML. This makes the gallery easy to update
+### Home Page
 
-### Commission
-- **Interactive Form**: Integrated Cloudinary API support for multiple photo uploads, providing a more professional and modern interface than the original sketch.
-- **Photo Upload**: The original wireframe used a text field for users to describe 
-the photo they planned to send. This was replaced with a file upload input 
-supporting multiple images.
+- Added clearer calls to action to direct users towards either the portfolio or the commission page.
+- Added pricing cards based on size so users can quickly understand the available portrait options.
+- Added a "Most Popular" badge to guide users towards a common choice.
+- Refined the homepage content so that it consistently refers to Gordon's work as pastel and pencil pet portraits.
 
-### 404
-- **404 Page**: A custom 404 page was added to redirect users who navigate to a 
-non-existent page back to the homepage, improving navigation without relying on 
-browser buttons. A live countdown timer was implemented using `setInterval` to 
-show the user how long until they are redirected.
+### Portfolio Page
+
+- Added a lightbox overlay so users can inspect the detail of Gordon's portrait work more closely.
+- Changed the filter approach from medium-based filtering to animal-type filtering. This better supports users who want to find examples similar to their own pet.
+- Built the gallery dynamically from `portraits.json` using the Fetch API. This makes the portfolio easier to maintain because new portraits can be added to the data file rather than hardcoded into the HTML.
+
+### Commission Page
+
+- Replaced the original photo description field with a multiple image upload input.
+- Added Cloudinary support so users can upload reference photos as part of their enquiry.
+- Added validation and error feedback to prevent incomplete or invalid submissions.
+- Added supporting information beside the form to reassure users about response times, sketch previews and sensitive memorial commissions.
+
+### 404 Page
+
+- Added a custom 404 page for users who navigate to a non-existent URL.
+- Added a countdown timer using `setInterval`.
+- Added a manual "Back to Home" button.
+- Redirects users back to the homepage without requiring browser navigation buttons.
 
 ## Technologies Used
 
-- **HTML5** 
-- **CSS3**
-- **JavaScript**
-- **Fetch API**
-- **Intersection Observer API**
-- **EmailJS**
-- **Cloudinary**
-- **Balsamiq** 
+- HTML5
+- CSS3
+- JavaScript
+- Fetch API
+- Intersection Observer API
+- EmailJS
+- Cloudinary
+- Balsamiq
+- Git and GitHub
+- GitHub Pages
 
-### Asynchronous JavaScript
-This project uses asynchronous JavaScript in two areas. The portfolio gallery fetches portrait data from `portraits.json` using the Fetch API, the DOM is only rendered once all data has been retrieved.
+## Asynchronous JavaScript
 
-The commission form submission handles multiple operations. Each selected photo is uploaded to Cloudinary independently, and `Promise.all()` is used to wait for every upload to resolve before any URLs are passed to EmailJS. This stops the email from being sent before the URLs have been resolved. If any upload fails, the error is caught and the user is notified.
+This project uses asynchronous JavaScript in two main areas.
+
+### Portfolio Gallery
+
+The portfolio gallery uses the Fetch API to request portrait data from `portraits.json`. The gallery is only rendered after the data has been retrieved successfully.
+
+If the fetch request fails, the error is handled so that the user is not left with a broken interface.
+
+### Commission Form
+
+The commission form allows users to upload multiple reference photos. Each selected image is uploaded to Cloudinary independently.
+
+`Promise.all()` is used to wait until all image uploads have completed before the form data is passed to EmailJS. This prevents the enquiry email from being sent before the uploaded image URLs are ready.
+
+If a Cloudinary upload fails, the error is caught and the user is notified before the enquiry is submitted. This prevents incomplete enquiries from being sent to the artist.
 
 ## Features
 
 ### Across All Pages
 
-- **Navigation Bar**:
-The navigation bar is fixed to the top of the page and remains visible as the user scrolls. It includes the site logo on the left and three page links on the right: Home, Portfolio, and Commission. The active page link is highlighted to show the user where they are. On smaller screens the navbar collapses into a slide-in panel, toggled by a burger button.
+#### Navigation Bar
 
-    - [Navbar screenshot](docs/features/navbar.png)
+The navigation bar is fixed to the top of the page and remains visible as the user scrolls. It includes the site logo and links to Home, Portfolio and Commission.
 
-- **Footer**:
-The footer appears on every page and contains the site logo and tagline, page navigation links, social media links to Instagram and Facebook, and a copyright notice.
+The current page is highlighted so users know where they are. On smaller screens, the navigation collapses into a burger menu.
 
-    - [Footer screenshot](docs/features/footer.png)
+- [Navbar screenshot](docs/features/navbar.png)
 
-- **Fade-in Animations**:
-Key sections and content blocks animate into view as the user scrolls down the page. This is handled using the Intersection Observer API, which applies a `.fadein` class to trigger CSS transitions when elements enter the viewport.
+#### Footer
+
+The footer appears on every page and includes the site logo, tagline, navigation links, social links and copyright information.
+
+- [Footer screenshot](docs/features/footer.png)
+
+#### Fade-in Animations
+
+Key sections animate into view as the user scrolls. This is handled using the Intersection Observer API, which adds a `.fadein` class when elements enter the viewport.
 
 ### Home Page
 
-- **Hero Section**:
-The hero is the first thing a visitor sees. It features a full-width dark background with a headline, a short description of Gordon's work, and two CTA buttons - one linking to the commission page and one to the portfolio gallery. The contrast between the near-black hero and the rest of the page makes the opening section visually distinct.
+#### Hero Section
 
-    - [Hero screenshot](docs/features/home-hero.png)
+The hero section introduces Loyal Paws Art and explains that Gordon creates pastel and pencil pet portraits. It includes two calls to action: one to begin a commission enquiry and one to view the portfolio.
 
-- **Artist Biography**:
-Below the hero, a two-column section introduces Gordon. It covers his background and his approach to commissions.
+- [Hero screenshot](docs/features/home-hero.png)
 
-    - [Artist bio screenshot](docs/features/artist-bio.png)
+#### Artist Biography
 
-- **Size and Pricing Cards**:
-Three cards display the available portrait sizes (A5, A4, A3), each with an example image, a brief description, a starting price, and an enquire button linking to the commission page. The A4 card is marked as most popular.
+The biography section introduces Gordon and explains his approach to creating personal pet portraits.
 
-    - [Pricing cards screenshot](docs/features/pricing-cards.png)
+- [Artist bio screenshot](docs/features/artist-bio.png)
 
-- **Testimonials Section**:
-Three customer testimonials are displayed against a dark charcoal background, each with a five-star rating, review text, and the customer's name and location.
+#### Size and Pricing Cards
 
-    - [Testimonials screenshot](docs/features/testimonials.png)
+Three cards display the available portrait sizes, starting prices and enquiry buttons. The A4 option is highlighted as the most popular choice.
 
-- **Commission CTA Banner**:
-A full-width dusty rose banner near the bottom of the page prompts visitors to commission a portrait, with a button linking to the Commission page.
+- [Pricing cards screenshot](docs/features/pricing-cards.png)
 
-    - [CTA banner screenshot](docs/features/cta-banner.png)
+#### Testimonials
+
+The testimonials section uses customer quotes to build trust and show that previous clients have been happy with Gordon's work.
+
+- [Testimonials screenshot](docs/features/testimonials.png)
+
+#### Commission CTA Banner
+
+A full-width call-to-action banner encourages users to move from browsing to submitting an enquiry.
+
+- [CTA banner screenshot](docs/features/cta-banner.png)
 
 ### Portfolio Page
 
-- **Hero Section**:
-A full-width hero introduces the page and a brief description of the gallery. It invites visitors to filter by animal type to explore the range of Gordon's work.
+#### Hero Section
 
-    - [Portfolio hero screenshot](docs/features/portfolio-hero.png)
+The portfolio hero introduces the gallery and encourages users to browse examples of Gordon's completed pastel and pencil portraits.
 
-- **Filter Bar**:
-Above the gallery grid, a filter bar allows visitors to narrow the displayed portraits by animal type. Filter buttons are provided for All, Dog, Cat, and Horse. A live count updates to reflect the number of portraits currently shown. The active filter button is highlighted to indicate the current selection.
+- [Portfolio hero screenshot](docs/features/portfolio-hero.png)
 
-    - [Filter bar screenshot](docs/features/filter-bar.png)
+#### Filter Bar
 
-- **Gallery Grid**:
-Portrait cards are dynamically rendered from a `portraits.json` data file using the Fetch API. Each card displays the portrait image, the pet's name, and a medium tag indicating whether the piece is a pastel or pencil work. Clicking a card opens the lightbox.
+The filter bar lets users filter portraits by animal type. Filters include:
 
-    - [Gallery grid screenshot](docs/features/gallery-grid.png)
+- All
+- Dog
+- Cat
+- Horse
 
-- **Lightbox**:
-Clicking any gallery card opens a full-screen lightbox overlay. The lightbox displays a larger version of the selected image alongside the pet's name, medium tag, and a short description. It can be closed via the close button, by clicking outside the image, or by pressing the Escape key. Keyboard navigation is supported, and focus is trapped within the lightbox while it is open.
+A live count updates to show how many portraits are currently displayed.
 
-    - [Lightbox screenshot](docs/features/lightbox.png)
+- [Filter bar screenshot](docs/features/filter-bar.png)
 
-- **Commission CTA Banner**:
-A CTA section at the bottom of the page mirrors the one on the homepage, prompting visitors who have browsed the gallery to take the next step and commission a portrait.
+#### Gallery Grid
 
-    - [Portfolio CTA screenshot](docs/features/cta-banner.png)
+The gallery grid is rendered dynamically from `portraits.json`. Each portrait card displays the pet's name, image and medium tag.
+
+- [Gallery grid screenshot](docs/features/gallery-grid.png)
+
+#### Lightbox
+
+Clicking a portrait opens a larger view in a lightbox. The lightbox displays the selected portrait, pet name, medium and description.
+
+The lightbox can be closed by:
+
+- clicking the close button
+- clicking outside the image area
+- pressing the Escape key
+
+Keyboard focus is managed while the lightbox is open.
+
+- [Lightbox screenshot](docs/features/lightbox.png)
+
+#### Portfolio CTA Banner
+
+A call-to-action banner encourages users who have viewed the gallery to commission their own portrait.
+
+- [Portfolio CTA screenshot](docs/features/cta-banner.png)
 
 ### Commission Page
 
-- **Hero Section**:
-A full-width hero introduces the page and a short description of the process. It sets expectations clearly: fill in the form, and Gordon will be in touch within 48 hours.
+#### Hero Section
 
-    - [Commission hero screenshot](docs/features/commission-hero.png)
+The commission hero introduces the enquiry page and sets the expectation that users can submit their details and receive a response from Gordon.
 
-- **The Process**:
-A four-step process section outlines what happens after an enquiry is submitted. The steps are: Send an enquiry, Receive a quote, Approve & confirm, and Artwork delivered. Each step is displayed in a numbered card with a short description.
+- [Commission hero screenshot](docs/features/commission-hero.png)
 
-    - [Process steps screenshot](docs/features/process-steps.png)
+#### Commission Process
 
-- **Pricing Section**:
-Two pricing cards detail the cost and specifications for each medium. The Pastel Portrait starts from £250 and the Pencil Portrait starts from £150, each listing turnaround times, available sizes, and finish details. A note below the cards explains that final pricing depends on size, number of subjects, and background complexity.
+The process section explains the steps involved in commissioning a portrait. This helps users understand what will happen after they make an enquiry.
 
-    - [Pricing screenshot](docs/features/commission-pricing.png)
+- [Process steps screenshot](docs/features/process-steps.png)
 
-- **Commission Enquiry Form**:
-The enquiry form collects all the information Gordon needs to respond with a personalised quote. Fields include the customer's name and email address, the pet's name, pet type, preferred medium, preferred size, a free-text description of the portrait, and an optional photo upload supporting multiple images. Required fields are marked and validated before submission. On submission the form is handled via EmailJS, which sends the enquiry directly to Gordon. An error summary is displayed if validation fails.
+#### Pricing Section
 
-    - [Enquiry form screenshot](docs/features/commission-form.png)
-    - [Failed Validation example](docs/features/form-validation.png)
+The pricing section explains the two available portrait mediums:
 
-- **Form Sidebar**:
-Alongside the form, an aside panel reassures visitors with three key points: Gordon's 48-hour response time, that a sketch preview is included before the final piece begins, and that memorial commissions for lost pets are handled with sensitivity and care.
+- **Pastel Portraits** starting from £250
+- **Pencil Portraits** starting from £150
 
-    - [Form sidebar screenshot](docs/features/form-sidebar.png)
+Each card includes turnaround time, available sizes and finish details. A note explains that final pricing may depend on size, number of subjects and background complexity.
+
+- [Pricing screenshot](docs/features/commission-pricing.png)
+
+#### Commission Enquiry Form
+
+The enquiry form collects the details Gordon needs to provide a personalised response.
+
+Fields include:
+
+- customer name
+- email address
+- pet name
+- pet type
+- preferred medium
+- preferred size
+- portrait description
+- optional reference photo uploads
+
+Required fields are validated before submission. If validation fails, the user is shown an error summary. If the submission succeeds, the user receives confirmation.
+
+The form uses EmailJS to send the enquiry and Cloudinary to handle uploaded reference photos.
+
+- [Enquiry form screenshot](docs/features/commission-form.png)
+- [Failed validation example](docs/features/form-validation.png)
+
+#### Form Sidebar
+
+The sidebar provides reassurance around response times, sketch previews and memorial commissions.
+
+- [Form sidebar screenshot](docs/features/form-sidebar.png)
 
 ### 404 Page
-- **Page not Found**:
-A custom 404 page is displayed when a user navigates to a non-existent page. 
-A live countdown timer redirects the user to the homepage automatically after 
-10 seconds. A "Back to Home" button is also provided for users who don't want to wait.
 
-    - [404 screenshot](docs/features/404.png)
+A custom 404 page is shown when a user navigates to a non-existent URL. The page includes a countdown timer and redirects the user to the homepage after 10 seconds.
+
+A "Back to Home" button is also provided.
+
+- [404 screenshot](docs/features/404.png)
 
 ## Current Development
-If you would like to see the features to be added in the future visit the Project board: https://github.com/users/Hybrid965/projects/2
+
+Future feature planning is tracked using the GitHub project board:
+
+https://github.com/users/Hybrid965/projects/2
 
 ## Future Development
- 
-- **Lightbox Keyboard Navigation** — Previous and next arrow controls to allow users to cycle through gallery images without closing and reopening the lightbox.
-- **Additional Gallery Filters** — Extend the portfolio filter bar to allow filtering by medium (Pastel / Pencil) as well as by animal type, giving visitors more control over what they browse.
-- **Expanded Testimonials** — A dedicated reviews page or integration with Google Reviews to surface a broader range of customer feedback as Gordon's client base grows.
-- **Blog** — A section showing works in progress and finished pieces before delivery, to build trust with new visitors and give the site regularly updated content.
+
+- **Lightbox Previous and Next Controls**  
+  Add arrow controls so users can move through gallery images without closing the lightbox.
+
+- **Additional Gallery Filters**  
+  Add medium-based filtering so users can filter by Pastel and Pencil as well as by animal type.
+
+- **Expanded Testimonials**  
+  Add a dedicated reviews page or integrate external reviews as Gordon's client base grows.
+
+- **Blog or Work-in-Progress Section**  
+  Add a section for progress updates, finished portraits and behind-the-scenes content.
+
+- **Online Payments**  
+  Consider adding payment functionality in a future version if Gordon wants the site to move beyond enquiry capture.
 
 ## Testing
+
 ### Testing Approach
- 
-There are two main approaches to testing a web app: automated and manual.
- 
-**Automated testing** uses scripts or testing frameworks (such as Jest) to run predefined checks against the code automatically. It is best suited to applications with complex logic, repeated functions, or large codebases where running checks by hand would be time-consuming.
- 
-**Manual testing** involves a developer or tester interacting directly with the application to check that it behaves as expected. It is better suited to smaller projects where the focus is on layout, visual behaviour, user interaction, and responsiveness. Manual testing also allows for better judgement, such as whether a transition feels smooth or a layout looks correct at a given screen size.
- 
-For this project, manual testing was chosen as the most appropriate approach. Loyal Paws Art is a three-page static front end site with focused interactivity, a gallery filter, lightbox, and commission form. The behaviour being tested is primarily visual and interaction-based. Each feature was tested systematically across devices and browsers at each stage of development, with results documented below.
+
+There are two main approaches to testing a web application: automated testing and manual testing.
+
+**Automated testing** uses scripts or testing frameworks to run predefined checks against code automatically. It is useful for applications with complex logic, repeated functions or large codebases where manual checks would be time-consuming.
+
+**Manual testing** involves a developer or tester interacting directly with the application to check that it behaves as expected. It is useful for projects where the focus is on layout, visual behaviour, user journeys and responsiveness.
+
+For this project, manual testing was chosen as the most appropriate approach because Loyal Paws Art is a focused front end website with visual and interaction-based features, including navigation, filtering, a lightbox and a form.
+
+Validation tools and Lighthouse were also used to check code quality, accessibility and performance.
 
 ### HTML Validation
-All three pages were tested using the [W3C Nu HTML Checker](https://validator.w3.org/).
 
-- **index.html** - No errors 
-    - [Index validated](docs/testing/index.html-validated.png)
-- **portfolio.html** - No errors 
-    - [Portfolio validated](docs/testing/portfolio.html-validated.png)
-- **commission.html** - No errors 
-    - [Commission validated](docs/testing/commission.html-validated.png)
+All HTML pages were tested using the W3C Nu HTML Checker.
+
+- **index.html** - No errors  
+  [Index validated](docs/testing/index.html-validated.png)
+
+- **portfolio.html** - No errors  
+  [Portfolio validated](docs/testing/portfolio.html-validated.png)
+
+- **commission.html** - No errors  
+  [Commission validated](docs/testing/commission.html-validated.png)
 
 ### CSS Validation
-CSS was tested using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
- 
-- **index-styles.css** - No errors 
-    - [Index CSS validated](docs/testing/styles.css-validated.png)
-- **portfolio.css** - No errors 
-    - [Portfolio CSS validated](docs/testing/portfolio.css-validated.png)
-- **commission-styles.css** - No errors 
-    - [Commission CSS validated](docs/testing/commission-styles.css-validated.png)
 
-### JS Validation
-JS was tested using the [JS Lint Validator](https://www.jslint.com/)
-- **burger.js** - No errors 
-    - [burger js validated](docs/testing/burger-js-validated.png)
-- **fadeIn.js** - No errors 
-    - [fadeIn JS validated](docs/testing/fadein-js-validated.png)
-- **filter.js** - No errors 
-    - [Filter JS validated](docs/testing/filter-js-validated.png)
-- **formValidation.js** - No errors 
-    - [Form Validation JS validated](docs/testing/formvalidation-js-validated.png)
-- **selectedMediumSelector.js** - No errors 
-    - [Selected Medium Selector JS validated](docs/testing/selectedmediumselector-js-validated.png)
-- **redirect.js** - No errors 
-    - [Redirect JS validated](docs/testing/redirect-js-validated.png)
+CSS files were tested using the W3C CSS Validator.
+
+- **index-styles.css** - No errors  
+  [Index CSS validated](docs/testing/styles.css-validated.png)
+
+- **portfolio.css** - No errors  
+  [Portfolio CSS validated](docs/testing/portfolio.css-validated.png)
+
+- **commission-styles.css** - No errors  
+  [Commission CSS validated](docs/testing/commission-styles.css-validated.png)
+
+### JavaScript Validation
+
+JavaScript files were tested using JSLint.
+
+- **burger.js** - No errors  
+  [Burger JS validated](docs/testing/burger-js-validated.png)
+
+- **fadeIn.js** - No errors  
+  [FadeIn JS validated](docs/testing/fadein-js-validated.png)
+
+- **filter.js** - No errors  
+  [Filter JS validated](docs/testing/filter-js-validated.png)
+
+- **formValidation.js** - No errors  
+  [Form validation JS validated](docs/testing/formvalidation-js-validated.png)
+
+- **selectedMediumSelector.js** - No errors  
+  [Selected medium selector JS validated](docs/testing/selectedmediumselector-js-validated.png)
+
+- **redirect.js** - No errors  
+  [Redirect JS validated](docs/testing/redirect-js-validated.png)
 
 ### Lighthouse Testing
-Each page was audited using Chrome DevTools Lighthouse in an incognito window to avoid interference from browser extensions. Audits were run in desktop mode.
+
+Each page was audited using Chrome DevTools Lighthouse in an incognito window to avoid interference from extensions. Audits were run in desktop mode.
 
 #### index.html
-- **Performance** - 94
-- **Accessibility** - 93
-- **Best Practices** - 96
-- **SEO** - 91
-- **Lighthouse Score** - [Score](docs/testing/lighthouse-index.png)
+
+- Performance: 94
+- Accessibility: 93
+- Best Practices: 96
+- SEO: 91
+
+[Lighthouse score](docs/testing/lighthouse-index.png)
 
 #### portfolio.html
-- **Performance** - 81
-- **Accessibility** - 93
-- **Best Practices** - 100 
-- **SEO** - 91
-- **Lighthouse** - [Score](docs/testing/lighthouse-portfolio.png)
+
+- Performance: 81
+- Accessibility: 93
+- Best Practices: 100
+- SEO: 91
+
+[Lighthouse score](docs/testing/lighthouse-portfolio.png)
 
 #### commission.html
-- **Performance** - 99
-- **Accessibility** - 97
-- **Best Practices** - 100
-- **SEO** - 91
-- **Lighthouse** - [Score](docs/testing/lighthouse-commission.png)
+
+- Performance: 99
+- Accessibility: 97
+- Best Practices: 100
+- SEO: 91
+
+[Lighthouse score](docs/testing/lighthouse-commission.png)
 
 #### 404.html
-- **Performance** - 100
-- **Accessibility** - 87
-- **Best Practices** - 100
-- **SEO** - 91
-- **Lighthouse** - [Score](docs/testing/lighthouse-404.png)
+
+- Performance: 100
+- Accessibility: 87
+- Best Practices: 100
+- SEO: 91
+
+[Lighthouse score](docs/testing/lighthouse-404.png)
 
 ### Functional Testing
-- Clicking logo in navbar → Navigates to index.html ✅
-- Clicking Home nav link → Navigates to index.html ✅
-- Clicking Portfolio nav link → Navigates to portfolio.html ✅
-- Clicking Commission nav link → Navigates to commission.html ✅
-- Active nav link highlighted → Current page link styled differently ✅
-- Clicking overlay → Nav panel and overlay close ✅
-- Clicking "View Portfolio" CTA → Navigates to portfolio.html ✅
-- Clicking "Commission a Portrait" CTA → Navigates to commission.html ✅
-- Clicking "Enquire here" on pricing cards → Navigates to commission.html ✅
-- Footer navigation links → Each link navigates to the correct page ✅
-- Footer Instagram link → Opens Instagram in a new tab ✅
-- Footer Facebook link → Opens Facebook in a new tab ✅
-- Gallery filter - All → All portrait cards displayed, count updates ✅
-- Gallery filter - Dog → Only dog portraits shown, count updates ✅
-- Gallery filter - Cat → Only cat portraits shown, count updates ✅
-- Gallery filter - Horse → Only horse portraits shown, count updates ✅
-- Clicking a gallery card → Lightbox opens with correct image, name and description ✅
-- Closing lightbox via close button → Lightbox closes ✅
-- Closing lightbox via Escape key → Lightbox closes ✅
-- Closing lightbox by clicking outside the image → Lightbox closes ✅
-- Submitting form with empty required fields → Validation errors shown in error summary ✅
-- Submitting form with invalid email → Validation error shown on email field ✅
-- Selecting a medium card → Card highlights and hidden input value updates ✅
-- Uploading a photo → File accepted and attached to submission ✅
-- Submitting a valid completed form → Enquiry sent via EmailJS, success message shown ✅
-- Navigating to a non-existent URL → 404 page displayed with countdown and redirect ✅
-- Back/forward browser navigation → Site remains functional, no broken state ✅
-- All external links → Open in a new tab ✅
-- User actions (form, filters, lightbox) → No errors generated in the console ✅
-- EmailJS failure → User notified via error message ✅
-- Cloudinary upload failure → Error caught, user notified before submission ✅
+
+| Test | Expected Result | Result |
+| --- | --- | --- |
+| Click logo in navbar | Navigates to `index.html` | Pass |
+| Click Home link | Navigates to `index.html` | Pass |
+| Click Portfolio link | Navigates to `portfolio.html` | Pass |
+| Click Commission link | Navigates to `commission.html` | Pass |
+| Active nav link displays | Current page is highlighted | Pass |
+| Open burger menu | Mobile nav panel opens | Pass |
+| Close burger menu | Mobile nav panel closes | Pass |
+| Click overlay | Nav panel and overlay close | Pass |
+| Click "View Portfolio" CTA | Navigates to portfolio page | Pass |
+| Click "Commission a Portrait" CTA | Navigates to commission page | Pass |
+| Click pricing card enquiry button | Navigates to commission page | Pass |
+| Footer internal links | Navigate to correct pages | Pass |
+| Footer social links | Open in a new tab | Pass |
+| Gallery filter: All | All portraits display and count updates | Pass |
+| Gallery filter: Dog | Dog portraits display and count updates | Pass |
+| Gallery filter: Cat | Cat portraits display and count updates | Pass |
+| Gallery filter: Horse | Horse portraits display and count updates | Pass |
+| Click gallery card | Lightbox opens with correct portrait data | Pass |
+| Close lightbox button | Lightbox closes | Pass |
+| Press Escape in lightbox | Lightbox closes | Pass |
+| Click outside lightbox image | Lightbox closes | Pass |
+| Submit empty form | Error summary is displayed | Pass |
+| Submit invalid email | Email validation error is displayed | Pass |
+| Select medium card | Card highlights and hidden input updates | Pass |
+| Upload photo | File is accepted and included in submission | Pass |
+| Submit valid form | Enquiry sends through EmailJS and success message displays | Pass |
+| Navigate to non-existent URL | 404 page displays with countdown and redirect | Pass |
+| Use browser back/forward buttons | Site remains functional | Pass |
+| Trigger EmailJS failure | User is shown an error message | Pass |
+| Trigger Cloudinary failure | Error is caught and user is notified | Pass |
+| Check console after user actions | No internal errors are generated | Pass |
 
 ### Responsiveness Testing
-- **Desktop** - Full navbar visible, images at full size 
-    - [Desktop](docs/testing/desktop-test.png) ✅
-- **Tablet** - Full navbar visible, images scale correctly 
-    - [Tablet](docs/testing/tablet-test.png) ✅
-- **Mobile** - Navbar collapses to burger menu, images scale to full width 
-    - [Mobile](docs/testing/mobile-test.png) ✅
+
+| Device Size | Expected Result | Result |
+| --- | --- | --- |
+| Desktop | Full navbar visible, content aligned, images display at full size | Pass |
+| Tablet | Layout adapts correctly and images scale | Pass |
+| Mobile | Navbar collapses to burger menu and content stacks vertically | Pass |
+
+Evidence:
+
+- [Desktop test](docs/testing/desktop-test.png)
+- [Tablet test](docs/testing/tablet-test.png)
+- [Mobile test](docs/testing/mobile-test.png)
 
 ### Browser Testing
-- **Chrome** - Layout, navigation and images all display correctly 
-    - [Chrome](docs/testing/desktop-browser-test-chrome.png) ✅
-- **Edge** - Layout, navigation and images all display correctly 
-    - [Edge](docs/testing/desktop-browser-test-edge.png) ✅
-- **Firefox** - Layout, navigation and images all display correctly 
-    - [Firefox](docs/testing/desktop-browser-test-firefox.png) ✅
+
+| Browser | Expected Result | Result |
+| --- | --- | --- |
+| Chrome | Layout, navigation and images display correctly | Pass |
+| Edge | Layout, navigation and images display correctly | Pass |
+| Firefox | Layout, navigation and images display correctly | Pass |
+
+Evidence:
+
+- [Chrome test](docs/testing/desktop-browser-test-chrome.png)
+- [Edge test](docs/testing/desktop-browser-test-edge.png)
+- [Firefox test](docs/testing/desktop-browser-test-firefox.png)
 
 ### User Story Validation
- 
-- "As a pet owner, I want to browse examples of the artist's work" 
-    - [Portfolio Gallery](docs/features/gallery-grid.png)
-- "As a pet owner, I want to understand the commission process and pricing upfront" 
-    - [Process Steps](docs/features/process-steps.png)
-- "As a gift buyer, I want to find out how commissioning a portrait works" 
-    - [Process Steps](docs/features/process-steps.png)
-- "As a gift buyer, I want to see clear pricing so I can decide if it fits my budget" 
-    - [Pricing Cards](docs/features/pricing-cards.png)
-- "As someone memorialising a pet, I want to feel confident the artist handles this with care" 
-    - [Form Sidebar](docs/features/form-sidebar.png)
-- "As someone memorialising a pet, I want a straightforward way to submit an enquiry" 
-    - [Enquiry Form](docs/features/commission-form.png)
-- "As the artist, I want to display my portfolio so clients can find and evaluate my work" 
-    - [Portfolio Gallery](docs/features/gallery-grid.png)
-- "As the artist, I want to receive structured enquiries with all the information I need" 
-    - [Enquiry Form](docs/features/commission-form.png)
+
+| User Story | Evidence |
+| --- | --- |
+| As a pet owner, I want to browse examples of the artist's work. | [Portfolio Gallery](docs/features/gallery-grid.png) |
+| As a pet owner, I want to understand the commission process and pricing upfront. | [Process Steps](docs/features/process-steps.png) |
+| As a gift buyer, I want to understand how commissioning a portrait works. | [Process Steps](docs/features/process-steps.png) |
+| As a gift buyer, I want clear pricing before getting in touch. | [Pricing Cards](docs/features/pricing-cards.png) |
+| As someone memorialising a pet, I want to feel confident the artist handles this with care. | [Form Sidebar](docs/features/form-sidebar.png) |
+| As someone memorialising a pet, I want a straightforward way to submit an enquiry. | [Enquiry Form](docs/features/commission-form.png) |
+| As the artist, I want to display my portfolio online. | [Portfolio Gallery](docs/features/gallery-grid.png) |
+| As the artist, I want to receive structured enquiries. | [Enquiry Form](docs/features/commission-form.png) |
 
 ## Current and Resolved Bugs
-### 1. Home
-- **1.1 - Resolved** - In mobile views the page can be scrolled horizontally
-    - **Evidence**: 🐛 [Bug - 1.1](docs/bugs/bug1.1.png)
-    - **Resolution**: Added `overflow-x: hidden` to the `html` and `body` tags
-    - **Commit**: `b4eed54`
-    - **Date reported**: 09/04/2026
-    - **Date fixed**: 09/04/2026
-- **1.2 - Resolved** - Fixing the previous bug caused the navigation bar to become unstuck
-    - **Evidence**: 🐛 [Bug - 1.2](docs/bugs/bug1.2.png)
-    - **Resolution**: Removed `overflow` from the `html` tag and changed the header to `position: fixed` instead of `sticky`
-    - **Commit**: `6005608`
-    - **Date reported**: 09/04/2026
-    - **Date fixed**: 09/04/2026
-- **1.3 - Resolved** - Button padding was misaligning the rest of the navigation bar
-    - **Evidence**: 🐛 [Bug - 1.3](docs/bugs/bug1.3.png)
-    - **Resolution**: Removed the commission ID from each CSS sheet and added the hover class to remove the button styling
-    - **Commit**: `ff4e0c9`
-    - **Date reported**: 13/04/2026
-    - **Date fixed**: 13/04/2026
-- **1.4 - Resolved** - Linter errors and syntax warnings in burger script
-    - **Evidence**: 🐛 [Bug - 1.4](docs/bugs/bug1.4.png)
-    - **Resolution**: Changed quotes to double quotes, replaced arrow functions with standard function.
-    - **Commit**: `d6f871b`
-    - **Date reported**: 21/04/2026
-    - **Date fixed**: 21/04/2026
-- **1.5 - Resolved** - Invalid syntax in fadein script
-    - **Evidence**: 🐛 [Bug - 1.5](docs/bugs/bug1.5.png)
-    - **Resolution**: Refactored the `in` operator check to use `undefined` (`window.IntersectionObserver !== undefined`). Changed all internal strings to double quotes.
-    - **Commit**: `d6f871b`
-    - **Date reported**: 21/04/2026
-    - **Date fixed**: 21/04/2026
-- **1.6 - Resolved** - HTML validation errors in index.html
-    - **Evidence**: 🐛 [Bug - 1.6](docs/bugs/bug1.6.png)
-    - **Resolution**: Removed trailing slashes.
-    - **Commit**: `3a9c203`
-    - **Date reported**: 22/04/2026
-    - **Date fixed**: 22/04/2026
-- **1.7 - Resolved** - CSS validation errors in styles.css
-    - **Evidence**: 🐛 [Bug - 1.7](docs/bugs/bug1.7.png)
-    - **Resolution**: Removed width from .reviewer as it wasnt doing anything.
-    - **Commit**: `f20fcd3`
-    - **Date reported**: 23/04/2026
-    - **Date fixed**: 23/04/2026
-- **1.8 - Resolved** - Burger buttons overflowing onto the page
-    - **Evidence**: 🐛 [Bug - 1.7](docs/bugs/bug1.8.png)
-    - **Resolution**: Adjusted the `navlinks a` rules width to 87% to stop the overflow.
-    - **Commit**: `1138d28`
-    - **Date reported**: 04/05/2026
-    - **Date fixed**: 05/05/2026
 
-### 2. Portfolio
-- **2.1 - Resolved** - Lightbox cuts off image due to height restrictions
-    - **Evidence**: 🐛 [Bug - 2.1](docs/bugs/bug2.1.png)
-    - **Resolution**: Readjusted the height on images inside the lightbox
-    - **Commit**: `aee4802`
-    - **Date reported**: 21/04/2026
-    - **Date fixed**: 21/04/2026
-- **2.2 - Resolved** - JSLint errors in filter script
-    - **Evidence**: 🐛 [Bug - 2.2](docs/bugs/bug2.2.png)
-    - **Resolution**: Converted complex arrow function to normal function. Split up longer lines into multiple lines. Added `/*global console*/` to declare `console` as a known global.
-    - **Commit**: `0c69a1f`
-    - **Date reported**: 22/04/2026
-    - **Date fixed**: 22/04/2026
-- **2.3 - Resolved** - HTML validation errors in portfolio.html
-    - **Evidence**: 🐛 [Bug - 2.3](docs/bugs/bug2.3.png)
-    - **Resolution**: Removed trailing slashes. Replaced empty `src=""` on the lightbox `<img>` with a tranparent placeholder(`data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=`) to satisfy the validator while allowing JavaScript to replace the `src` at runtime when the lightbox opens.
-    - **Commit**: `259a934`
-    - **Date reported**: 22/04/2026
-    - **Date fixed**: 22/04/2026
+### 1. Home Page
 
+#### 1.1 - Resolved
 
-### 3. Commission
-- **3.1 - Resolved** - Form content was misaligned
-    - **Evidence**: 🐛 [Bug - 3.1](docs/bugs/bug3.1.png)
-    - **Resolution**: Centred the aside and removed padding in the 1000px media query
-    - **Commit**: `cfbd707`
-    - **Date reported**: 13/04/2026
-    - **Date fixed**: 13/04/2026
-- **3.2 - Resolved** - Form submission error
-    - **Evidence**: 🐛 [Bug - 3.2](docs/bugs/bug3.2.png)
-    - **Resolution**: Updated the form validation code, updated the event listener, and added Cloudinary support for file uploads
-    - **Commit**: `4071d8d`
-    - **Date reported**: 21/04/2026
-    - **Date fixed**: 21/04/2026
-- **3.3 - Resolved** - Commission form only sending a single image to the artist
-    - **Evidence**: 🐛 [Bug - 3.3](docs/bugs/bug3.3.png)
-    - **Resolution**: Refactored the form submission logic in `formValidation.js` to support multiple file uploads. Replaced the single-file Cloudinary fetch with a `Promise.all()` loop that iterates through the array. Added logic to join the resulting URLs into a single formatted string (`photoLinkString`).
-    - **Commit**: `7ab8a6a`
-    - **Date reported**: 21/04/2026
-    - **Date fixed**: 21/04/2026
-- **3.4 - Resolved** - W3C Validation syntax and accessibility errors
-    - **Evidence**: 🐛 [Bug - 3.4](docs/bugs/bug3.4.png)
-    - **Resolution**: 
-        1. Removed trailing slashes from void elements (`link`, `input`).
-        2. Maintained the `<section>` element for the commission form to preserve document structure. Resolved the "Section lacks heading" warning by implementing an `aria-label="Commission Enquiry Form"`.
-        3. Replaced the `label for` attribute for the medium selector with a `<p>` tag and `aria-labelledby`.
-    - **Commit**: `5e91b4c`
-    - **Date reported**: 21/04/2026
-    - **Date fixed**: 21/04/2026
-- **3.5 - Resolved** - JSLint errors in form validation script
-    - **Evidence**: 🐛 [Bug - 3.5](docs/bugs/bug3.5.png)
-    - **Resolution**: Converted complex arrow functions to normal function. Broke long lines into multiple lines. Added missing semicolons. Converted single quotes to double quotes. Extracted Cloudinary URL into a `const` to reduce line length. Added `/*global console, emailjs, alert*/` to declare globals. Added `/*jslint long*/` to suppress unavoidable line length warning on the Cloudinary URL.
-    - **Commit**: `9793a62`
-    - **Date reported**: 22/04/2026
-    - **Date fixed**: 22/04/2026
-- **3.6 - Resolved** - JSLint errors in selected medium script
-    - **Evidence**: 🐛 [Bug - 3.6](docs/bugs/bug3.6.png)
-    - **Resolution**: Converted all arrow functions to normal functions.
-    - **Commit**: `bc92208`
-    - **Date reported**: 22/04/2026
-    - **Date fixed**: 22/04/2026
+- **Bug**: In mobile views, the page could be scrolled horizontally.
+- **Evidence**: [Bug 1.1](docs/bugs/bug1.1.png)
+- **Resolution**: Added `overflow-x: hidden` to the `html` and `body` tags.
+- **Commit**: `b4eed54`
+- **Date Reported**: 09/04/2026
+- **Date Fixed**: 09/04/2026
+
+#### 1.2 - Resolved
+
+- **Bug**: Fixing the previous bug caused the navigation bar to stop sticking to the top of the page.
+- **Evidence**: [Bug 1.2](docs/bugs/bug1.2.png)
+- **Resolution**: Removed `overflow` from the `html` tag and changed the header to `position: fixed`.
+- **Commit**: `6005608`
+- **Date Reported**: 09/04/2026
+- **Date Fixed**: 09/04/2026
+
+#### 1.3 - Resolved
+
+- **Bug**: Button padding misaligned the navigation bar.
+- **Evidence**: [Bug 1.3](docs/bugs/bug1.3.png)
+- **Resolution**: Removed the commission ID from each CSS sheet and added the hover class to remove the conflicting button styling.
+- **Commit**: `ff4e0c9`
+- **Date Reported**: 13/04/2026
+- **Date Fixed**: 13/04/2026
+
+#### 1.4 - Resolved
+
+- **Bug**: Linter errors and syntax warnings in the burger menu script.
+- **Evidence**: [Bug 1.4](docs/bugs/bug1.4.png)
+- **Resolution**: Changed quotes to double quotes and replaced arrow functions with standard functions.
+- **Commit**: `d6f871b`
+- **Date Reported**: 21/04/2026
+- **Date Fixed**: 21/04/2026
+
+#### 1.5 - Resolved
+
+- **Bug**: Invalid syntax in the fade-in script.
+- **Evidence**: [Bug 1.5](docs/bugs/bug1.5.png)
+- **Resolution**: Refactored the Intersection Observer check and standardised internal strings.
+- **Commit**: `d6f871b`
+- **Date Reported**: 21/04/2026
+- **Date Fixed**: 21/04/2026
+
+#### 1.6 - Resolved
+
+- **Bug**: HTML validation errors in `index.html`.
+- **Evidence**: [Bug 1.6](docs/bugs/bug1.6.png)
+- **Resolution**: Removed trailing slashes from void elements.
+- **Commit**: `3a9c203`
+- **Date Reported**: 22/04/2026
+- **Date Fixed**: 22/04/2026
+
+#### 1.7 - Resolved
+
+- **Bug**: CSS validation errors in `styles.css`.
+- **Evidence**: [Bug 1.7](docs/bugs/bug1.7.png)
+- **Resolution**: Removed an unused width rule from `.reviewer`.
+- **Commit**: `f20fcd3`
+- **Date Reported**: 23/04/2026
+- **Date Fixed**: 23/04/2026
+
+#### 1.8 - Resolved
+
+- **Bug**: Burger menu links overflowed onto the page.
+- **Evidence**: [Bug 1.8](docs/bugs/bug1.8.png)
+- **Resolution**: Adjusted the `navlinks a` width rule to stop the overflow.
+- **Commit**: `1138d28`
+- **Date Reported**: 04/05/2026
+- **Date Fixed**: 05/05/2026
+
+### 2. Portfolio Page
+
+#### 2.1 - Resolved
+
+- **Bug**: The lightbox image was cut off due to height restrictions.
+- **Evidence**: [Bug 2.1](docs/bugs/bug2.1.png)
+- **Resolution**: Adjusted the height rules for images inside the lightbox.
+- **Commit**: `aee4802`
+- **Date Reported**: 21/04/2026
+- **Date Fixed**: 21/04/2026
+
+#### 2.2 - Resolved
+
+- **Bug**: JSLint errors in the filter script.
+- **Evidence**: [Bug 2.2](docs/bugs/bug2.2.png)
+- **Resolution**: Converted arrow functions to standard functions, split long lines, and declared `console` as a known global.
+- **Commit**: `0c69a1f`
+- **Date Reported**: 22/04/2026
+- **Date Fixed**: 22/04/2026
+
+#### 2.3 - Resolved
+
+- **Bug**: HTML validation errors in `portfolio.html`.
+- **Evidence**: [Bug 2.3](docs/bugs/bug2.3.png)
+- **Resolution**: Removed trailing slashes and replaced the empty lightbox image `src` with a transparent placeholder so JavaScript could update it when the lightbox opens.
+- **Commit**: `259a934`
+- **Date Reported**: 22/04/2026
+- **Date Fixed**: 22/04/2026
+
+### 3. Commission Page
+
+#### 3.1 - Resolved
+
+- **Bug**: Form content was misaligned.
+- **Evidence**: [Bug 3.1](docs/bugs/bug3.1.png)
+- **Resolution**: Centred the aside and removed padding in the 1000px media query.
+- **Commit**: `cfbd707`
+- **Date Reported**: 13/04/2026
+- **Date Fixed**: 13/04/2026
+
+#### 3.2 - Resolved
+
+- **Bug**: Form submission error.
+- **Evidence**: [Bug 3.2](docs/bugs/bug3.2.png)
+- **Resolution**: Updated the form validation code, updated the event listener, and added Cloudinary support for file uploads.
+- **Commit**: `4071d8d`
+- **Date Reported**: 21/04/2026
+- **Date Fixed**: 21/04/2026
+
+#### 3.3 - Resolved
+
+- **Bug**: The commission form only sent a single image to the artist.
+- **Evidence**: [Bug 3.3](docs/bugs/bug3.3.png)
+- **Resolution**: Refactored the form submission logic in `formValidation.js` to support multiple file uploads. Replaced the single-file Cloudinary fetch with a `Promise.all()` loop and joined the returned URLs into one formatted string.
+- **Commit**: `7ab8a6a`
+- **Date Reported**: 21/04/2026
+- **Date Fixed**: 21/04/2026
+
+#### 3.4 - Resolved
+
+- **Bug**: W3C validation and accessibility errors.
+- **Evidence**: [Bug 3.4](docs/bugs/bug3.4.png)
+- **Resolution**: Removed trailing slashes from void elements, preserved the section element for document structure, added `aria-label="Commission Enquiry Form"`, and replaced the medium selector label structure with `aria-labelledby`.
+- **Commit**: `5e91b4c`
+- **Date Reported**: 21/04/2026
+- **Date Fixed**: 21/04/2026
+
+#### 3.5 - Resolved
+
+- **Bug**: JSLint errors in the form validation script.
+- **Evidence**: [Bug 3.5](docs/bugs/bug3.5.png)
+- **Resolution**: Converted arrow functions to standard functions, broke long lines into multiple lines, added missing semicolons, standardised quotes, and declared required globals.
+- **Commit**: `9793a62`
+- **Date Reported**: 22/04/2026
+- **Date Fixed**: 22/04/2026
+
+#### 3.6 - Resolved
+
+- **Bug**: JSLint errors in the selected medium script.
+- **Evidence**: [Bug 3.6](docs/bugs/bug3.6.png)
+- **Resolution**: Converted arrow functions to standard functions.
+- **Commit**: `bc92208`
+- **Date Reported**: 22/04/2026
+- **Date Fixed**: 22/04/2026
 
 ### Known Bugs
+
 There are no known bugs remaining in the project at the time of submission.
 
 ## Deployment
 
-### How was this site deployed?
+### How the Site Was Deployed
+
 This site was deployed to GitHub Pages using the following steps:
 
-1. Navigate to the repository on GitHub
-2. Click on the **Settings** tab
-3. In the left sidebar, click on **Pages**
-4. Under **Source**, select **Deploy from a branch**
-5. Under **Branch**, select **main**
-6. Click **Save**
-7. The site was then published and is accessible at `https://hybrid965.github.io/loyal-paws-art/`
+1. Navigate to the repository on GitHub.
+2. Click the **Settings** tab.
+3. In the left sidebar, click **Pages**.
+4. Under **Source**, select **Deploy from a branch**.
+5. Under **Branch**, select `main`.
+6. Click **Save**.
+7. GitHub Pages builds and publishes the site.
 
-### How can I clone this repository?
-To run this project locally:
+The deployed site is available at:
 
-1. Navigate to the repository on GitHub
-2. Click the green **Code** button
-3. Copy the HTTPS URL
-4. Open your terminal and run:
+```text
+https://hybrid965.github.io/loyal-paws-art/
 ```
+
+### How to Clone the Repository
+
+To run the project locally:
+
+1. Navigate to the repository on GitHub.
+2. Click the green **Code** button.
+3. Copy the HTTPS URL.
+4. Open a terminal.
+5. Run:
+
+```bash
 git clone https://github.com/Hybrid965/loyal-paws-art.git
 ```
 
-### 404 Page
-A custom `404.html` is included in the root of the repository. GitHub Pages serves 
-this automatically when a user navigates to a non-existent URL. The page includes 
-a live countdown and redirects the user to the homepage after 10 seconds without 
-requiring browser navigation buttons.
+### 404 Page Deployment
 
-### Version Control
-Throughout development, commits were made at the completion of each individual feature or fix, keeping changes small and well-defined. Commit messages have been written descriptively to reflect the specific change made.
+A custom `404.html` file is included in the root of the repository. GitHub Pages serves this page automatically when a user navigates to a non-existent URL.
+
+The page includes a countdown timer and redirects the user to the homepage after 10 seconds.
+
+## Version Control
+
+Git and GitHub were used throughout the project.
+
+Commits were made at the completion of individual features and fixes so that the development process could be followed clearly. Commit messages were written descriptively to explain the purpose of each change.
+
+Examples of version-controlled work include:
+
+- initial page structure
+- responsive navigation
+- homepage styling
+- portfolio gallery
+- gallery filtering
+- lightbox functionality
+- commission form validation
+- Cloudinary upload support
+- EmailJS submission handling
+- 404 page redirect
+- validation fixes
+- bug fixes
+
+This supports a clear development history and helps demonstrate how the final application was built over time.
 
 ## Credits
 
 ### Content
+
 - **Logo**: https://www.flaticon.com/authors/logisstudio
 - **Favicon**: https://www.flaticon.com/authors/logisstudio
 
 ### Media
-- All portrait photography and artwork displayed in the gallery is the original work of Gordon and is used with his permission.
 
-### Code
-- **Intersection Observer API**: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API - used to trigger fade-in animations as elements enter the viewport
-- **EmailJS**: https://www.emailjs.com - used to handle commission enquiry form submissions and deliver them directly to the artist
-- **Cloudinary**: https://cloudinary.com - used to handle multiple photo uploads from the commission enquiry form before passing URLs to EmailJS
-- All external dependencies are attributed via comments in the relevant source files.
+All portrait photography and artwork displayed in the gallery is the original work of Gordon Burkert and is used with his permission.
+
+### Code and Services
+
+- **Intersection Observer API**: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API  
+  Used to trigger fade-in animations as elements enter the viewport.
+
+- **EmailJS**: https://www.emailjs.com  
+  Used to send commission enquiry form submissions directly to the artist.
+
+- **Cloudinary**: https://cloudinary.com  
+  Used to handle uploaded reference photos before passing image URLs to EmailJS.
+
+All external dependencies are attributed through the README and comments in the relevant source files.
 
 ### Fonts
-- **Cormorant Garamond & Jost**: https://fonts.google.com
+
+- **Cormorant Garamond**: https://fonts.google.com
+- **Jost**: https://fonts.google.com
 
 ### Tools
-- **Balsamiq**: https://balsamiq.com - used to produce wireframes during the design phase
 
----
+- **Balsamiq**: https://balsamiq.com  
+  Used to create wireframes during the design phase.
+
