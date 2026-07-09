@@ -2,226 +2,226 @@
   {
     "id": 1,
     "petType": "dog",
-    "label": "dog drawing",
-    "name": "Bob",
+    "label": "dog portrait",
+    "name": "Toby",
     "src": "assets/images/dog1.jpg",
-    "alt": "Pencil drawing of Bob",
-    "description": "A detailed pencil portrait capturing Bob's warm expression and gentle nature."
+    "alt": "Portrait of Toby, a white terrier with one tan ear",
+    "description": "A soft portrait of a white terrier with one tan ear, capturing Toby's alert expression, bright eyes and gentle character."
   },
   {
     "id": 2,
     "petType": "dog",
-    "label": "dog drawing",
-    "name": "Bob",
+    "label": "dog portrait",
+    "name": "Murphy",
     "src": "assets/images/dog2.jpg",
-    "alt": "Pencil drawing of Bob",
-    "description": "A detailed pencil portrait capturing Bob's warm expression and gentle nature."
+    "alt": "Portrait of Murphy, an older black dog resting his head",
+    "description": "A thoughtful portrait of an older black dog resting his head, using careful shading to capture Murphy's calm and soulful expression."
   },
   {
     "id": 3,
     "petType": "dog",
-    "label": "dog drawing",
-    "name": "Bob",
+    "label": "dog portrait",
+    "name": "Blue",
     "src": "assets/images/dog3.jpg",
-    "alt": "Pencil drawing of Bob",
-    "description": "A detailed pencil portrait capturing Bob's warm expression and gentle nature."
+    "alt": "Portrait of Blue, a slim grey dog wearing a red collar",
+    "description": "A refined portrait of a slim grey dog with a red collar, highlighting Blue's elegant shape, long muzzle and bright, attentive eyes."
   },
   {
     "id": 4,
     "petType": "dog",
-    "label": "dog drawing",
-    "name": "Bob",
+    "label": "dog portrait",
+    "name": "Alfie",
     "src": "assets/images/dog4.jpg",
-    "alt": "Pencil drawing of Bob",
-    "description": "A detailed pencil portrait capturing Bob's warm expression and gentle nature."
+    "alt": "Portrait of Alfie, a white terrier with dark eyes",
+    "description": "A light and delicate portrait of a white terrier, focusing on Alfie's expressive eyes, soft coat and curious, gentle face."
   },
   {
     "id": 5,
     "petType": "dog",
-    "label": "dog drawing",
-    "name": "Bob",
+    "label": "dog portrait",
+    "name": "Scout and Willow",
     "src": "assets/images/dog5.jpg",
-    "alt": "Pencil drawing of Bob",
-    "description": "A detailed pencil portrait capturing Bob's warm expression and gentle nature."
+    "alt": "Double portrait of Scout and Willow, two slender dogs in profile",
+    "description": "A double portrait of two slender dogs shown in profile, capturing the contrast between their markings and their calm, graceful poses."
   },
   {
     "id": 6,
     "petType": "dog",
-    "label": "dog drawing",
-    "name": "Bob",
+    "label": "dog portrait",
+    "name": "Bailey",
     "src": "assets/images/dog6.jpg",
-    "alt": "Pencil drawing of Bob",
-    "description": "A detailed pencil portrait capturing Bob's warm expression and gentle nature."
+    "alt": "Portrait of Bailey, a black dog holding a yellow ball",
+    "description": "A playful side-profile portrait of a black dog holding a yellow ball, capturing Bailey's energy, focus and love of play."
   },
   {
     "id": 7,
     "petType": "dog",
-    "label": "dog drawing",
-    "name": "Bob",
+    "label": "dog portrait",
+    "name": "Mabel",
     "src": "assets/images/dog7.jpg",
-    "alt": "Pencil drawing of Bob",
-    "description": "A detailed pencil portrait capturing Bob's warm expression and gentle nature."
+    "alt": "Portrait of Mabel, a tricolour dog with long ears",
+    "description": "A warm portrait of a tricolour dog with long ears and a tilted head, capturing Mabel's sweet expression and soft, affectionate nature."
   },
   {
     "id": 8,
     "petType": "dog",
-    "label": "dog drawing",
-    "name": "Bob",
+    "label": "dog portrait",
+    "name": "Ruby",
     "src": "assets/images/dog8.jpg",
-    "alt": "Pencil drawing of Bob",
-    "description": "A detailed pencil portrait capturing Bob's warm expression and gentle nature."
+    "alt": "Portrait of Ruby, a happy dog wearing a red bandana",
+    "description": "A cheerful portrait of a happy dog wearing a red bandana, capturing Ruby's open expression, bright personality and friendly energy."
   },
   {
     "id": 9,
     "petType": "dog",
-    "label": "dog drawing",
-    "name": "Bob",
+    "label": "dog portrait",
+    "name": "Kaiser",
     "src": "assets/images/dog9.jpg",
-    "alt": "Pencil drawing of Bob",
-    "description": "A detailed pencil portrait capturing Bob's warm expression and gentle nature."
+    "alt": "Portrait of Kaiser, a black and tan dog with upright ears",
+    "description": "A striking portrait of a black and tan dog with upright ears, capturing Kaiser's alert expression, strong markings and loyal presence."
   },
   {
     "id": 10,
     "petType": "dog",
-    "label": "dog drawing",
-    "name": "Bob",
+    "label": "dog portrait",
+    "name": "Winston",
     "src": "assets/images/dog10.jpg",
-    "alt": "Pencil drawing of Bob",
-    "description": "A detailed pencil portrait capturing Bob's warm expression and gentle nature."
+    "alt": "Portrait of Winston, a black schnauzer with a textured beard",
+    "description": "A detailed portrait of a black schnauzer, using layered strokes to capture Winston's wiry coat, expressive eye and distinctive beard."
   },
   {
     "id": 11,
     "petType": "dog",
-    "label": "dog drawing",
-    "name": "Bob",
+    "label": "dog portrait",
+    "name": "Diesel",
     "src": "assets/images/dog11.jpg",
-    "alt": "Pencil drawing of Bob",
-    "description": "A detailed pencil portrait capturing Bob's warm expression and gentle nature."
+    "alt": "Portrait of Diesel, a black and tan doberman wearing a chain collar",
+    "description": "A bold portrait of a black and tan doberman, capturing Diesel's proud profile, glossy coat and confident expression against a lively background."
   },
   {
     "id": 12,
     "petType": "dog",
-    "label": "dog drawing",
-    "name": "Bob",
+    "label": "dog portrait",
+    "name": "Chester",
     "src": "assets/images/dog12.jpg",
-    "alt": "Pencil drawing of Bob",
-    "description": "A detailed pencil portrait capturing Bob's warm expression and gentle nature."
+    "alt": "Portrait of Chester, a dachshund wearing a red collar",
+    "description": "A close-up portrait of a dachshund with a red collar, focusing on Chester's soft eyes, rich colouring and gentle, inquisitive face."
   },
   {
     "id": 13,
     "petType": "dog",
-    "label": "dog drawing",
-    "name": "Bob",
+    "label": "dog portrait",
+    "name": "Milo",
     "src": "assets/images/dog13.jpg",
-    "alt": "Pencil drawing of Bob",
-    "description": "A detailed pencil portrait capturing Bob's warm expression and gentle nature."
+    "alt": "Portrait of Milo, a black dog against a red background",
+    "description": "A characterful portrait of a black dog against a deep red background, capturing Milo's alert ears, glossy coat and warm expression."
   },
   {
     "id": 14,
     "petType": "cat",
-    "label": "cat drawing",
-    "name": "Bob",
+    "label": "cat portrait",
+    "name": "Raven",
     "src": "assets/images/cat1.jpg",
-    "alt": "Pencil drawing of Bob",
-    "description": "A delicate pencil study highlighting Bob's quiet elegance and watchful gaze."
+    "alt": "Portrait of Raven, a black cat lying in grass",
+    "description": "A atmospheric portrait of a black cat resting among grass, capturing Raven's watchful eyes and quiet presence against a soft green background."
   },
   {
     "id": 15,
     "petType": "cat",
-    "label": "cat drawing",
-    "name": "Bob",
+    "label": "cat portrait",
+    "name": "Pearl",
     "src": "assets/images/cat2.jpg",
-    "alt": "Pencil drawing of Bob",
-    "description": "A delicate pencil study highlighting Bob's quiet elegance and watchful gaze."
+    "alt": "Portrait of Pearl, a white cat with large amber eyes",
+    "description": "A delicate portrait of a white cat with large amber eyes, using subtle pastel tones to capture Pearl's soft fur and gentle expression."
   },
   {
     "id": 16,
     "petType": "cat",
-    "label": "placeholder drawing",
-    "name": "Bob",
+    "label": "coming soon",
+    "name": "Saffy",
     "src": "assets/images/placeholder.png",
-    "alt": "Pencil drawing of Bob",
-    "description": "A delicate pencil study highlighting Bob's quiet elegance and watchful gaze."
+    "alt": "Placeholder image for Saffy's cat portrait",
+    "description": "A future cat portrait entry reserved for additional commissioned artwork."
   },
   {
     "id": 17,
     "petType": "cat",
-    "label": "placeholder drawing",
-    "name": "Bob",
+    "label": "coming soon",
+    "name": "Cleo",
     "src": "assets/images/placeholder.png",
-    "alt": "Pencil drawing of Bob",
-    "description": "A delicate pencil study highlighting Bob's quiet elegance and watchful gaze."
+    "alt": "Placeholder image for Cleo's cat portrait",
+    "description": "A future cat portrait entry reserved for additional commissioned artwork."
   },
   {
     "id": 18,
     "petType": "cat",
-    "label": "placeholder drawing",
-    "name": "Bob",
+    "label": "coming soon",
+    "name": "Nala",
     "src": "assets/images/placeholder.png",
-    "alt": "Pencil drawing of Bob",
-    "description": "A delicate pencil study highlighting Bob's quiet elegance and watchful gaze."
+    "alt": "Placeholder image for Nala's cat portrait",
+    "description": "A future cat portrait entry reserved for additional commissioned artwork."
   },
   {
     "id": 19,
     "petType": "cat",
-    "label": "placeholder drawing",
-    "name": "Bob",
+    "label": "coming soon",
+    "name": "Poppy",
     "src": "assets/images/placeholder.png",
-    "alt": "Pencil drawing of Bob",
-    "description": "A delicate pencil study highlighting Bob's quiet elegance and watchful gaze."
+    "alt": "Placeholder image for Poppy's cat portrait",
+    "description": "A future cat portrait entry reserved for additional commissioned artwork."
   },
   {
     "id": 20,
     "petType": "cat",
-    "label": "placeholder drawing",
-    "name": "Bob",
+    "label": "coming soon",
+    "name": "Misty",
     "src": "assets/images/placeholder.png",
-    "alt": "Pencil drawing of Bob",
-    "description": "A delicate pencil study highlighting Bob's quiet elegance and watchful gaze."
+    "alt": "Placeholder image for Misty's cat portrait",
+    "description": "A future cat portrait entry reserved for additional commissioned artwork."
   },
   {
     "id": 21,
     "petType": "horse",
-    "label": "placeholder drawing",
-    "name": "Bob",
+    "label": "coming soon",
+    "name": "Spirit",
     "src": "assets/images/placeholder.png",
-    "alt": "Pencil drawing of Bob",
-    "description": "A sweeping pencil portrait drawn from a client photograph, capturing strength and poise."
+    "alt": "Placeholder image for Spirit's horse portrait",
+    "description": "A future horse portrait entry reserved for additional commissioned artwork."
   },
   {
     "id": 22,
     "petType": "horse",
-    "label": "placeholder drawing",
-    "name": "Bob",
+    "label": "coming soon",
+    "name": "Storm",
     "src": "assets/images/placeholder.png",
-    "alt": "Pencil drawing of Bob",
-    "description": "A sweeping pencil portrait drawn from a client photograph, capturing strength and poise."
+    "alt": "Placeholder image for Storm's horse portrait",
+    "description": "A future horse portrait entry reserved for additional commissioned artwork."
   },
   {
     "id": 23,
     "petType": "horse",
-    "label": "placeholder drawing",
-    "name": "Bob",
+    "label": "coming soon",
+    "name": "Apollo",
     "src": "assets/images/placeholder.png",
-    "alt": "Pencil drawing of Bob",
-    "description": "A sweeping pencil portrait drawn from a client photograph, capturing strength and poise."
+    "alt": "Placeholder image for Apollo's horse portrait",
+    "description": "A future horse portrait entry reserved for additional commissioned artwork."
   },
   {
     "id": 24,
     "petType": "horse",
-    "label": "placeholder drawing",
-    "name": "Bob",
+    "label": "coming soon",
+    "name": "Jasper",
     "src": "assets/images/placeholder.png",
-    "alt": "Pencil drawing of Bob",
-    "description": "A sweeping pencil portrait drawn from a client photograph, capturing strength and poise."
+    "alt": "Placeholder image for Jasper's horse portrait",
+    "description": "A future horse portrait entry reserved for additional commissioned artwork."
   },
   {
     "id": 25,
     "petType": "horse",
-    "label": "placeholder drawing",
-    "name": "Bob",
+    "label": "coming soon",
+    "name": "Duke",
     "src": "assets/images/placeholder.png",
-    "alt": "Pencil drawing of Bob",
-    "description": "A sweeping pencil portrait drawn from a client photograph, capturing strength and poise."
+    "alt": "Placeholder image for Duke's horse portrait",
+    "description": "A future horse portrait entry reserved for additional commissioned artwork."
   }
 ]
