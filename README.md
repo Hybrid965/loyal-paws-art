@@ -587,7 +587,7 @@ Evidence:
 
 Evidence:
 
-- [Chrome test](docs/testing/desktop-browser-test-chrome.png)
+- [Chrome test](docs/testing/desktop-test.png)
 - [Edge test](docs/testing/desktop-browser-test-edge.png)
 - [Firefox test](docs/testing/desktop-browser-test-firefox.png)
 
