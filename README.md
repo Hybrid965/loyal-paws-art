@@ -1,5 +1,9 @@
 # Loyal Paws Art
 
+## Live Demo
+Click below to see the live site
+- https://hybrid965.github.io/loyal-paws-art/
+
 ## Purpose
 
 Loyal Paws Art is a commission enquiry website created for Gordon Burkert, a pet portrait artist based in Evesham who works in pastel and pencil.
