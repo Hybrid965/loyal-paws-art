@@ -1,18 +1,55 @@
-const mediumCards = document.querySelectorAll(".medium-card");
+const mediumCards = Array.from(
+    document.querySelectorAll(".medium-card")
+);
 
-mediumCards.forEach(function (card) {
+const mediumInput = document.getElementById("medium");
+
+function selectMedium(card) {
+    mediumCards.forEach(function (mediumCard) {
+        mediumCard.classList.remove("selected");
+        mediumCard.setAttribute("aria-checked", "false");
+        mediumCard.setAttribute("tabindex", "-1");
+    });
+
+    card.classList.add("selected");
+    card.setAttribute("aria-checked", "true");
+    card.setAttribute("tabindex", "0");
+
+    mediumInput.value = card.dataset.value;
+}
+
+mediumCards.forEach(function (card, index) {
+    // Make the initially selected card focusable
+    if (card.classList.contains("selected")) {
+        card.setAttribute("tabindex", "0");
+    } else {
+        card.setAttribute("tabindex", "-1");
+    }
+
     card.addEventListener("click", function () {
-        // Remove selected from all cards
-        mediumCards.forEach(function (c) {
-            c.classList.remove("selected");
-            c.setAttribute("aria-checked", "false");
-        });
+        selectMedium(card);
+    });
 
-        // Select the clicked card
-        card.classList.add("selected");
-        card.setAttribute("aria-checked", "true");
+    card.addEventListener("keydown", function (event) {
+        let nextIndex;
 
-        // Update the hidden input
-        document.getElementById("medium").value = card.dataset.value;
+        if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+            nextIndex = (index + 1) % mediumCards.length;
+        } else if (
+            event.key === "ArrowLeft" ||
+            event.key === "ArrowUp"
+        ) {
+            nextIndex =
+                (index - 1 + mediumCards.length) % mediumCards.length;
+        } else {
+            return;
+        }
+
+        event.preventDefault();
+
+        const nextCard = mediumCards[nextIndex];
+
+        selectMedium(nextCard);
+        nextCard.focus();
     });
 });
