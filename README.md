@@ -933,6 +933,19 @@ Examples of version-controlled work include:
 
 This supports a clear development history and helps demonstrate how the final application was built over time.
 
+## External Services
+
+This project uses the following third-party services:
+
+- **Cloudinary** – used to upload and host customer reference images submitted through the commission form.
+- **EmailJS** – used to send commission enquiry form submissions without requiring a traditional backend server.
+- **GitHub Pages** – used to host and deploy the live website.
+- **Playwright** – used for automated browser testing and regression testing.
+
+The website design, HTML, CSS, JavaScript, validation logic, accessibility improvements and user interface were created specifically for the Loyal Paws Art project.
+
+Third-party services were used only where external hosting, form delivery or automated browser testing functionality was required.
+
 ## Credits
 
 ### Content
