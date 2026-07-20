@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const pettype = document.getElementById("pettype");
         const medium = document.getElementById("medium");
         const size = document.getElementById("size");
+        const photo = document.getElementById("photo");
 
         // Checking Name is valid
         if (!name.value.trim()) {
@@ -64,6 +65,46 @@ document.addEventListener("DOMContentLoaded", function () {
         // Checking Size is valid
         if (!size.value) {
             errors.push({ id: "size", message: "Please select a size" });
+        }
+
+        // Checking uploaded photos
+        const allowedFileTypes = [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+        ];
+
+        const maximumFiles = 5;
+        const maximumFileSize = 10 * 1024 * 1024;
+        const uploadedFiles = Array.from(photo.files);
+
+        if (uploadedFiles.length > maximumFiles) {
+            errors.push({
+                id: "photo",
+                message: "Please upload no more than 5 photos."
+            });
+        }
+
+        const invalidFile = uploadedFiles.find(function (file) {
+            return !allowedFileTypes.includes(file.type);
+        });
+
+        if (invalidFile) {
+            errors.push({
+                id: "photo",
+                message: "Photos must be JPG, PNG or WebP files."
+            });
+        }
+
+        const oversizedFile = uploadedFiles.find(function (file) {
+            return file.size > maximumFileSize;
+        });
+
+        if (oversizedFile) {
+            errors.push({
+                id: "photo",
+                message: "Each photo must be smaller than 10MB."
+            });
         }
 
         return errors;
@@ -167,16 +208,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 photo_url: photoLinkString,
                 size: form.size.value
             })
-            .then(function () {
-                showSuccess();
-            })
-            .catch(function (err) {
-                console.error("EmailJS error:", err);
-                alert(
-                    "Sorry, there was an error sending your enquiry. " +
-                    "Please try again later."
-                );
-            });
+                .then(function () {
+                    showSuccess();
+                })
+                .catch(function (err) {
+                    console.error("EmailJS error:", err);
+                    alert(
+                        "Sorry, there was an error sending your enquiry. " +
+                        "Please try again later."
+                    );
+                });
 
         } else {
             showErrors(errors);
