@@ -441,8 +441,105 @@ There are two main approaches to testing a web application: automated testing an
 
 For this project, manual testing was chosen as the most appropriate approach because Loyal Paws Art is a focused front end website with visual and interaction-based features, including navigation, filtering, a lightbox and a form.
 
+A small amount of automated testing was completed to enforce that the users stories have been achieved.
+
 Validation tools and Lighthouse were also used to check code quality, accessibility and performance.
 
+## Automated Testing
+
+Automated browser testing was added using [Playwright](https://playwright.dev/) to provide repeatable regression testing for the website's main features and user journeys.
+
+The tests run against a locally hosted version of the website using Chromium. This helps confirm that the pages, JavaScript functionality, accessibility controls and form validation continue to work after future changes.
+
+### Automated Test Coverage
+
+| Test | Expected result | Result |
+|---|---|---|
+| Homepage loading | The homepage loads and displays the main heading | Pass |
+| Portfolio navigation | The homepage portfolio CTA opens the portfolio page | Pass |
+| Portfolio JSON loading | Portrait cards are loaded from the JSON file | Pass |
+| Portfolio filtering | Selecting the Dog filter displays only dog portraits | Pass |
+| Portfolio lightbox | Clicking a portrait opens the lightbox | Pass |
+| Lightbox keyboard control | Pressing `Escape` closes the lightbox | Pass |
+| Empty form validation | Submitting an empty commission form displays validation errors | Pass |
+| Medium keyboard selection | Arrow keys switch between Pastel and Pencil | Pass |
+| Medium form value | The hidden medium input updates when the selected medium changes | Pass |
+| File type validation | Files other than JPG, PNG and WebP are rejected | Pass |
+| File quantity validation | Uploading more than five photographs is rejected | Pass |
+| File size validation | Photographs larger than 10MB are rejected | Pass |
+| Custom 404 page | The page-not-found message and countdown are displayed | Pass |
+| 404 redirect | The user is redirected safely back to the website homepage | Pass |
+
+### Running the Tests
+
+Node.js and npm must be installed before running the automated tests.
+
+Install the project dependencies:
+
+```bash
+npm install
+```
+
+Install the Chromium browser used by Playwright:
+
+```bash
+npx playwright install chromium
+```
+
+Run all automated tests:
+
+```bash
+npm test
+```
+
+### Test Files
+
+The automated tests are separated by page and functionality:
+
+```text
+tests/
+├── 404.spec.js
+├── commission.spec.js
+├── home.spec.js
+└── portfolio.spec.js
+```
+
+The Playwright configuration is stored in:
+
+```text
+playwright.config.js
+```
+
+The npm dependencies and test commands are stored in:
+
+```text
+package.json
+```
+
+### Test Outcome
+
+All Playwright tests passed successfully.
+
+The automated tests confirm that the website's key user journeys remain functional, including:
+
+- Navigation
+- Portfolio rendering
+- Portfolio filtering
+- Lightbox interaction
+- Keyboard accessibility
+- Form validation
+- Upload validation
+- Custom 404 redirection
+
+The automated tests do not send genuine EmailJS enquiries or upload files to Cloudinary. These external integrations were tested separately through manual functional testing.
+
+### Automated Test Evidence
+
+The screenshot below shows the successful Playwright test run.
+
+[Automated test results](docs/testing/automated-testing.png)
+
+## Manual Testing
 ### HTML Validation
 
 All HTML pages were tested using the W3C Nu HTML Checker.

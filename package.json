@@ -1,0 +1,16 @@
+{
+  "name": "loyal-paws-art-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Automated browser smoke tests for Loyal Paws Art",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "http-server": "^14.1.1"
+  }
+}
