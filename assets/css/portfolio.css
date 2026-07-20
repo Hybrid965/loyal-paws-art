@@ -140,6 +140,18 @@ Gallery & Filter
     justify-content: center;
 }
 
+.gallery-error {
+    grid-column: 1 / -1;
+    width: 100%;
+    min-height: 100px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 
 /*==========================================
 Lightbox

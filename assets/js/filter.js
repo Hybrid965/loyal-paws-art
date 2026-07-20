@@ -2,6 +2,7 @@
 
 // Assign the variable to gallery-grid
 let gallery = document.getElementById("gallery-grid");
+const galleryError = document.getElementById("gallery")
 
 
 // Update the portrait number depending whats selected
@@ -46,8 +47,16 @@ fetch("assets/json/portraits.json")
     updateGalleryCount();
 
   })
-  .catch((err) => console.error("Failed to load JSON:", err));
 
+  .catch(function(err){
+    console.error("Failed to load JSON:", err);
+
+    galleryError.innerHTML = `
+    <div class="gallery-error fadein">
+      <p class="fadein gallery-error">Sorry, the portfolio could not be loaded at this time. Please refresh the page or try again later.</p>
+    </div>
+  `;
+  });
 
 // Filter function
 function applyFilter(petType) {
