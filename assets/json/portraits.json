@@ -116,8 +116,17 @@
     "alt": "Portrait of Milo, a black dog against a red background",
     "description": "A characterful portrait of a black dog against a deep red background, capturing Milo's alert ears, glossy coat and warm expression."
   },
-  {
+   {
     "id": 14,
+    "petType": "dog",
+    "label": "dog portrait",
+    "name": "Luna",
+    "src": "assets/images/dog14.png",
+    "alt": "Portrait of Luna, a black dog sitting on a sofa relaxing",
+    "description": "A characterful portrait of a black cockerspaniel relaxing on a sofa, perhaps contemplating when dinner is?"
+  },
+  {
+    "id": 15,
     "petType": "cat",
     "label": "cat portrait",
     "name": "Raven",
@@ -126,7 +135,7 @@
     "description": "A atmospheric portrait of a black cat resting among grass, capturing Raven's watchful eyes and quiet presence against a soft green background."
   },
   {
-    "id": 15,
+    "id": 16,
     "petType": "cat",
     "label": "cat portrait",
     "name": "Pearl",
