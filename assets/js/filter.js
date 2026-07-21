@@ -1,8 +1,8 @@
 /*global console*/
-
+/*jslint long*/
 // Assign the variable to gallery-grid
 let gallery = document.getElementById("gallery-grid");
-const galleryError = document.getElementById("gallery")
+const galleryError = document.getElementById("gallery");
 
 
 // Update the portrait number depending whats selected
