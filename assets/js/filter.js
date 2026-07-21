@@ -104,12 +104,12 @@ function openLightbox(src, alt, name, label, description) {
   lightboxLabel.textContent = label;
   lightboxDesc.textContent = description;
   lightbox.classList.add("active");
-  document.body.style.overflow = "hidden";
+  
 }
 
 function closeLightbox() {
   lightbox.classList.remove("active");
-  document.body.style.overflow = "";
+  
 }
 
 lightboxClose.addEventListener("click", closeLightbox);

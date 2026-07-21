@@ -13,7 +13,7 @@ Universal
 ==========================================*/
 
 .subheading {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: "Cormorant Garamond", Georgia, serif;
     text-transform: uppercase;
 }
 
@@ -26,9 +26,9 @@ Universal
 }
 
 .gallery-count {
-    font-size: 0.9rem;
-    color: #666;
     margin: 8px 0 16px;
+    color: #666;
+    font-size: 0.9rem;
 }
 
 
@@ -37,28 +37,31 @@ Hero
 ==========================================*/
 
 #hero {
-    color: #FAF7F2;
     height: auto;
     background-color: #2C2828;
+    color: #FAF7F2;
 }
 
 #hero-content {
     display: flex;
-    justify-content: center;
-    text-align: center;
     flex-direction: column;
+    justify-content: center;
+
     padding: 150px;
+
+    text-align: center;
 }
 
 .heading-hero {
+    margin-bottom: 20px;
+
     font-size: 4.375rem;
     font-weight: 100;
-    margin-bottom: 20px;
 }
 
 
 /*==========================================
-Gallery & Filter
+Gallery and Filter
 ==========================================*/
 
 #gallery {
@@ -68,13 +71,15 @@ Gallery & Filter
 .filter-bar {
     margin: 30px;
     padding: 10px;
+
     font-size: 0.75rem;
 }
 
 .filter-btn {
-    padding: 8px 20px;
-    border: none;
     margin: 5px;
+    padding: 8px 20px;
+
+    border: none;
 }
 
 .filter-btn:hover {
@@ -88,167 +93,437 @@ Gallery & Filter
     color: #FAF7F2;
 }
 
+
+/*==========================================
+Gallery Grid
+==========================================*/
+
+#gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 1.5px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
 .gallery-card {
-    flex: 1 1 calc(33.333% - 1.5px);
-    min-width: 280px;
+    min-width: 0;
+
     background-color: #FAF7F2;
-    display: flex;
-    flex-direction: column;
+}
+
+.gallery-card-thumb {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
 }
 
 .gallery-card-thumb img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
     display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
     cursor: pointer;
+
     transition: transform 0.3s ease;
 }
 
 .gallery-card-thumb img:hover {
-    transform: translateY(-3px);
-
+    transform: scale(1.02);
 }
 
 .gallery-card-info {
-    padding: 1rem 1.25rem;
     display: flex;
-    justify-content: space-between;
     align-items: baseline;
+    justify-content: space-between;
+
+    gap: 15px;
+    padding: 1rem 1.25rem;
 }
 
 .gallery-card-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.1rem;
     color: #2C2828;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.1rem;
 }
 
 .gallery-card-medium-tag {
+    color: #8A8585;
+
     font-size: 0.7rem;
     letter-spacing: 0.1em;
+    text-align: right;
     text-transform: uppercase;
-    color: #8A8585;
-}
-
-#gallery-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5px;
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    justify-content: center;
 }
 
 .gallery-error {
+    display: flex;
     grid-column: 1 / -1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     width: 100%;
     min-height: 100px;
     padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     text-align: center;
 }
 
 
 /*==========================================
-Lightbox
+Lightbox Overlay
 ==========================================*/
 
 .lightbox {
-    display: none;
     position: fixed;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.85);
-    z-index: 1000;
-    align-items: center;
-    justify-content: center;
+    z-index: 9999;
+
+    display: none;
+    place-items: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.88);
 }
 
 .lightbox.active {
-    display: flex;
+    display: grid;
 }
+
+
+/*==========================================
+Lightbox Card
+==========================================*/
 
 .lightbox-content {
-    background-color: #FAF7F2;
-    max-width: 500px;
-    width: 100%;
+    position: relative;
+
+    width: min(500px, calc(100vw - 40px));
+    max-height: calc(100dvh - 40px);
+    margin: 0;
+
+    overflow-x: hidden;
     overflow-y: auto;
-    max-height: 90vh;
+
+    background-color: #FAF7F2;
+    border-radius: 3px;
+    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.5);
 }
+
+
+/*==========================================
+Lightbox Image
+==========================================*/
 
 .lightbox-content img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     display: block;
-    border-bottom: 3px solid #c49a6c;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+
+    background-color: #1A1717;
+    border: none;
+    object-fit: contain;
 }
+
+
+/*==========================================
+Lightbox Information
+==========================================*/
 
 .lightbox-info {
-    padding: 1rem 1.25rem;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    align-items: flex-start;
+
+    width: 100%;
+    padding: 21px 24px 24px;
+
+    box-sizing: border-box;
+    background-color: #FAF7F2;
 }
 
-.lightbox-desc {
-    font-size: 0.8rem;
-    color: #5A5555;
-    margin-top: 4px;
-    line-height: 1.5;
+#lightbox-name {
+    margin: 0 0 9px;
+
+    color: #2C2828;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1;
 }
+
+#lightbox-label {
+    display: inline-block;
+
+    margin: 0 0 15px;
+    padding: 6px 11px;
+
+    background-color: #EEE7DE;
+    border-radius: 20px;
+    color: #6A5B4D;
+
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.lightbox-desc,
+#lightbox-desc {
+    width: 100%;
+    margin: 0;
+    padding-top: 15px;
+
+    border-top: 1px solid #DDD3C8;
+    color: #5A5555;
+
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
+
+
+/*==========================================
+Lightbox Close Button
+==========================================*/
 
 #lightbox-close {
     position: fixed;
     top: 20px;
     right: 28px;
+    z-index: 10000;
+
+    padding: 4px;
+
     background: none;
     border: none;
     color: #FAF7F2;
-    font-size: 2rem;
-    cursor: pointer;
+
+    font-size: 2.5rem;
     line-height: 1;
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+#lightbox-close:hover {
+    color: #C49A6C;
 }
 
 
 /*==========================================
-CTA 
+CTA
 ==========================================*/
+
 #cta p {
     margin-top: 30px;
 }
 
 
 /*==========================================
-Media Queries
+Large Tablet
+==========================================*/
+
+@media (max-width: 1200px) {
+    #gallery-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+
+/*==========================================
+Tablet - 900px
+==========================================*/
+
+@media (max-width: 900px) {
+    #hero-content {
+        padding: 120px 60px;
+    }
+
+    .heading-hero {
+        font-size: 3.5rem;
+    }
+
+    #gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .lightbox {
+        padding: 15px;
+    }
+
+    .lightbox-content {
+        width: min(460px, calc(100vw - 30px));
+        max-height: calc(100dvh - 30px);
+    }
+
+    .lightbox-info {
+        padding: 18px 20px 21px;
+    }
+
+    #lightbox-name {
+        font-size: 1.75rem;
+    }
+
+    #lightbox-close {
+        top: 14px;
+        right: 19px;
+    }
+}
+
+
+/*==========================================
+Smaller Tablet
 ==========================================*/
 
 @media (max-width: 800px) {
     .heading-hero {
-        font-size: 3.125rem;
         margin: 20px 0;
+        font-size: 3.125rem;
     }
 }
 
+
+/*==========================================
+Mobile
+==========================================*/
+
 @media (max-width: 600px) {
-    /* Mobile nav handled by shared.css */
-
     #hero-content {
-        padding: 100px 50px;
+        padding: 100px 25px;
     }
 
-    .subheading {
-        font-size: 0.875rem;
+    .heading-hero {
+        font-size: 2.75rem;
     }
 
+    .subheading,
     .heading-paragraph {
         font-size: 0.875rem;
     }
 
+    .filter-bar {
+        margin: 20px 10px;
+    }
+
+    .filter-btn {
+        padding: 8px 15px;
+    }
+
+    #gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-card-info {
+        padding: 0.9rem 1rem;
+    }
+
+    .lightbox {
+        padding: 12px;
+    }
+
     .lightbox-content {
-        width: 95%;
+        width: calc(100vw - 24px);
+        max-height: calc(100dvh - 24px);
+    }
+
+    .lightbox-info {
+        padding: 17px 18px 20px;
+    }
+
+    #lightbox-name {
+        font-size: 1.65rem;
+    }
+
+    #lightbox-label {
+        margin-bottom: 12px;
+    }
+
+    .lightbox-desc,
+    #lightbox-desc {
+        padding-top: 12px;
+
+        font-size: 0.85rem;
+        line-height: 1.55;
+    }
+
+    #lightbox-close {
+        top: 9px;
+        right: 13px;
+
+        font-size: 2.25rem;
+    }
+}
+
+
+/*==========================================
+Short Screens
+==========================================*/
+
+@media (max-height: 800px) and (min-width: 601px) {
+    .lightbox-content {
+        width: min(420px, calc(100vw - 40px));
+    }
+
+    .lightbox-info {
+        padding-top: 16px;
+        padding-bottom: 18px;
+    }
+
+    #lightbox-name {
+        font-size: 1.65rem;
+    }
+
+    .lightbox-desc,
+    #lightbox-desc {
+        font-size: 0.84rem;
+        line-height: 1.5;
+    }
+}
+
+
+/*==========================================
+Very Short Screens
+==========================================*/
+
+@media (max-height: 650px) and (min-width: 601px) {
+    .lightbox-content {
+        width: min(340px, calc(100vw - 40px));
+    }
+
+    .lightbox-info {
+        padding: 13px 16px 15px;
+    }
+
+    #lightbox-name {
+        margin-bottom: 6px;
+        font-size: 1.45rem;
+    }
+
+    #lightbox-label {
+        margin-bottom: 9px;
+        padding: 4px 9px;
+    }
+
+    .lightbox-desc,
+    #lightbox-desc {
+        padding-top: 9px;
+
+        font-size: 0.78rem;
+        line-height: 1.4;
     }
 }
